@@ -71,7 +71,7 @@ public class MainActivity extends Activity {
     private boolean mPermOk;
     private TextView mSub2;
     private TextView mProgressPercent;
-    private ImageView mOmniLogo;
+    private ImageView mCarbonLogo;
 
     private static final int PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE = 0;
 
@@ -109,7 +109,7 @@ public class MainActivity extends Activity {
         lastChecked = (TextView) findViewById(R.id.text_last_checked);
         downloadSize = (TextView) findViewById(R.id.text_download_size);
         mProgressPercent = (TextView) findViewById(R.id.progress_percent);
-        mOmniLogo = (ImageView) findViewById(R.id.omni_logo);
+        mCarbonLogo = (ImageView) findViewById(R.id.carbon_logo);
 
         config = Config.getInstance(this);
         mPermOk = false;
@@ -250,7 +250,7 @@ public class MainActivity extends Activity {
 
                 extraText = getString(R.string.error_disk_space_sub, current,
                         total);
-                DrawableCompat.setTint(mOmniLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_err));
+                DrawableCompat.setTint(mCarbonLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_err));
             } else if (UpdateService.STATE_ERROR_UNKNOWN.equals(state)) {
                 enableCheck = true;
                 progress.setIndeterminate(false);
@@ -260,12 +260,12 @@ public class MainActivity extends Activity {
                 title = getString(R.string.state_error_not_official_title);
                 extraText = getString(R.string.state_error_not_official_extra,
                         intent.getStringExtra(UpdateService.EXTRA_FILENAME));
-                DrawableCompat.setTint(mOmniLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_disabled));
+                DrawableCompat.setTint(mCarbonLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_disabled));
             } else if (UpdateService.STATE_ERROR_DOWNLOAD.equals(state)) {
                 enableCheck = true;
                 progress.setIndeterminate(false);
                 extraText = intent.getStringExtra(UpdateService.EXTRA_FILENAME);
-                DrawableCompat.setTint(mOmniLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_alert));
+                DrawableCompat.setTint(mCarbonLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_alert));
             } else if (UpdateService.STATE_ERROR_CONNECTION.equals(state)) {
                 enableCheck = true;
                 progress.setIndeterminate(false);
@@ -316,7 +316,7 @@ public class MainActivity extends Activity {
 
                 deltaUpdatePossible = latestDeltaZip != null;
                 fullUpdatePossible = latestFullZip != null;
-                DrawableCompat.setTint(mOmniLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_green));
+                DrawableCompat.setTint(mCarbonLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_white));
 
 
                 if (deltaUpdatePossible) {
@@ -325,14 +325,14 @@ public class MainActivity extends Activity {
                     enableBuild = true;
                     updateVersion = latestDeltaBase;
                     title = getString(R.string.state_action_build_delta);
-                    DrawableCompat.setTint(mOmniLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_green));
+                    DrawableCompat.setTint(mCarbonLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_white));
                 } else if (fullUpdatePossible) {
                     String latestFullBase = latestFull.substring(0,
                             latestFull.lastIndexOf('.'));
                     enableBuild = true;
                     updateVersion = latestFullBase;
                     title = getString(R.string.state_action_build_full);
-                    DrawableCompat.setTint(mOmniLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_alert));
+                    DrawableCompat.setTint(mCarbonLogo.getDrawable(), ContextCompat.getColor(context, R.color.logo_alert));
                 }
                 long downloadSize = prefs.getLong(
                         UpdateService.PREF_DOWNLOAD_SIZE, -1);

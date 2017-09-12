@@ -859,7 +859,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             if(fileName.endsWith(".zip") && fileName.indexOf(config.getDevice()) != -1) {
                 String[] parts = fileName.split("-");
                 if (parts.length > 1) {
-                    String version = parts[1] + parts[2];
+                    String version = parts[2];
                     Version current = new Version(config.getAndroidVersion());
                     Version fileVersion = new Version(version);
                     if (fileVersion.compareTo(current) >= 0) {
@@ -1883,10 +1883,9 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
 
                     // Create a list of deltas to apply to get from our current
                     // version to the latest
-                    String fetch = String.format(Locale.ENGLISH, "%s%s-%s.delta",
+                    String fetch = String.format(Locale.ENGLISH, "%s%s.delta",
                             config.getUrlBaseDelta(),
-                            config.getFilenameBase(),
-                            config.getDevice());
+                            config.getFilenameBase());
 
                     while (true) {
                         DeltaInfo delta = null;
