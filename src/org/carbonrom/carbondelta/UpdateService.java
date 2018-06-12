@@ -2351,4 +2351,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             }
         }
     }
+
+    public Config getConfig() {
+        return config;
+    }
 }
