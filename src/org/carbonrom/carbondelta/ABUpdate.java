@@ -43,9 +43,9 @@ class ABUpdate {
     private static final String PAYLOAD_PROPERTIES_PATH = "payload_properties.txt";
 
     private final String zipPath;
+    private final boolean enableABPerfMode;
 
     private ProgressListener mProgressListener;
-
     private UpdateService updateservice;
 
     private final UpdateEngineCallback mUpdateEngineCallback = new UpdateEngineCallback() {
@@ -100,6 +100,7 @@ class ABUpdate {
         this.zipPath = zipPath;
         this.mProgressListener = listener;
         this.updateservice = updateservice;
+        this.enableABPerfMode = updateservice.getConfig().getABPerfModeCurrent();
     }
 
     private boolean startUpdate() {
@@ -132,6 +133,7 @@ class ABUpdate {
         }
 
         UpdateEngine updateEngine = new UpdateEngine();
+        updateEngine.setPerformanceMode(enableABPerfMode);
         updateEngine.bind(mUpdateEngineCallback);
         String zipFileUri = "file://" + file.getAbsolutePath();
         updateEngine.applyPayload(zipFileUri, offset, 0, headerKeyValuePairs);
