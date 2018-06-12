@@ -43,6 +43,7 @@ class ABUpdate {
     private static final String PREFS_IS_INSTALLING_UPDATE = "prefs_is_installing_update";
 
     private final String zipPath;
+    private final boolean enableABPerfMode;
 
     private ProgressListener mProgressListener;
 
@@ -106,6 +107,7 @@ class ABUpdate {
         this.zipPath = zipPath;
         this.mProgressListener = listener;
         this.updateservice = us;
+        this.enableABPerfMode = updateservice.getConfig().getABPerfModeCurrent();
     }
 
     private boolean startUpdate() {
@@ -138,6 +140,7 @@ class ABUpdate {
         }
 
         UpdateEngine updateEngine = new UpdateEngine();
+        updateEngine.setPerformanceMode(enableABPerfMode);
         updateEngine.bind(mUpdateEngineCallback);
         String zipFileUri = "file://" + file.getAbsolutePath();
         updateEngine.applyPayload(zipFileUri, offset, 0, headerKeyValuePairs);
