@@ -43,6 +43,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Date;
+import java.util.zip.ZipFile;
 import javax.net.ssl.HttpsURLConnection;
 
 import org.json.JSONArray;
@@ -70,6 +71,7 @@ import android.os.PowerManager;
 import android.os.Process;
 import android.os.StatFs;
 import android.os.SystemClock;
+import android.os.UpdateEngine;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 
@@ -141,6 +143,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     public static final String STATE_ACTION_APPLYING_PATCH = "action_applying_patch";
     public static final String STATE_ACTION_APPLYING_MD5 = "action_applying_md5";
     public static final String STATE_ACTION_READY = "action_ready";
+    public static final String STATE_ACTION_AB_FLASH = "action_ab_flash";
+    public static final String STATE_ACTION_AB_FINISHED = "action_ab_finished";
     public static final String STATE_ERROR_DISK_SPACE = "error_disk_space";
     public static final String STATE_ERROR_UNKNOWN = "error_unknown";
     public static final String STATE_ERROR_UNOFFICIAL = "error_unofficial";
@@ -313,7 +317,11 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 }
             } else if (ACTION_FLASH.equals(intent.getAction())) {
                 if (checkPermissions()) {
-                    flashUpdate();
+                    if(Config.isABDevice()) {
+                        flashABUpdate();
+                    } else {
+                        flashUpdate();
+                    }
                     scanImageFiles();
                 }
             } else if (ACTION_ALARM.equals(intent.getAction())) {
@@ -1500,6 +1508,76 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
         os.write((s + "\n").getBytes("UTF-8"));
     }
 
+    private String handleUpdateCleanup() throws FileNotFoundException {
+        String flashFilename = prefs.getString(PREF_READY_FILENAME_NAME, PREF_READY_FILENAME_DEFAULT);
+        String intialFile = prefs.getString(PREF_INITIAL_FILE, PREF_READY_FILENAME_DEFAULT);
+
+        if (flashFilename == PREF_READY_FILENAME_DEFAULT
+                || !flashFilename.startsWith(config.getPathBase())
+                || !new File(flashFilename).exists()) {
+            throw new FileNotFoundException("flashUpdate - no valid file to flash found " + flashFilename);
+        }
+        // now delete the initial file
+        if (intialFile != null
+                && new File(intialFile).exists()
+                && intialFile.startsWith(config.getPathBase())){
+            new File(intialFile).delete();
+            Logger.d("flashUpdate - delete initial file");
+        }
+
+        return flashFilename;
+    }
+
+    private void onUpdateCompleted(int status) {
+        clearState();
+        if (status == UpdateEngine.ErrorCodeConstants.SUCCESS) {
+            // Start "Please Reboot now" Dialog here
+            updateState(STATE_ACTION_AB_FINISHED, null, null, null, null, null);
+        } else {
+            updateState(STATE_ERROR_FLASH, null, null, null, null, null);
+        }
+    }
+
+    private void flashABUpdate() {
+        Logger.d("flashABUpdate");
+        String flashFilename = "";
+        try {
+            flashFilename = handleUpdateCleanup();
+        } catch (Exception ex) {
+            Logger.ex(ex);
+        }
+
+        final String _filename = config.getFilenameBase() + ".zip";
+        clearState();
+        updateState(STATE_ACTION_AB_FLASH, 0f, 0L, 100L, _filename, null);
+
+        try {
+            ZipFile zipFile = new ZipFile(flashFilename);
+            boolean isABUpdate = ABUpdate.isABUpdate(zipFile);
+            zipFile.close();
+            if (isABUpdate) {
+                final long[] last = new long[] { 0, SystemClock.elapsedRealtime() };
+
+                DeltaInfo.ProgressListener listener = new DeltaInfo.ProgressListener() {
+                    @Override
+                    public void onProgress(float progress, long current, long total) {
+                        long now = SystemClock.elapsedRealtime();
+                        if (now >= last[0] + 16L) {
+                            updateState(STATE_ACTION_AB_FLASH, progress, current, total, _filename,
+                                    SystemClock.elapsedRealtime() - last[1]);
+                            last[0] = now;
+                        }
+                    }
+                };
+                ABUpdate.start(flashFilename, listener, this::onUpdateCompleted);
+            } else {
+                throw new Exception("Not an AB Update");
+            }
+        } catch (Exception ex) {
+            Logger.ex(ex);
+        }
+    }
+
     @SuppressLint("SdCardPath")
     private void flashUpdate() {
         Logger.d("flashUpdate");
@@ -1517,24 +1595,15 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
         }
 
         boolean deltaSignature = prefs.getBoolean(PREF_DELTA_SIGNATURE, false);
-        String flashFilename = prefs.getString(PREF_READY_FILENAME_NAME, PREF_READY_FILENAME_DEFAULT);
-        String intialFile = prefs.getString(PREF_INITIAL_FILE, PREF_READY_FILENAME_DEFAULT);
+        String flashFilename = "";
+        try {
+            flashFilename = handleUpdateCleanup();
+        } catch (Exception ex) {
+            Logger.ex(ex);
+        }
 
         clearState();
 
-        if (flashFilename == PREF_READY_FILENAME_DEFAULT
-                || !flashFilename.startsWith(config.getPathBase())
-                || !new File(flashFilename).exists()) {
-            Logger.d("flashUpdate - no valid file to flash found " + flashFilename);
-            return;
-        }
-        // now delete the initial file
-        if (intialFile != null
-                && new File(intialFile).exists()
-                && intialFile.startsWith(config.getPathBase())){
-            new File(intialFile).delete();
-            Logger.d("flashUpdate - delete initial file");
-        }
         // Remove the path to the storage from the filename, so we get a path
         // relative to the root of the storage
         String path_sd = Environment.getExternalStorageDirectory()
@@ -1774,7 +1843,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 state.equals(UpdateService.STATE_ACTION_CHECKING_MD5) ||
                 state.equals(UpdateService.STATE_ACTION_APPLYING) ||
                 state.equals(UpdateService.STATE_ACTION_APPLYING_MD5) ||
-                state.equals(UpdateService.STATE_ACTION_APPLYING_PATCH)) {
+                state.equals(UpdateService.STATE_ACTION_APPLYING_PATCH) ||
+                state.equals(UpdateService.STATE_ACTION_AB_FLASH)) {
             return true;
         }
         return false;
