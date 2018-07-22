@@ -24,10 +24,17 @@ package org.carbonrom.carbondelta;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+
+import android.preference.PreferenceManager;
 
 public class BootCompleteReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
+    	final SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences(this);
+        prefs.edit()
+                .putBoolean(UpdateService.PREF_AB_UPDATE_REBOOT_PENDING, false).commit();
         UpdateService.start(context);
     }
 }
