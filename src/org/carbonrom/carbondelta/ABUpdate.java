@@ -31,6 +31,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.carbonrom.carbondelta.DeltaInfo.ProgressListener;
+
 class ABUpdate {
 
     private static final String TAG = "ABUpdateInstaller";
@@ -42,29 +44,49 @@ class ABUpdate {
 
     private final String zipPath;
 
-    private UpdaterListener mUpdateListener;
+    private ProgressListener mProgressListener;
+
+    private UpdateService updateservice;
 
     private final UpdateEngineCallback mUpdateEngineCallback = new UpdateEngineCallback() {
+        float lastPercent;
+        int offset = 0;
         @Override
         public void onStatusUpdate(int status, float percent) {
-            int progress = Math.round(percent * 100);
-            mUpdateListener.progressUpdate(progress);
-            mUpdateListener.notifyUpdateStatusChange(status);
+            if (status == UpdateEngine.UpdateStatusConstants.UPDATED_NEED_REBOOT) {
+                updateservice.onUpdateCompleted(UpdateEngine.ErrorCodeConstants.SUCCESS);
+                return;
+            }
+            if (status == UpdateEngine.UpdateStatusConstants.REPORTING_ERROR_EVENT) {
+                updateservice.onUpdateCompleted(UpdateEngine.ErrorCodeConstants.ERROR);
+                return;
+            }
+            if (lastPercent > percent) {
+                offset = 50;
+            }
+            lastPercent = percent;
+            if (mProgressListener != null) {
+                mProgressListener.setStatus(updateservice.getString(updateservice.getResources().getIdentifier(
+                    "progress_status_" + status, "string", updateservice.getPackageName())));
+                mProgressListener.onProgress(percent * 50f + (float) offset,
+                    (long) Math.round(percent * 50) + (long) offset, 100L);
+            }
         }
 
         @Override
         public void onPayloadApplicationComplete(int errorCode) {
-           sIsInstallingUpdate = false;
-           mUpdateListener.progressUpdate(100);
-           mUpdateListener.notifyUpdateComplete(errorCode);
+            mProgressListener.onProgress(100f, 100L, 100L);
+            updateservice.onUpdateCompleted(errorCode);
+            sIsInstallingUpdate = false;
         }
     };
 
-    static synchronized boolean start(String zipPath, UpdaterListener listener) {
+    static synchronized boolean start(String zipPath, ProgressListener listener,
+            UpdateService updateservice) {
         if (sIsInstallingUpdate) {
             return false;
         }
-        ABUpdate installer = new ABUpdate(zipPath, listener);
+        ABUpdate installer = new ABUpdate(zipPath, listener, updateservice);
         sIsInstallingUpdate = installer.startUpdate();
         return sIsInstallingUpdate;
     }
@@ -73,9 +95,12 @@ class ABUpdate {
         return sIsInstallingUpdate;
     }
 
-    private ABUpdate(String zipPath, UpdaterListener listener) {
+    private ABUpdate(String zipPath, ProgressListener listener,
+                UpdateService updateservice) {
         this.zipPath = zipPath;
-        this.mUpdateListener = listener;
+        this.mProgressListener = listener;
+        this.onUpdateCompleted = onUpdateCompleted;
+        this.updateservice = updateservice;
     }
 
     private boolean startUpdate() {
