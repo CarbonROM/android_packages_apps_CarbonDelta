@@ -390,14 +390,20 @@ public class MainActivity extends Activity {
                         if (progressInK)
                             kibps *= 1024f;
                         int sec = (int) (((((float) total / (float) current) * (float) ms) - ms) / 1000f);
-                        if (kibps < 10000) {
-                            sub2 = String.format(Locale.ENGLISH,
-                                    "%.0f KiB/s, %02d:%02d",
-                                    kibps, sec / 60, sec % 60);
+                        if (intent.getBooleanExtra(UpdateService.EXTRA_FILE_PROGRESS, true)) {
+                            if (kibps < 10000) {
+                                sub2 = String.format(Locale.ENGLISH,
+                                        "%.0f KiB/s, %02d:%02d",
+                                        kibps, sec / 60, sec % 60);
+                            } else {
+                                sub2 = String.format(Locale.ENGLISH,
+                                        "%.0f MiB/s, %02d:%02d",
+                                        kibps / 1024f, sec / 60, sec % 60);
+                            }
                         } else {
                             sub2 = String.format(Locale.ENGLISH,
-                                    "%.0f MiB/s, %02d:%02d",
-                                    kibps / 1024f, sec / 60, sec % 60);
+                                    "%02d:%02d",
+                                    sec / 60, sec % 60);
                         }
                     }
                 }
@@ -457,7 +463,11 @@ public class MainActivity extends Activity {
     }
 
     public void onButtonFlashNowClick(View v) {
-        flashRecoveryWarning.run();
+        if (Config.isABDevice()) {
+            flashStart.run();
+        } else {
+            flashRecoveryWarning.run();
+        }
     }
 
     public void onButtonStopClick(View v) {
