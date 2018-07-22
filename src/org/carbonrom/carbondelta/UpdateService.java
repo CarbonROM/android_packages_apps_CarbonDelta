@@ -43,6 +43,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Date;
+import java.util.zip.ZipFile;
 import javax.net.ssl.HttpsURLConnection;
 
 import org.json.JSONArray;
@@ -70,6 +71,7 @@ import android.os.PowerManager;
 import android.os.Process;
 import android.os.StatFs;
 import android.os.SystemClock;
+import android.os.UpdateEngine;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
 
@@ -130,6 +132,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     public static final String EXTRA_TOTAL = "org.carbonrom.carbondelta.extra.TOTAL";
     public static final String EXTRA_FILENAME = "org.carbonrom.carbondelta.extra.FILENAME";
     public static final String EXTRA_MS = "org.carbonrom.carbondelta.extra.MS";
+    public static final String EXTRA_FILE_PROGRESS = "org.carbonrom.carbondelta.extra.FILE_PROGRESS";
 
     public static final String STATE_ACTION_NONE = "action_none";
     public static final String STATE_ACTION_CHECKING = "action_checking";
@@ -141,6 +144,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     public static final String STATE_ACTION_APPLYING_PATCH = "action_applying_patch";
     public static final String STATE_ACTION_APPLYING_MD5 = "action_applying_md5";
     public static final String STATE_ACTION_READY = "action_ready";
+    public static final String STATE_ACTION_AB_FLASH = "action_ab_flash";
     public static final String STATE_ERROR_DISK_SPACE = "error_disk_space";
     public static final String STATE_ERROR_UNKNOWN = "error_unknown";
     public static final String STATE_ERROR_UNOFFICIAL = "error_unofficial";
@@ -313,7 +317,11 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 }
             } else if (ACTION_FLASH.equals(intent.getAction())) {
                 if (checkPermissions()) {
-                    flashUpdate();
+                    if(Config.isABDevice()) {
+                        flashABUpdate();
+                    } else {
+                        flashUpdate();
+                    }
                     scanImageFiles();
                 }
             } else if (ACTION_ALARM.equals(intent.getAction())) {
@@ -341,7 +349,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     }
 
     private synchronized void updateState(String state, Float progress,
-            Long current, Long total, String filename, Long ms) {
+            Long current, Long total, String filename, Long ms, Boolean file_progress) {
         this.state = state;
 
         Intent i = new Intent(BROADCAST_INTENT);
@@ -356,6 +364,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             i.putExtra(EXTRA_FILENAME, filename);
         if (ms != null)
             i.putExtra(EXTRA_MS, ms);
+        if (file_progress != null)
+            i.putExtra(EXTRA_FILE_PROGRESS, file_progress.booleanValue());
 
         sendStickyBroadcast(i);
     }
@@ -446,12 +456,12 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 Logger.d("System up to date");
                 updateState(STATE_ACTION_NONE, null, null, null, null,
                         prefs.getLong(PREF_LAST_CHECK_TIME_NAME,
-                                PREF_LAST_CHECK_TIME_DEFAULT));
+                                PREF_LAST_CHECK_TIME_DEFAULT), null);
             } else {
                 Logger.d("Update available");
                 updateState(STATE_ACTION_BUILD, null, null, null, null,
                         prefs.getLong(PREF_LAST_CHECK_TIME_NAME,
-                                PREF_LAST_CHECK_TIME_DEFAULT));
+                                PREF_LAST_CHECK_TIME_DEFAULT), null);
                 if (!userInitiated && notify) {
                     if (!isSnoozeNotification()) {
                         startNotification(checkOnly);
@@ -467,12 +477,12 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             Logger.d("System up to date");
             updateState(STATE_ACTION_NONE, null, null, null, null,
                     prefs.getLong(PREF_LAST_CHECK_TIME_NAME,
-                            PREF_LAST_CHECK_TIME_DEFAULT));
+                            PREF_LAST_CHECK_TIME_DEFAULT), null);
         } else {
             Logger.d("Update found: %s", filename);
             updateState(STATE_ACTION_READY, null, null, null, (new File(
                     filename)).getName(), prefs.getLong(
-                            PREF_LAST_CHECK_TIME_NAME, PREF_LAST_CHECK_TIME_DEFAULT));
+                            PREF_LAST_CHECK_TIME_NAME, PREF_LAST_CHECK_TIME_DEFAULT), null);
 
             if (!userInitiated && notify) {
                 if (!isSnoozeNotification()) {
@@ -741,7 +751,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             f.delete();
 
         try {
-            updateState(STATE_ACTION_DOWNLOADING, 0f, 0L, 0L, f.getName(), null);
+            updateState(STATE_ACTION_DOWNLOADING, 0f, 0L, 0L, f.getName(), null, null);
             urlConnection = setupHttpsRequest(url);
             if(urlConnection == null){
                 return false;
@@ -749,13 +759,13 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
 
             len = urlConnection.getContentLength();
 
-            updateState(STATE_ACTION_DOWNLOADING, 0f, 0L, len, f.getName(), null);
+            updateState(STATE_ACTION_DOWNLOADING, 0f, 0L, len, f.getName(), null, null);
 
             long freeSpace = (new StatFs(config.getPathBase()))
                     .getAvailableBytes();
             if (freeSpace < len) {
                 updateState(STATE_ERROR_DISK_SPACE, null, freeSpace, len, null,
-                        null);
+                        null, null);
                 Logger.d("not enough space!");
                 return false;
             }
@@ -772,7 +782,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                     if (now >= last[2] + 16L) {
                         updateState(STATE_ACTION_DOWNLOADING, progress,
                                 current, total, f.getName(),
-                                SystemClock.elapsedRealtime() - last[3]);
+                                SystemClock.elapsedRealtime() - last[3], null);
                         last[2] = now;
                     }
                 }
@@ -824,7 +834,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             Logger.ex(e);
             return false;
         } finally {
-            updateState(STATE_ACTION_DOWNLOADING, 100f, len, len, null, null);
+            updateState(STATE_ACTION_DOWNLOADING, 100f, len, len, null, null, null);
             if (urlConnection != null) {
                 urlConnection.disconnect();
             }
@@ -880,7 +890,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
 
         String buildData = downloadUrlMemoryAsString(url);
         if (buildData == null || buildData.length() == 0) {
-            updateState(STATE_ERROR_DOWNLOAD, null, null, null, url, null);
+            updateState(STATE_ERROR_DOWNLOAD, null, null, null, url, null, null);
             return null;
         }
         JSONObject object = null;
@@ -911,7 +921,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
         } catch (Exception e) {
             Logger.ex(e);
         }
-        updateState(STATE_ERROR_UNOFFICIAL, null, null, null, config.getVersion(), null);
+        updateState(STATE_ERROR_UNOFFICIAL, null, null, null, config.getVersion(), null, null);
         return null;
     }
 
@@ -927,7 +937,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 long now = SystemClock.elapsedRealtime();
                 if (now >= last[0] + 16L) {
                     updateState(_state, progress, current, total, _filename,
-                            SystemClock.elapsedRealtime() - last[1]);
+                            SystemClock.elapsedRealtime() - last[1], null);
                     last[0] = now;
                 }
             }
@@ -951,7 +961,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                             getMD5Progress(STATE_ACTION_SEARCHING_MD5,
                                     f.getName())) != null);
                     updateState(STATE_ACTION_SEARCHING, null, null, null, null,
-                            null);
+                            null, null);
 
                     if (ok)
                         return f.getAbsolutePath();
@@ -997,7 +1007,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                         Logger.d("download stopped");
                     } else {
                         updateState(STATE_ERROR_DOWNLOAD, null, null, null,
-                                fn, null);
+                                fn, null, null);
                         Logger.d("download error");
                     }
                     return false;
@@ -1029,7 +1039,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                         updateState(STATE_ACTION_APPLYING_PATCH,
                                 ((float) current / (float) _totalOut) * 100f,
                                 current, _totalOut, _display,
-                                SystemClock.elapsedRealtime() - _start);
+                                SystemClock.elapsedRealtime() - _start, null);
 
                         Thread.sleep(16);
                     } catch (InterruptedException e) {
@@ -1129,12 +1139,12 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
 
         if (!isSupportedVersion()) {
             // TODO - to be more generic this should maybe use the info from getNewestFullBuild
-            updateState(STATE_ERROR_UNOFFICIAL, null, null, null, config.getVersion(), null);
+            updateState(STATE_ERROR_UNOFFICIAL, null, null, null, config.getVersion(), null, null);
             Logger.i("Ignoring request to check for updates - not compatible for update! " + config.getVersion());
             return false;
         }
         if (!networkState.isConnected()) {
-            updateState(STATE_ERROR_CONNECTION, null, null, null, null, null);
+            updateState(STATE_ERROR_CONNECTION, null, null, null, null, null, null);
             Logger.i("Ignoring request to check for updates - no data connection");
             return false;
         }
@@ -1165,7 +1175,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     }
 
     private long getDeltaDownloadSize(List<DeltaInfo> deltas) {
-        updateState(STATE_ACTION_CHECKING, null, null, null, null, null);
+        updateState(STATE_ACTION_CHECKING, null, null, null, null, null, null);
 
         long deltaDownloadSize = 0L;
         for (DeltaInfo di : deltas) {
@@ -1200,7 +1210,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             }
         }
 
-        updateState(STATE_ACTION_CHECKING, null, null, null, null, null);
+        updateState(STATE_ACTION_CHECKING, null, null, null, null, null, null);
 
         return deltaDownloadSize;
     }
@@ -1248,7 +1258,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
 
         DeltaInfo firstDelta = deltas.get(0);
 
-        updateState(STATE_ACTION_SEARCHING, null, null, null, null, null);
+        updateState(STATE_ACTION_SEARCHING, null, null, null, null, null, null);
 
         String initialFile = null;
 
@@ -1274,7 +1284,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 initialFile = expectedLocation;
             }
         }
-        updateState(STATE_ACTION_SEARCHING, null, null, null, null, null);
+        updateState(STATE_ACTION_SEARCHING, null, null, null, null, null, null);
 
         // If the user flashed manually, the file is probably not in our
         // preferred location (assuming it wasn't sideloaded), so search
@@ -1324,7 +1334,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
 
         final String[] filename = new String[] { null };
         updateState(STATE_ACTION_DOWNLOADING, 0f, 0L, totalDownloadSize, null,
-                null);
+                null, null);
 
         final long[] last = new long[] { 0, totalDownloadSize, 0,
                 SystemClock.elapsedRealtime() };
@@ -1338,7 +1348,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 if (now >= last[2] + 16L) {
                     updateState(STATE_ACTION_DOWNLOADING, progress, current,
                             total, filename[0], SystemClock.elapsedRealtime()
-                            - last[3]);
+                            - last[3], null);
                     last[2] = now;
                 }
             }
@@ -1371,7 +1381,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             }
         }
         updateState(STATE_ACTION_DOWNLOADING, 100f, totalDownloadSize,
-                totalDownloadSize, null, null);
+                totalDownloadSize, null, null, null);
 
         return true;
     }
@@ -1394,7 +1404,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 Logger.d("download stopped");
             } else {
                 Logger.d("download error");
-                updateState(STATE_ERROR_DOWNLOAD, null, null, null, url, null);
+                updateState(STATE_ERROR_DOWNLOAD, null, null, null, url, null, null);
             }
         }
 
@@ -1444,7 +1454,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 if (!zipadjust(initialFile, tempFiles[tempFile], start,
                         current, total)) {
                     updateState(STATE_ERROR_UNKNOWN, null, null, null, null,
-                            null);
+                            null, null);
                     Logger.d("zipadjust error");
                     return false;
                 }
@@ -1465,7 +1475,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                         + di.getUpdate().getName(), outFile, start, current,
                         total)) {
                     updateState(STATE_ERROR_UNKNOWN, null, null, null, null,
-                            null);
+                            null, null);
                     Logger.d("dedelta error");
                     return false;
                 }
@@ -1480,7 +1490,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                         config.getPathBase() + lastDelta.getOut().getName(),
                         start, current, total)) {
                     updateState(STATE_ERROR_UNKNOWN, null, null, null, null,
-                            null);
+                            null, null);
                     Logger.d("dedelta error");
                     return false;
                 }
@@ -1500,6 +1510,76 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
         os.write((s + "\n").getBytes("UTF-8"));
     }
 
+    private String handleUpdateCleanup() throws FileNotFoundException {
+        String flashFilename = prefs.getString(PREF_READY_FILENAME_NAME, PREF_READY_FILENAME_DEFAULT);
+        String intialFile = prefs.getString(PREF_INITIAL_FILE, PREF_READY_FILENAME_DEFAULT);
+
+        if (flashFilename == PREF_READY_FILENAME_DEFAULT
+                || !flashFilename.startsWith(config.getPathBase())
+                || !new File(flashFilename).exists()) {
+            throw new FileNotFoundException("flashUpdate - no valid file to flash found " + flashFilename);
+        }
+        // now delete the initial file
+        if (intialFile != null
+                && new File(intialFile).exists()
+                && intialFile.startsWith(config.getPathBase())){
+            new File(intialFile).delete();
+            Logger.d("flashUpdate - delete initial file");
+        }
+
+        return flashFilename;
+    }
+
+    private void onUpdateCompleted(int status) {
+        clearState();
+        if (status == UpdateEngine.ErrorCodeConstants.SUCCESS) {
+            // Start "Please Reboot now" Dialog here
+            updateState(STATE_ACTION_READY, null, null, null, null, null, null);
+        } else {
+            updateState(STATE_ERROR_FLASH, null, null, null, null, null, null);
+        }
+    }
+
+    private void flashABUpdate() {
+        Logger.d("flashABUpdate");
+        String flashFilename = "";
+        try {
+            flashFilename = handleUpdateCleanup();
+        } catch (Exception ex) {
+            Logger.ex(ex);
+        }
+
+        final String _filename = config.getFilenameBase() + ".zip";
+        clearState();
+        updateState(STATE_ACTION_AB_FLASH, 0f, 0L, 100L, _filename, null, false);
+
+        try {
+            ZipFile zipFile = new ZipFile(flashFilename);
+            boolean isABUpdate = ABUpdate.isABUpdate(zipFile);
+            zipFile.close();
+            if (isABUpdate) {
+                final long[] last = new long[] { 0, SystemClock.elapsedRealtime() };
+
+                DeltaInfo.ProgressListener listener = new DeltaInfo.ProgressListener() {
+                    @Override
+                    public void onProgress(float progress, long current, long total) {
+                        long now = SystemClock.elapsedRealtime();
+                        if (now >= last[0] + 16L) {
+                            updateState(STATE_ACTION_AB_FLASH, progress, current, total, _filename,
+                                    SystemClock.elapsedRealtime() - last[1], null);
+                            last[0] = now;
+                        }
+                    }
+                };
+                ABUpdate.start(flashFilename, listener, this::onUpdateCompleted);
+            } else {
+                throw new Exception("Not an AB Update");
+            }
+        } catch (Exception ex) {
+            Logger.ex(ex);
+        }
+    }
+
     @SuppressLint("SdCardPath")
     private void flashUpdate() {
         Logger.d("flashUpdate");
@@ -1517,24 +1597,15 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
         }
 
         boolean deltaSignature = prefs.getBoolean(PREF_DELTA_SIGNATURE, false);
-        String flashFilename = prefs.getString(PREF_READY_FILENAME_NAME, PREF_READY_FILENAME_DEFAULT);
-        String intialFile = prefs.getString(PREF_INITIAL_FILE, PREF_READY_FILENAME_DEFAULT);
+        String flashFilename = "";
+        try {
+            flashFilename = handleUpdateCleanup();
+        } catch (Exception ex) {
+            Logger.ex(ex);
+        }
 
         clearState();
 
-        if (flashFilename == PREF_READY_FILENAME_DEFAULT
-                || !flashFilename.startsWith(config.getPathBase())
-                || !new File(flashFilename).exists()) {
-            Logger.d("flashUpdate - no valid file to flash found " + flashFilename);
-            return;
-        }
-        // now delete the initial file
-        if (intialFile != null
-                && new File(intialFile).exists()
-                && intialFile.startsWith(config.getPathBase())){
-            new File(intialFile).delete();
-            Logger.d("flashUpdate - delete initial file");
-        }
         // Remove the path to the storage from the filename, so we get a path
         // relative to the root of the storage
         String path_sd = Environment.getExternalStorageDirectory()
@@ -1659,7 +1730,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             // else to do at
             // at this stage than give up. No reason to crash though.
             Logger.ex(e);
-            updateState(STATE_ERROR_FLASH, null, null, null, null, null);
+            updateState(STATE_ERROR_FLASH, null, null, null, null, null, null);
         }
     }
 
@@ -1774,7 +1845,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 state.equals(UpdateService.STATE_ACTION_CHECKING_MD5) ||
                 state.equals(UpdateService.STATE_ACTION_APPLYING) ||
                 state.equals(UpdateService.STATE_ACTION_APPLYING_MD5) ||
-                state.equals(UpdateService.STATE_ACTION_APPLYING_PATCH)) {
+                state.equals(UpdateService.STATE_ACTION_APPLYING_PATCH) ||
+                state.equals(UpdateService.STATE_ACTION_AB_FLASH)) {
             return true;
         }
         return false;
@@ -1834,7 +1906,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     }
 
     private void checkForUpdatesAsync(final boolean userInitiated, final int checkOnly) {
-        updateState(STATE_ACTION_CHECKING, null, null, null, null, null);
+        updateState(STATE_ACTION_CHECKING, null, null, null, null, null, null);
         wakeLock.acquire();
         wifiLock.acquire();
 
@@ -2101,7 +2173,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                         long freeSpace = (new StatFs(config.getPathBase())).getAvailableBytes();
                         if (freeSpace < requiredSpace) {
                             updateState(STATE_ERROR_DISK_SPACE, null, freeSpace, requiredSpace,
-                                    null, null);
+                                    null, null, null);
                             Logger.d("not enough space!");
                             return;
                         }
@@ -2124,7 +2196,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                                     true,
                                     getMD5Progress(STATE_ACTION_APPLYING_MD5, lastDelta.getOut()
                                             .getName())) == null) {
-                                updateState(STATE_ERROR_UNKNOWN, null, null, null, null, null);
+                                updateState(STATE_ERROR_UNKNOWN, null, null, null, null, null, null);
                                 Logger.d("final verification error");
                                 return;
                             }
@@ -2188,7 +2260,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
         if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
             Logger.d("checkPermissions failed");
-            updateState(STATE_ERROR_PERMISSIONS, null, null, null, null, null);
+            updateState(STATE_ERROR_PERMISSIONS, null, null, null, null, null, null);
             return false;
         }
         return true;
