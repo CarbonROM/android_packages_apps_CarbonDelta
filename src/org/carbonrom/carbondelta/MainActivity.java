@@ -67,6 +67,7 @@ public class MainActivity extends Activity {
     private ImageButton stopNow = null;
     private TextView currentVersion = null;
     private TextView lastChecked = null;
+    private TextView downloadSizeHeader = null;
     private TextView downloadSize = null;
     private Config config;
     private boolean mPermOk;
@@ -107,6 +108,7 @@ public class MainActivity extends Activity {
         stopNow = (ImageButton) findViewById(R.id.button_stop);
         currentVersion = (TextView) findViewById(R.id.text_current_version);
         lastChecked = (TextView) findViewById(R.id.text_last_checked);
+        downloadSizeHeader = (TextView) findViewById(R.id.text_download_size_header);
         downloadSize = (TextView) findViewById(R.id.text_download_size);
         mProgressPercent = (TextView) findViewById(R.id.progress_percent);
         mCarbonLogo = (ImageView) findViewById(R.id.carbon_logo);
@@ -390,14 +392,20 @@ public class MainActivity extends Activity {
                         if (progressInK)
                             kibps *= 1024f;
                         int sec = (int) (((((float) total / (float) current) * (float) ms) - ms) / 1000f);
-                        if (kibps < 10000) {
+                        if(UpdateService.STATE_ACTION_AB_FLASH.equals(state)) {
                             sub2 = String.format(Locale.ENGLISH,
-                                    "%.0f KiB/s, %02d:%02d",
-                                    kibps, sec / 60, sec % 60);
+                                    "%02d:%02d",
+                                    sec / 60, sec % 60);
                         } else {
-                            sub2 = String.format(Locale.ENGLISH,
-                                    "%.0f MiB/s, %02d:%02d",
-                                    kibps / 1024f, sec / 60, sec % 60);
+                            if (kibps < 10000) {
+                                sub2 = String.format(Locale.ENGLISH,
+                                        "%.0f KiB/s, %02d:%02d",
+                                        kibps, sec / 60, sec % 60);
+                            } else {
+                                sub2 = String.format(Locale.ENGLISH,
+                                        "%.0f MiB/s, %02d:%02d",
+                                        kibps / 1024f, sec / 60, sec % 60);
+                            }
                         }
                     }
                 }
@@ -410,6 +418,12 @@ public class MainActivity extends Activity {
             MainActivity.this.currentVersion.setText(config.getFilenameBase());
             MainActivity.this.lastChecked.setText(lastCheckedText);
             MainActivity.this.extra.setText(extraText);
+            if(UpdateService.STATE_ACTION_AB_FLASH.equals(state)) {
+                MainActivity.this.downloadSizeHeader.setText("");
+            } else {
+                MainActivity.this.downloadSizeHeader
+                    .setText(getString(R.string.text_download_size_header_title));
+            }
             MainActivity.this.downloadSize.setText(downloadSizeText);
 
             progress.setProgress((int) current);
@@ -457,7 +471,11 @@ public class MainActivity extends Activity {
     }
 
     public void onButtonFlashNowClick(View v) {
-        flashRecoveryWarning.run();
+        if (Config.isABDevice()) {
+            flashStart.run();
+        } else {
+            flashRecoveryWarning.run();
+        }
     }
 
     public void onButtonStopClick(View v) {
