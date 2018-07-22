@@ -43,6 +43,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Date;
+import java.util.zip.ZipFile;
 import javax.net.ssl.HttpsURLConnection;
 
 import org.json.JSONArray;
@@ -141,6 +142,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     public static final String STATE_ACTION_APPLYING_PATCH = "action_applying_patch";
     public static final String STATE_ACTION_APPLYING_MD5 = "action_applying_md5";
     public static final String STATE_ACTION_READY = "action_ready";
+    public static final String STATE_ACTION_AB_FLASH = "action_ab_flash";
     public static final String STATE_ERROR_DISK_SPACE = "error_disk_space";
     public static final String STATE_ERROR_UNKNOWN = "error_unknown";
     public static final String STATE_ERROR_UNOFFICIAL = "error_unofficial";
@@ -216,6 +218,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     private int failedUpdateCount;
     private SharedPreferences prefs = null;
     private String oldFlashFilename;
+    private DeltaInfo.ProgressListener mProgressListener;
 
     /*
      * Using reflection voodoo instead calling the hidden class directly, to
@@ -313,7 +316,11 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 }
             } else if (ACTION_FLASH.equals(intent.getAction())) {
                 if (checkPermissions()) {
-                    flashUpdate();
+                    if(Config.isABDevice()) {
+                        flashABUpdate();
+                    } else {
+                        flashUpdate();
+                    }
                     scanImageFiles();
                 }
             } else if (ACTION_ALARM.equals(intent.getAction())) {
@@ -645,8 +652,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
         }
     }
 
-    private boolean downloadUrlFile(String url, File f, String matchMD5,
-            DeltaInfo.ProgressListener progressListener) {
+    private boolean downloadUrlFile(String url, File f, String matchMD5) {
         Logger.d("download: %s", url);
 
         HttpsURLConnection urlConnection = null;
@@ -686,8 +692,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                             digest.update(buffer, 0, r);
 
                         recv += (long) r;
-                        if (progressListener != null)
-                            progressListener.onProgress(
+                        if (mProgressListener != null)
+                            mProgressListener.onProgress(
                                     ((float) recv / (float) len) * 100f, recv,
                                     len);
                     }
@@ -762,7 +768,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
 
             final long[] last = new long[] { 0, len, 0,
                     SystemClock.elapsedRealtime() };
-            DeltaInfo.ProgressListener progressListener = new DeltaInfo.ProgressListener() {
+            mProgressListener = new DeltaInfo.ProgressListener() {
                 @Override
                 public void onProgress(float progress, long current, long total) {
                     current += last[0];
@@ -795,8 +801,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                             digest.update(buffer, 0, r);
 
                         recv += (long) r;
-                        if (progressListener != null)
-                            progressListener.onProgress(
+                        if (mProgressListener != null)
+                            mProgressListener.onProgress(
                                     ((float) recv / (float) len) * 100f, recv,
                                     len);
                     }
@@ -978,8 +984,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     }
 
     private boolean downloadDeltaFile(String url_base,
-            DeltaInfo.FileBase fileBase, DeltaInfo.FileSizeMD5 match,
-            DeltaInfo.ProgressListener progressListener, boolean force) {
+            DeltaInfo.FileBase fileBase, DeltaInfo.FileSizeMD5 match, boolean force) {
         if (fileBase.getTag() == null) {
             if (force || networkState.getState()) {
                 String url = url_base + fileBase.getName();
@@ -987,7 +992,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 File f = new File(fn);
                 Logger.d("download: %s --> %s", url, fn);
 
-                if (downloadUrlFile(url, f, match.getMD5(), progressListener)) {
+                if (downloadUrlFile(url, f, match.getMD5())) {
                     fileBase.setTag(fn);
                     Logger.d("success");
                     return true;
@@ -1328,7 +1333,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
 
         final long[] last = new long[] { 0, totalDownloadSize, 0,
                 SystemClock.elapsedRealtime() };
-        DeltaInfo.ProgressListener progressListener = new DeltaInfo.ProgressListener() {
+        mProgressListener = new DeltaInfo.ProgressListener() {
             @Override
             public void onProgress(float progress, long current, long total) {
                 current += last[0];
@@ -1347,15 +1352,14 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
         if (getFull) {
             filename[0] = lastDelta.getOut().getName();
             if (!downloadDeltaFile(config.getUrlBaseFull(), lastDelta.getOut(),
-                    lastDelta.getOut().getOfficial(), progressListener, force)) {
+                    lastDelta.getOut().getOfficial(), force)) {
                 return false;
             }
         } else {
             for (DeltaInfo di : deltas) {
                 filename[0] = di.getUpdate().getName();
                 if (!downloadDeltaFile(config.getUrlBaseUpdate(),
-                        di.getUpdate(), di.getUpdate().getUpdate(),
-                        progressListener, force)) {
+                        di.getUpdate(), di.getUpdate().getUpdate(), force)) {
                     return false;
                 }
                 last[0] += di.getUpdate().getUpdate().getSize();
@@ -1365,7 +1369,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 filename[0] = lastDelta.getSignature().getName();
                 if (!downloadDeltaFile(config.getUrlBaseUpdate(),
                         lastDelta.getSignature(), lastDelta.getSignature()
-                        .getUpdate(), progressListener, force)) {
+                        .getUpdate(), force)) {
                     return false;
                 }
             }
@@ -1498,6 +1502,41 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     private void writeString(OutputStream os, String s)
             throws UnsupportedEncodingException, IOException {
         os.write((s + "\n").getBytes("UTF-8"));
+    }
+
+    private void flashABUpdate() {
+        String flashFilename = prefs.getString(PREF_READY_FILENAME_NAME, PREF_READY_FILENAME_DEFAULT);
+        String intialFile = prefs.getString(PREF_INITIAL_FILE, PREF_READY_FILENAME_DEFAULT);
+
+        updateState(STATE_ACTION_AB_FLASH, null, null, null, null, null);
+
+        if (flashFilename == PREF_READY_FILENAME_DEFAULT
+                || !flashFilename.startsWith(config.getPathBase())
+                || !new File(flashFilename).exists()) {
+            Logger.d("flashUpdate - no valid file to flash found " + flashFilename);
+            return;
+        }
+
+        // now delete the initial file
+        if (intialFile != null
+                && new File(intialFile).exists()
+                && intialFile.startsWith(config.getPathBase())){
+            new File(intialFile).delete();
+            Logger.d("flashUpdate - delete initial file");
+        }
+
+        try {
+            ZipFile zipFile = new ZipFile(flashFilename);
+            boolean isABUpdate = ABUpdate.isABUpdate(zipFile);
+            zipFile.close();
+            if (isABUpdate) {
+                ABUpdate.start(flashFilename, mProgressListener);
+            } else {
+                throw new Exception("Not an AB Update");
+            }
+        } catch (Exception ex) {
+            Logger.ex(ex);
+        }
     }
 
     @SuppressLint("SdCardPath")
@@ -1692,13 +1731,13 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     }
 
     // need to locally here for the deltas == 0 case
-    private String getFileMD5(File file, ProgressListener progressListener) {
+    private String getFileMD5(File file, ProgressListener listener) {
         String ret = null;
 
         long current = 0;
         long total = file.length();
-        if (progressListener != null)
-            progressListener.onProgress(getProgress(current, total), current, total);
+        if (listener != null)
+            listener.onProgress(getProgress(current, total), current, total);
 
         try {
             FileInputStream is = new FileInputStream(file);
@@ -1710,8 +1749,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 while ((r = is.read(buffer)) > 0) {
                     digest.update(buffer, 0, r);
                     current += (long) r;
-                    if (progressListener != null)
-                        progressListener.onProgress(getProgress(current, total), current, total);
+                    if (listener != null)
+                        listener.onProgress(getProgress(current, total), current, total);
                 }
 
                 String MD5 = new BigInteger(1, digest.digest()).
@@ -1733,8 +1772,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             Logger.ex(e);
         }
 
-        if (progressListener != null)
-            progressListener.onProgress(getProgress(total, total), total, total);
+        if (listener != null)
+            listener.onProgress(getProgress(total, total), total, total);
 
         return ret;
     }
@@ -1774,7 +1813,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 state.equals(UpdateService.STATE_ACTION_CHECKING_MD5) ||
                 state.equals(UpdateService.STATE_ACTION_APPLYING) ||
                 state.equals(UpdateService.STATE_ACTION_APPLYING_MD5) ||
-                state.equals(UpdateService.STATE_ACTION_APPLYING_PATCH)) {
+                state.equals(UpdateService.STATE_ACTION_APPLYING_PATCH) ||
+                state.equals(UpdateService.STATE_ACTION_AB_FLASH)) {
             return true;
         }
         return false;
