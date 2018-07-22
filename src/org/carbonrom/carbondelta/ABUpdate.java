@@ -31,6 +31,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.carbonrom.carbondelta.DeltaInfo.ProgressListener;
+
 class ABUpdate {
 
     private static final String TAG = "ABUpdateInstaller";
@@ -42,25 +44,24 @@ class ABUpdate {
 
     private final String zipPath;
 
-    private UpdaterListener mUpdateListener;
+    private ProgressListener mProgressListener;
 
     private final UpdateEngineCallback mUpdateEngineCallback = new UpdateEngineCallback() {
         @Override
         public void onStatusUpdate(int status, float percent) {
-            int progress = Math.round(percent * 100);
-            mUpdateListener.progressUpdate(progress);
-            mUpdateListener.notifyUpdateStatusChange(status);
+            if (mProgressListener != null)
+                mProgressListener.onProgress(percent,
+                    (long) Math.round(percent * 100), 100L);
         }
 
         @Override
         public void onPayloadApplicationComplete(int errorCode) {
-           sIsInstallingUpdate = false;
-           mUpdateListener.progressUpdate(100);
-           mUpdateListener.notifyUpdateComplete(errorCode);
+            sIsInstallingUpdate = false;
+            mProgressListener.onProgress(100f, 100L, 100L);
         }
     };
 
-    static synchronized boolean start(String zipPath, UpdaterListener listener) {
+    static synchronized boolean start(String zipPath, ProgressListener listener) {
         if (sIsInstallingUpdate) {
             return false;
         }
@@ -73,9 +74,9 @@ class ABUpdate {
         return sIsInstallingUpdate;
     }
 
-    private ABUpdate(String zipPath, UpdaterListener listener) {
+    private ABUpdate(String zipPath, ProgressListener listener) {
         this.zipPath = zipPath;
-        this.mUpdateListener = listener;
+        this.mProgressListener = listener;
     }
 
     private boolean startUpdate() {
