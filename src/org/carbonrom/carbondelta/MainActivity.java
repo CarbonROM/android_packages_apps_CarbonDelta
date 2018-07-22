@@ -457,7 +457,11 @@ public class MainActivity extends Activity {
     }
 
     public void onButtonFlashNowClick(View v) {
-        flashRecoveryWarning.run();
+        if (Config.isABDevice()) {
+            flashStart.run();
+        } else {
+            flashRecoveryWarning.run();
+        }
     }
 
     public void onButtonStopClick(View v) {
