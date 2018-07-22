@@ -24,6 +24,8 @@
     ]]>
 	</string>
 	<string name="state_action_none">Your system is up to date.</string>
+	<string name="state_action_ab_flash">Installing A/B Update &#8230;</string>
+	<string name="state_action_ab_finished">Update installed. Reboot pending &#8230;</string>
 	<string name="state_action_checking">Checking for updates &#8230;</string>
 	<string name="state_action_checking_md5">Verifying file &#8230;</string>
 	<string name="state_action_searching">Searching for files &#8230;</string>
@@ -41,6 +43,7 @@
 	<string name="last_checked" formatted="false">%s at %s</string>
 	<string name="last_checked_never">We\'ve never checked, maybe you would like to do so?</string>
 	<string name="button_check_short">Check</string>
+	<string name="button_reboot_short">Reboot</string>
 	<string name="button_flash_now">Flash</string>
 
 	<!-- updates from 2013/12/18 -->
@@ -106,4 +109,15 @@
 	<string name="clean_files_feedback" formatted="false">Deleted %d files. Now press \'Check for updates\'</string>
 	<string name="state_error_permissions">No storage permissions.</string>
 	<string name="state_error_flash">Failed to setup flash. Clean /cache and retry.</string>
+
+	<string name="progress_status_0">Idle &#8230;</string>
+	<string name="progress_status_1">Checking for Updates &#8230;</string>
+	<string name="progress_status_2">Update available &#8230;</string>
+	<string name="progress_status_3">Installing &#8230;</string>
+	<string name="progress_status_4">Verifying &#8230;</string>
+	<string name="progress_status_5">Finalizing &#8230;</string>
+	<string name="progress_status_6">Updated. Pending Reboot &#8230;</string>
+	<string name="progress_status_7">Reporting Error Event &#8230;</string>
+	<string name="progress_status_8">Attempting Rollback &#8230;</string>
+	<string name="progress_status_9">Disabled.</string>
 </resources>
