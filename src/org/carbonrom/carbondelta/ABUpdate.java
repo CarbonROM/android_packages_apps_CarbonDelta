@@ -20,6 +20,7 @@ import android.os.UpdateEngineCallback;
 import android.util.Log;
 
 import java.util.Enumeration;
+import java.util.function.Consumer;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
@@ -30,6 +31,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.carbonrom.carbondelta.DeltaInfo.ProgressListener;
 
 class ABUpdate {
 
@@ -42,29 +45,51 @@ class ABUpdate {
 
     private final String zipPath;
 
-    private UpdaterListener mUpdateListener;
+    private ProgressListener mProgressListener;
+
+    private Consumer<Integer> onUpdateCompleted;
+
+    private Context context;
 
     private final UpdateEngineCallback mUpdateEngineCallback = new UpdateEngineCallback() {
+        float lastPercent;
+        int offset = 0;
         @Override
         public void onStatusUpdate(int status, float percent) {
-            int progress = Math.round(percent * 100);
-            mUpdateListener.progressUpdate(progress);
-            mUpdateListener.notifyUpdateStatusChange(status);
+            if (status == UpdateEngine.UpdateStatusConstants.UPDATED_NEED_REBOOT) {
+                onUpdateCompleted.accept(UpdateEngine.ErrorCodeConstants.SUCCESS);
+                return;
+            }
+            if (status == UpdateEngine.UpdateStatusConstants.REPORTING_ERROR_EVENT) {
+                onUpdateCompleted.accept(UpdateEngine.ErrorCodeConstants.ERROR);
+                return;
+            }
+            if (lastPercent > percent) {
+                offset = 50;
+            }
+            lastPercent = percent;
+            if (mProgressListener != null) {
+                mProgressListener.setStatus(context.getString(getResources().getIdentifier(
+                    "progress_status_" + status, "string", getPackageName())));
+                mProgressListener.onProgress(percent * 50f + (float) offset,
+                    (long) Math.round(percent * 50) + (long) offset, 100L);
+            }
         }
 
         @Override
         public void onPayloadApplicationComplete(int errorCode) {
-           sIsInstallingUpdate = false;
-           mUpdateListener.progressUpdate(100);
-           mUpdateListener.notifyUpdateComplete(errorCode);
+            mProgressListener.onProgress(100f, 100L, 100L);
+            onUpdateCompleted.accept(errorCode);
+            sIsInstallingUpdate = false;
         }
     };
 
-    static synchronized boolean start(String zipPath, UpdaterListener listener) {
+    static synchronized boolean start(String zipPath, ProgressListener listener,
+            Consumer<Integer> onUpdateCompleted, Context context) {
         if (sIsInstallingUpdate) {
             return false;
         }
-        ABUpdate installer = new ABUpdate(zipPath, listener);
+        ABUpdate installer = new ABUpdate(zipPath, listener, onUpdateCompleted, context);
         sIsInstallingUpdate = installer.startUpdate();
         return sIsInstallingUpdate;
     }
@@ -73,9 +98,12 @@ class ABUpdate {
         return sIsInstallingUpdate;
     }
 
-    private ABUpdate(String zipPath, UpdaterListener listener) {
+    private ABUpdate(String zipPath, ProgressListener listener,
+                Consumer<Integer> onUpdateCompleted, Context context) {
         this.zipPath = zipPath;
-        this.mUpdateListener = listener;
+        this.mProgressListener = listener;
+        this.onUpdateCompleted = onUpdateCompleted;
+        this.context = context;
     }
 
     private boolean startUpdate() {
