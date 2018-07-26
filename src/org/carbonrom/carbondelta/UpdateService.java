@@ -166,6 +166,9 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     private static final int NOTIFICATION_UPDATE = 2;
     private static final int NOTIFICATION_ERROR = 3;
 
+    public static final String PREF_AB_UPDATE_REBOOT_PENDING = "pending_ab_update_reboot";
+    public static final boolean PREF_AB_UPDATE_REBOOT_PENDING_DEFAULT = false;
+
     public static final String PREF_READY_FILENAME_NAME = "ready_filename";
     public static final String PREF_READY_FILENAME_DEFAULT = null;
 
@@ -1531,10 +1534,11 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     private void onUpdateCompleted(int status) {
         if (status == UpdateEngine.ErrorCodeConstants.SUCCESS) {
             if (!isSnoozeNotification()) {
-                startNotification(checkOnly);
+                startNotification(0);
             } else {
                 Logger.d("notification snoozed");
             }
+            prefs.edit().putBoolean(PREF_AB_UPDATE_REBOOT_PENDING, true).commit();
             updateState(STATE_ACTION_AB_FINISHED, null, null, null, null, null);
         } else {
             updateState(STATE_ERROR_FLASH, null, null, null, null, null);
@@ -1543,6 +1547,11 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
     }
 
     private void flashABUpdate() {
+        // Check if we have a pending Reboot from an before applied Update
+        if(prefs.getBoolean(PREF_AB_UPDATE_REBOOT_PENDING, PREF_AB_UPDATE_REBOOT_PENDING_DEFAULT)) {
+            updateState(STATE_ACTION_AB_FINISHED, null, null, null, null, null);
+            return;
+        }
         Logger.d("flashABUpdate");
         String flashFilename = "";
         try {

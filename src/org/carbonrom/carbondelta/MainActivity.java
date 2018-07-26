@@ -77,6 +77,7 @@ public class MainActivity extends Activity {
     private TextView mSub2;
     private TextView mProgressPercent;
     private ImageView mCarbonLogo;
+    private View mProgressEndSpace;
     private int mProgressCurrent = 0;
     private int mProgressMax = 1;
     private boolean mProgressEnabled = false;
@@ -120,6 +121,7 @@ public class MainActivity extends Activity {
         downloadSizeHeader = (TextView) findViewById(R.id.text_download_size_header);
         mProgressPercent = (TextView) findViewById(R.id.progress_percent);
         mCarbonLogo = (ImageView) findViewById(R.id.carbon_logo);
+        mProgressEndSpace = findViewById(R.id.progress_end_margin);
 
         config = Config.getInstance(this);
         mPermOk = false;
@@ -481,6 +483,7 @@ public class MainActivity extends Activity {
                     : View.VISIBLE);
             stopNow.setVisibility(enableStop ? View.VISIBLE : View.GONE);
             rebootNow.setVisibility(enableReboot ? View.VISIBLE : View.GONE);
+            mProgressEndSpace.setVisibility(enableStop ? View.VISIBLE : View.GONE);
         }
     };
 
@@ -515,7 +518,10 @@ public class MainActivity extends Activity {
             Logger.d("[%s] required beyond this point", UpdateService.PERMISSION_REBOOT);
             return;
         }
-
+        final SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences(this);
+        prefs.edit()
+                .putBoolean(UpdateService.PREF_AB_UPDATE_REBOOT_PENDING, false).commit();
         ((PowerManager) getSystemService(Context.POWER_SERVICE)).rebootCustom(null);
     }
 
