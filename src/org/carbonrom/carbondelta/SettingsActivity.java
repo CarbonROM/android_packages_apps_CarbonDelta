@@ -239,6 +239,7 @@ public class SettingsActivity extends PreferenceActivity implements
         } else if (preference.equals(mABPerfMode)) {
             boolean value = ((CheckBoxPreference) preference).isChecked();
             mConfig.setABPerfModeCurrent(value);
+            Logger.i("Settings-Setting ABPerfMode" + value);
             return true;
         }
         return false;
