@@ -239,6 +239,7 @@ public class SettingsActivity extends PreferenceActivity implements
             return true;
         } else if (preference.equals(mABPerfMode)) {
             mConfig.setABPerfModeCurrent((boolean) newValue);
+            Logger.i("Settings-Setting ABPerfMode" + (boolean) newValue);
             return true;
         }
         return false;

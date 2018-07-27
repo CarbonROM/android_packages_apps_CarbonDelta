@@ -231,10 +231,13 @@ public class Config {
     }
 
     public boolean getABPerfModeCurrent() {
-        return prefs.getBoolean(PREF_AB_PERF_MODE_NAME, PREF_AB_PERF_MODE_DEFAULT);
+        boolean value = prefs.getBoolean(PREF_AB_PERF_MODE_NAME, PREF_AB_PERF_MODE_DEFAULT);
+        Logger.i("Returning AB Perf Mode" + value);
+        return value;
     }
 
     public void setABPerfModeCurrent(boolean enable) {
+        Logger.i("Setting AB Perf Mode" + enable);
         prefs.edit()
                 .putBoolean(PREF_AB_PERF_MODE_NAME, enable).commit();
     }
