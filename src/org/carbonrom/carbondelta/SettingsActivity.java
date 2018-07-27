@@ -160,14 +160,14 @@ public class SettingsActivity extends PreferenceActivity implements
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
             Preference preference) {
 
-        if (preference == mNetworksConfig) {
+        if (preference.equals(mNetworksConfig)) {
             showNetworks();
             return true;
-        } else if (preference == mChargeOnly) {
+        } else if (preference.equals(mChargeOnly)) {
             boolean value = ((CheckBoxPreference) preference).isChecked();
             mBatteryLevel.setEnabled(!value);
             return true;
-        } else if (preference == mSecureMode) {
+        } else if (preference.equals(mSecureMode)) {
             boolean value = ((CheckBoxPreference) preference).isChecked();
             mConfig.setSecureModeCurrent(value);
             (new AlertDialog.Builder(this))
@@ -180,10 +180,10 @@ public class SettingsActivity extends PreferenceActivity implements
                     .setCancelable(true)
                     .setNeutralButton(android.R.string.ok, null).show();
             return true;
-        } else if (preference == mSchedulerDailyTime) {
+        } else if (preference.equals(mSchedulerDailyTime)) {
             showTimePicker();
             return true;
-        } else if (preference == mCleanFiles) {
+        } else if (preference.equals(mCleanFiles)) {
             int numDeletedFiles = cleanFiles();
             SharedPreferences prefs = PreferenceManager
                     .getDefaultSharedPreferences(this);
@@ -197,7 +197,7 @@ public class SettingsActivity extends PreferenceActivity implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mAutoDownload) {
+        if (preference.equals(mAutoDownload)) {
             String value = (String) newValue;
             int idx = mAutoDownload.findIndexOfValue(value);
             mAutoDownload.setSummary(mAutoDownload.getEntries()[idx]);
@@ -208,13 +208,13 @@ public class SettingsActivity extends PreferenceActivity implements
             mSchedulerMode
                     .setEnabled(autoDownloadValue > UpdateService.PREF_AUTO_DOWNLOAD_DISABLED);
             return true;
-        } else if (preference == mBatteryLevel) {
+        } else if (preference.equals(mBatteryLevel)) {
             String value = (String) newValue;
             int idx = mBatteryLevel.findIndexOfValue(value);
             mBatteryLevel.setSummary(mBatteryLevel.getEntries()[idx]);
             mBatteryLevel.setValueIndex(idx);
             return true;
-        } else if (preference == mSchedulerMode) {
+        } else if (preference.equals(mSchedulerMode)) {
             String value = (String) newValue;
             int idx = mSchedulerMode.findIndexOfValue(value);
             mSchedulerMode.setSummary(mSchedulerMode.getEntries()[idx]);
@@ -222,7 +222,7 @@ public class SettingsActivity extends PreferenceActivity implements
             mSchedulerDailyTime.setEnabled(!value.equals(PREF_SCHEDULER_MODE_SMART));
             mScheduleWeekDay.setEnabled(value.equals(PREF_SCHEDULER_MODE_WEEKLY));
             return true;
-        } else if (preference == mScheduleWeekDay) {
+        } else if (preference.equals(mScheduleWeekDay)) {
             int idx = mScheduleWeekDay.findIndexOfValue((String) newValue);
             mScheduleWeekDay.setSummary(mScheduleWeekDay.getEntries()[idx]);
             return true;
