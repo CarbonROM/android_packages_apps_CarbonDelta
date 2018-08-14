@@ -2155,7 +2155,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                         String latestFullZip = latestFull !=  PREF_READY_FILENAME_DEFAULT ? latestFull : null;
                         String currentVersionZip = config.getFilenameBase() +".zip";
 
-                        boolean updateAvilable = (latestFullZip != null && latestFullZip.compareTo(currentVersionZip) > 0);
+                        boolean updateAvilable = (latestFullZip != null && Long.parseLong(latestFullZip.replaceAll("\\D+","")) > Long.parseLong(currentVersionZip.replaceAll("\\D+","")));
                         downloadFullBuild = updateAvilable;
 
                         if (!updateAvilable) {
@@ -2216,8 +2216,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                         String latestDeltaZip = latestDelta != PREF_READY_FILENAME_DEFAULT ? new File(latestDelta).getName() : null;
                         String latestFullZip = latestFull !=  PREF_READY_FILENAME_DEFAULT ? latestFull : null;
                         String currentVersionZip = config.getFilenameBase() +".zip";
-                        boolean fullUpdatePossible = latestFullZip != null && latestFullZip.compareTo(currentVersionZip) > 0;
-                        boolean deltaUpdatePossible = !downloadFullBuild && latestDeltaZip != null && latestDeltaZip.compareTo(currentVersionZip) > 0 && latestDeltaZip.equals(latestFullZip);
+                        boolean fullUpdatePossible = latestFullZip != null && Long.parseLong(latestFullZip.replaceAll("\\D+","")) > Long.parseLong(currentVersionZip.replaceAll("\\D+",""));
+                        boolean deltaUpdatePossible = !downloadFullBuild && latestDeltaZip != null && Long.parseLong(latestDeltaZip.replaceAll("\\D+","")) > Long.parseLong(currentVersionZip.replaceAll("\\D+","")) && latestDeltaZip.equals(latestFullZip);
 
                         if (!deltaUpdatePossible && fullUpdatePossible) {
                             downloadFullBuild = true;
