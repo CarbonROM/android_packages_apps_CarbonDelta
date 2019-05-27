@@ -21,7 +21,7 @@
         Delta decoding based on <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
     ]]></string>
   <string name="state_action_none">お使いのシステムは最新です</string>
-  <string name="state_action_ab_flash">A/Bアップデートのインストール中&#8230;</string>
+  <string name="state_action_ab_flash">A/B アップデートのインストール中&#8230;</string>
   <string name="state_action_ab_finished">更新をインストールしました。再起動の保留中&#8230;</string>
   <string name="state_action_checking">更新の確認中&#8230;</string>
   <string name="state_action_checking_md5">ファイルの確認中&#8230;</string>
@@ -46,14 +46,13 @@
   <!-- updates from 2013/12/18 -->
   <string name="action_secure_mode">セキュア</string>
   <string name="secure_mode_enabled_title">セキュアモード: 有効</string>
-  <string name="secure_mode_enabled_description"><![CDATA[更新の暗号署名はフラッシュされる前に本物かどうかを確認するために確認され、追加の更新は書き込まれません。このモードは<b>TWRP</b>のみ互換性があります。]]></string>
+  <string name="secure_mode_enabled_description"><![CDATA[更新の暗号署名はフラッシュされる前に本物かどうかを確認するために確認され、追加の更新は書き込まれません。このモードは 
+ <b>TWRP</b> のみ互換性があります。]]></string>
   <string name="secure_mode_disabled_title">セキュアモード: 無効</string>
   <string name="secure_mode_disabled_description"><![CDATA[追加の更新が存在する場合はフラッシュさます。どんな (悪意のある) ソフトウェアパッケージでも、これらのアップデートを適用して完全なシステムアクセスを得ることができることに注意して下さい。]]></string>
   <string name="recovery_notice_title">注意</string>
-  <string name="recovery_notice_description_secure"><![CDATA[現在のモードでの更新の書き込みは、<b>TWRP</b>リカバリーのみサポートされています。続行する前に互換性のあるリカバリーを実行していることを確認してください。]]></string>
-  <string name="recovery_notice_description_not_secure"><![CDATA[現在のモードでの更新の書き込みは、<b>TWRP</b>リカバリーのみ正式にサポートされています。<b>CWM</b>のいくつかの<i>コミュニティビルド</i>バージョンでは動作する<i>かもしれませんが</i>、<i>公式</i><b>CWM</b>はサポート<i>されていません</i>。続行する前に互換性のあるリカバリーを実行していることを確認してください。]]></string>
   <string name="flash_after_update_notice_title">注意</string>
-  <string name="flash_after_update_notice_description"><![CDATA[追加のアップデートは<b>FlashAfterUpdate</b>フォルダにありますが、セキュアモードは有効です。続行すると、これらの追加の更新はフラッシュ<b>されません</b>。]]></string>
+  <string name="flash_after_update_notice_description"><![CDATA[追加のアップデートは <b>FlashAfterUpdate</b> フォルダにありますが、セキュアモードは有効です。続行するとこれらの追加の更新はフラッシュ<b>されません</b>。]]></string>
   <string name="state_error_not_official_title">更新が無効になりました</string>
   <string name="state_error_not_official_extra" formatted="false">%sのアップデートはできません</string>
   <string name="button_build_delta">ダウンロード</string>
@@ -71,7 +70,7 @@
   <string name="auto_download_title">スケジュールアクション</string>
   <string name="download_disabled">無効</string>
   <string name="check_only">確認と通知</string>
-  <string name="download_delta">Deltaの自動ダウンロード</string>
+  <string name="download_delta">Delta の自動ダウンロード</string>
   <string name="download_full">全て自動ダウンロード</string>
   <string name="menu_settings">設定</string>
   <string name="category_download">自動ダウンロード</string>
@@ -102,10 +101,7 @@
   <string name="category_admin">メンテナンス</string>
   <string name="clear_files_title">アップデートファイルを削除する</string>
   <string name="clear_files_summary">存在する更新ファイルを削除して強制的にアップデータをダウンロードする</string>
-  <string name="clean_files_feedback" formatted="false">%d個のファイルを削除しました。「更新を確認」をチェックしてください。</string>
   <string name="state_error_permissions">ストレージの許可がありません</string>
-  <string name="state_error_flash">書き込みの開始に失敗しました。 キャッシュを削除して再試行してください。</string>
-  <string name="state_error_ab_flash">書き込みの開始に失敗しました。再起動して再試行してください。</string>
   <string name="progress_status_0">一時停止中&#8230;</string>
   <string name="progress_status_1">更新の確認中&#8230;</string>
   <string name="progress_status_2">更新が利用可能です&#8230;</string>
@@ -116,6 +112,6 @@
   <string name="progress_status_7">エラーイベントの報告中&#8230;</string>
   <string name="progress_status_8">ロールバックの試行中&#8230;</string>
   <string name="progress_status_9">無効</string>
-  <string name="ab_perf_mode_title">A/Bパフォーマンスモード</string>
-  <string name="ab_perf_mode_summary">A/Bアップデートのインストールのためにパフォーマンスモードを使用する</string>
+  <string name="ab_perf_mode_title">A/B パフォーマンスモード</string>
+  <string name="ab_perf_mode_summary">A/B アップデートのインストールのためにパフォーマンスモードを使用する</string>
 </resources>

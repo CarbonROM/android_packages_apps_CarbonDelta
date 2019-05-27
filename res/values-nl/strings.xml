@@ -35,9 +35,11 @@
   <string name="error_disk_space_sub" formatted="false">%d MiB beschikbaar, %d MiB nodig</string>
   <string name="notify_update_available">Er is een update beschikbaar</string>
   <string name="notify_checking">Zoeken naar updates &#8230;</string>
+  <string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d resterend</string>
   <string name="last_checked" formatted="false">%s op %s</string>
   <string name="last_checked_never">Er is nog niet eerder gecontroleerd op updates, zou u willen wat wij het voor u gaan controleren?</string>
   <string name="button_check_short">Controleer</string>
+  <string name="button_reboot_short">Opnieuw opstarten</string>
   <string name="button_flash_now">Installeer</string>
   <!-- updates from 2013/12/18 -->
   <string name="action_secure_mode">Beveilig</string>
@@ -101,6 +103,10 @@
   <string name="clean_files_feedback" formatted="false">%d Bestanden verwijderd. Klik nu \'Controleer voor updates\'</string>
   <string name="state_error_permissions">Geen opslag-machtigingen.</string>
   <string name="state_error_flash">Voorbereiden flashen mislukt. Wis /cache en probeer opnieuw.</string>
+  <string name="progress_status_1">Zoeken naar updates &#8230;</string>
+  <string name="progress_status_2">Update beschikbaar &#8230;</string>
+  <string name="progress_status_3">Installeren &#8230;</string>
+  <string name="progress_status_4">Verifiëren &#8230;</string>
   <string name="progress_status_7">Rapporteer Error gebeurtenis &#8230;</string>
   <string name="progress_status_8">Probeert Terugdraaiing &#8230;</string>
   <string name="progress_status_9">Uitgeschakeld.</string>
