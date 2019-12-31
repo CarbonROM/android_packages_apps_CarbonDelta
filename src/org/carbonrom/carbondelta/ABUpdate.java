@@ -76,8 +76,6 @@ class ABUpdate {
 
         @Override
         public void onPayloadApplicationComplete(int errorCode) {
-            mProgressListener.onProgress(100f, 100L, 100L);
-            updateservice.onUpdateCompleted(errorCode);
             setInstallingUpdate(false, updateservice);
         }
     };
