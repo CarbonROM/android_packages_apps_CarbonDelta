@@ -4,23 +4,9 @@
     <style name="Theme.CarbonDelta" parent="@android:style/Theme.DeviceDefault.Settings">
         <item name="android:buttonStyle">?android:attr/borderlessButtonStyle</item>
         <item name="android:navigationBarColor">@*android:color/primary_dark_device_default_settings</item>
-        <item name="android:actionBarPopupTheme">@style/Theme.CarbonDelta.PopupMenu</item>
-        <item name="android:dialogTheme">@style/Theme.CarbonDelta.Dialog</item>
-        <item name="android:alertDialogTheme">@style/Theme.CarbonDelta.AlertDialog</item>
         <item name="android:windowBackground">@*android:color/primary_dark_device_default_settings</item>
     </style>
 
     <style name="Theme.CarbonDelta.Settings" parent="@style/Theme.CarbonDelta"></style>
 
-    <style name="Theme.CarbonDelta.PopupMenu" parent="@android:style/Theme.DeviceDefault.Dialog" >
-        <item name="android:colorBackground">@*android:color/primary_device_default_settings</item>
-    </style>
-
-    <style name="Theme.CarbonDelta.Dialog" parent="@android:style/Theme.DeviceDefault.Dialog">
-        <item name="android:colorBackground">@*android:color/primary_device_default_settings</item>
-    </style>
-
-    <style name="Theme.CarbonDelta.AlertDialog" parent="@android:style/Theme.DeviceDefault.Dialog.Alert">
-        <item name="android:colorBackground">@*android:color/primary_device_default_settings</item>
-    </style>
 </resources>
