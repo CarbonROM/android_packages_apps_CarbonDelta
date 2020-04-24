@@ -20,6 +20,8 @@
         Delta dekódolás alapja: <b>xdelta</b>, szerzői jog &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
     ]]></string>
 	<string name="state_action_none">A rendszer naprakész.</string>
+	<string name="state_action_ab_flash">A/B frissítés telepítése &#8230;</string>
+	<string name="state_action_ab_finished">Frissítés telepítve. Újraindítás függőben &#8230;</string>
 	<string name="state_action_checking">Frissítések keresése &#8230;</string>
 	<string name="state_action_checking_md5">Fájl ellenőrzése &#8230;</string>
 	<string name="state_action_searching">Keresés a fájlok után &#8230;</string>
@@ -34,9 +36,11 @@
 	<string name="error_disk_space_sub" formatted="false">%d MiB elérhető, %d MiB szükséges</string>
 	<string name="notify_update_available">Egy frissítés elérhető</string>
 	<string name="notify_checking">Frissítések keresése &#8230;</string>
+	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d van hátra</string>
 	<string name="last_checked" formatted="false">%s ekkor: %s</string>
 	<string name="last_checked_never">Mi soha nem ellenőriztük, talán szeretné most megtenni?</string>
 	<string name="button_check_short">Ellenőrzés</string>
+	<string name="button_reboot_short">Újraindítás</string>
 	<string name="button_flash_now">Flash</string>
 	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Biztonságos</string>
@@ -100,4 +104,15 @@
 	<string name="clean_files_feedback" formatted="false">%d fájl törölve. Most nyomjon a \"Frissítések keresése\" gombra</string>
 	<string name="state_error_permissions">Nincs tárhely engedély.</string>
 	<string name="state_error_flash">Zseblámpa beállítása sikertelen. Törölje a /cache-t és próbálja újra.</string>
+	<string name="state_error_ab_flash">Frissítés telepítése sikertelen. Indítsd újra a készüléket és próbáld újra.</string>
+	<string name="progress_status_0">Tétlen &#8230;</string>
+	<string name="progress_status_1">Frissítések keresése &#8230;</string>
+	<string name="progress_status_2">Frissítés elérhető &#8230;</string>
+	<string name="progress_status_3">Telepítés &#8230;</string>
+	<string name="progress_status_4">Fájl ellenőrzése &#8230;</string>
+	<string name="progress_status_6">Frissítve. Újraindítás függőben &#8230;</string>
+	<string name="progress_status_7">Hiba esemény jelentése &#8230;</string>
+	<string name="progress_status_8">Visszaállás megkísérlése &#8230;</string>
+	<string name="progress_status_9">Letiltva.</string>
+	<string name="ab_perf_mode_summary">Teljesítménymód használata AB frissítések telepítése közben</string>
 </resources>

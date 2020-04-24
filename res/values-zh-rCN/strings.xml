@@ -110,7 +110,7 @@
 	<string name="progress_status_2">查到更新 &#8230;</string>
 	<string name="progress_status_3">正在安装 &#8230;</string>
 	<string name="progress_status_4">正在验证 &#8230;</string>
-	<string name="progress_status_5">即将完毕 &#8230;</string>
+	<string name="progress_status_5">正在完成和优化应用程序 &#8230;</string>
 	<string name="progress_status_6">更新完毕。等待重启中 &#8230;</string>
 	<string name="progress_status_7">正在提交事件错误报告 &#8230;</string>
 	<string name="progress_status_8">还原尝试中 &#8230;</string>

@@ -11,6 +11,14 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Muu</string>
 	<string name="action_about">Teave</string>
+	<string name="about_content"><![CDATA[        &copy; <b>Jorrit \'Chainfire\' Jongma</b>, _COPYRIGHT_CARBONDELTA_.<br>
+        <br>
+        Algselt projekti jaoks mõeldud <b>Carbon</b><br>
+        <br>
+        Levitatakse tingimustel <b>GNU universaalse avaliku litsentsi versioon 3.0 (GPLv3)</b><br>
+        <br>
+        Delta-failide dekodeerimine <b>xdelta</b>, &copy <b>Joshua MacDonald</b>, _COPYRIGHT_XDELTA_.<br>
+    ]]></string>
 	<string name="state_action_none">Sinu süsteem on ajakohane.</string>
 	<string name="state_action_ab_flash">A/B uuenduse paigaldamine&#8230;</string>
 	<string name="state_action_ab_finished">Värskendus on installitud. Taaskäivitamine on vajalik &#8230;</string>

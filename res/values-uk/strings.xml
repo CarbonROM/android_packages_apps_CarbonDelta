@@ -22,6 +22,8 @@
 <b>Joshua MacDonald</b><br>
     ]]></string>
 	<string name="state_action_none">Установлена остання версія ПЗ.</string>
+	<string name="state_action_ab_flash">Встановлення A/B оновлення &#8230;</string>
+	<string name="state_action_ab_finished">Оновлення встановлено. Очікування перезавантаження &#8230;</string>
 	<string name="state_action_checking">Перевірка оновлень&#8230;</string>
 	<string name="state_action_checking_md5">Верифікація файлу&#8230;</string>
 	<string name="state_action_searching">Пошук файлів&#8230;</string>
@@ -36,9 +38,11 @@
 	<string name="error_disk_space_sub" formatted="false">%d МБ доступно, %d Мбайт необхідно</string>
 	<string name="notify_update_available">Доступне оновлення</string>
 	<string name="notify_checking">Перевірка наявності оновлень&#8230;</string>
+	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d залишилося</string>
 	<string name="last_checked" formatted="false">%s в %s</string>
 	<string name="last_checked_never">Пошук оновлень ще не виконувався. Можливо, варто спробувати?</string>
 	<string name="button_check_short">Перевірити</string>
+	<string name="button_reboot_short">Перезавантажити</string>
 	<string name="button_flash_now">Встановити</string>
 	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Безпечний режим</string>
@@ -81,6 +85,7 @@
 	<string name="notify_title_error">Проблема перевірки оновлення</string>
 	<string name="notify_title_flash">Оновлення готове до встановлення</string>
 	<string name="notify_title_download">Оновлення готове до завантаження</string>
+	<string name="last_checked_never_title_new">Натисніть кнопку \"Перевірити\", щоб розпочати</string>
 	<string name="screen_state_title">При вимкненому екрані</string>
 	<string name="screen_state_message">Оновлення завантажуватимуться тільки при вимкненому екрані пристрою</string>
 	<string name="category_scheduler">Автоматичне оновлення</string>
@@ -99,4 +104,18 @@
 	<string name="clear_files_title">Очистити файли оновлень</string>
 	<string name="clear_files_summary">Видалити існуючі файли оновлень, щоб примусово завантажити повне оновлення</string>
 	<string name="clean_files_feedback" formatted="false">Видалено %d файлів. Тепер натисніть \'Перевірити оновлення\'</string>
+	<string name="state_error_permissions">Немає дозволу на зберігання.</string>
+	<string name="state_error_flash">Не вдалося встановити. Очиститіть /cache та повторіть спробу.</string>
+	<string name="state_error_ab_flash">Не вдалося встановити. Будь ласка перезавантажте телефон та спробуйте ще раз.</string>
+	<string name="progress_status_0">Бездіяльність &#8230;</string>
+	<string name="progress_status_1">Перевірка наявності оновлень... &#8230;</string>
+	<string name="progress_status_2">Доступне оновлення &#8230;</string>
+	<string name="progress_status_3">Встановлення &#8230;</string>
+	<string name="progress_status_4">Верифікація файлу &#8230;</string>
+	<string name="progress_status_6">Оновлено. Очікування перезавантаження &#8230;</string>
+	<string name="progress_status_7">Повідомлення про помилку &#8230;</string>
+	<string name="progress_status_8">Спроба відкату &#8230;</string>
+	<string name="progress_status_9">Вимкнено.</string>
+	<string name="ab_perf_mode_title">Режим продуктивності AB</string>
+	<string name="ab_perf_mode_summary">Використовувати режим продуктивності для встановлення AB оновлень</string>
 </resources>
