@@ -11,14 +11,6 @@
 	<string name="network_ethernet">乙太網路</string>
 	<string name="network_unknown">其他</string>
 	<string name="action_about">關於</string>
-	<string name="about_content"><![CDATA[        版權 &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        为<b>Carbon項目</b>而建立<br>
-        <br>
-        授權許可 <b>GNU 通用公共授權，版本3.0 (GPLv3)</b><br>
-        <br>
-        Delta解碼基於 <b>xdelta</b>, 版權&copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
 	<string name="state_action_none">您的系統已是最新版本。</string>
 	<string name="state_action_ab_flash">安裝 A/B 更新 &#8230;</string>
 	<string name="state_action_ab_finished">已安裝更新 重新開機以啟用 &#8230;</string>

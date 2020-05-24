@@ -11,11 +11,6 @@
 	<string name="network_ethernet">Internet</string>
 	<string name="network_unknown">Outras</string>
 	<string name="action_about">Sobre</string>
-	<string name="about_content"><![CDATA[        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Originalmente criado para o projeto de <b>CarbonROM</b><br>
-        licenciado sob os termos da <b>GNU General Public License, versão 3.0 (GPLv3)</b><br>
-        baseada em decodificação <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>]]></string>
 	<string name="state_action_none">Seu sistema está atualizado.</string>
 	<string name="state_action_ab_flash">Instalando Atualização A/B &#8230;</string>
 	<string name="state_action_ab_finished">Atualização instalada. Reinicialização pendente &#8230;</string>

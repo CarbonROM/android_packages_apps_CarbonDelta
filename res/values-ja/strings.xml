@@ -11,14 +11,6 @@
 	<string name="network_ethernet">イーサネット</string>
 	<string name="network_unknown">その他</string>
 	<string name="action_about">概要</string>
-	<string name="about_content"><![CDATA[        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Created for <b>CarbonROM</b><br>
-        <br>
-        Licensed under the terms of the <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
-        <br>
-        Delta decoding based on <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
 	<string name="state_action_none">お使いのシステムは最新です</string>
 	<string name="state_action_ab_flash">A/B アップデートのインストール中&#8230;</string>
 	<string name="state_action_ab_finished">更新をインストールしました。再起動の保留中&#8230;</string>
@@ -62,7 +54,7 @@
 	<string name="state_action_build_delta">Delta の更新ができます</string>
 	<string name="state_action_build_full">全ての更新ができます</string>
 	<string name="state_error_download">ダウンロードに問題</string>
-	<string name="text_current_version_header_title">現在のバージョン</string>
+	<string name="text_current_version_header_title">実行バージョン</string>
 	<string name="text_last_checked_header_title">最終確認</string>
 	<string name="text_update_version_title">更新バージョン</string>
 	<string name="text_download_size_header_title">ダウンロードサイズ</string>

@@ -11,15 +11,6 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Annat</string>
 	<string name="action_about">Om</string>
-	<string name="about_content"><![CDATA[        
-        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Skapad för <b>CarbonROM</b><br>
-        <br>
-        Licensierad enligt villkoren i <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
-        <br>
-        Deltaavkodning baserad på <b>xdelta</b>, Copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-      ]]></string>
 	<string name="state_action_none">Ditt system är uppdaterat.</string>
 	<string name="state_action_ab_flash">Installerar A/B-uppdateringen &#8230;</string>
 	<string name="state_action_ab_finished">Uppdateringen installerades. Omstart väntar &#8230;</string>

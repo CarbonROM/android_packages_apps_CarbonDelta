@@ -11,14 +11,6 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Diğer</string>
 	<string name="action_about">Hakkında</string>
-	<string name="about_content"><![CDATA[        Telif hakkı&copy; _COPYRIGHT_CARBONDELTA_<b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        <b>Carbon Projesi</b>için oluşturulmuştur<br>
-        <br>
-        <b>GNU Umûmî Ruhsat, sürüm 3.0 (GPLv3)</b> şartları altında ruhsat verilmiştir<br>
-        <br>
-        Delta decoding <b>xdelta</b> tabanlıdır, telif hakkı &copy; _COPYRIGHT_XDELTA_<b>Joshua MacDonald</b><br>
-    ]]></string>
 	<string name="state_action_none">Sisteminiz güncel</string>
 	<string name="state_action_ab_flash">A/B güncellemesi yükleniyor &#8230;</string>
 	<string name="state_action_ab_finished">Güncelleme yüklendi. Yeniden başlatma bekleniyor &#8230;</string>

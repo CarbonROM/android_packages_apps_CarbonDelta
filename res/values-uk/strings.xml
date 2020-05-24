@@ -11,16 +11,6 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Інші</string>
 	<string name="action_about">Про додаток</string>
-	<string name="about_content"><![CDATA[        Авторські права &copy;_COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>     
-        <br>
-           Створено для <b> Carbon</b><br>
-        <br>
-        Публічна Ліцензія, версія 3.0 (GPLv3)</b>
-<br>
-        <br>
-        Дельта кодування на основі <b>xdelta</b>, авторські права &copy;_COPYRIGHT_XDELTA_ 
-<b>Joshua MacDonald</b><br>
-    ]]></string>
 	<string name="state_action_none">Установлена остання версія ПЗ.</string>
 	<string name="state_action_ab_flash">Встановлення A/B оновлення &#8230;</string>
 	<string name="state_action_ab_finished">Оновлення встановлено. Очікування перезавантаження &#8230;</string>
@@ -112,6 +102,7 @@
 	<string name="progress_status_2">Доступне оновлення &#8230;</string>
 	<string name="progress_status_3">Встановлення &#8230;</string>
 	<string name="progress_status_4">Верифікація файлу &#8230;</string>
+	<string name="progress_status_5">Завершення та оптимізація додатків &#8230;</string>
 	<string name="progress_status_6">Оновлено. Очікування перезавантаження &#8230;</string>
 	<string name="progress_status_7">Повідомлення про помилку &#8230;</string>
 	<string name="progress_status_8">Спроба відкату &#8230;</string>
