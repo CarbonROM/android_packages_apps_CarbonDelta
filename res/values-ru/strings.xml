@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s в %s</string>
 	<string name="last_checked_never">Поиск обновлений ещё не выполнялся. Возможно, стоит попробовать?</string>
 	<string name="button_check_short">Проверить</string>
+	<string name="button_check_now">Check for update &#8230;</string>
 	<string name="button_reboot_short">Перезагрузка</string>
 	<string name="button_flash_now">Установить</string>
 	<!-- updates from 2013/12/18 -->
@@ -117,4 +118,16 @@
 	<string name="progress_status_9">Отключено.</string>
 	<string name="ab_perf_mode_title">Режим производительности AB</string>
 	<string name="ab_perf_mode_summary">Использовать режим производительности для установки обновлений AB</string>
+	<string name="state_error_flash_file_title">Can not flash that file</string>
+	<string name="select_file_activity_title">Select ZIP file</string>
+	<string name="button_select_file">File</string>
+	<string name="state_error_ab_flash_title">Can not flash AB update</string>
+	<string name="state_error_flash_title">Can not flash update</string>
+	<string name="file_flash_support_title">Local file flash</string>
+	<string name="file_flash_support_summary">Enable selecting a local ZIP file</string>
+	<string name="flash_file_notice_title">Local file flash</string>
+	<string name="flash_file_notice_message"><b>Attention:</b> There will be no checks if the selected ZIP file is suitable for your device!\n\n<b>Flashing the wrong ZIP can lead to a non functional device!</b></string>
+	<string name="channel_name">Update progress</string>
+	<string name="channel_description"></string>
+	<string name="text_update_file_flash_title">Update file</string>
 </resources>

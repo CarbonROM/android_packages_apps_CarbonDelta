@@ -20,6 +20,8 @@
         Delta gebaseerd op <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
     ]]></string>
 	<string name="state_action_none">Uw systeem is up to date.</string>
+	<string name="state_action_ab_flash">Installing A/B Update &#8230;</string>
+	<string name="state_action_ab_finished">Update installed. Reboot pending &#8230;</string>
 	<string name="state_action_checking">Controleren op updates &#8230;</string>
 	<string name="state_action_checking_md5">Bestand verifiëren &#8230;</string>
 	<string name="state_action_searching">Bestanden zoeken &#8230;</string>
@@ -38,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s op %s</string>
 	<string name="last_checked_never">Er is nog niet eerder gecontroleerd op updates, zou u willen wat wij het voor u gaan controleren?</string>
 	<string name="button_check_short">Controleer</string>
+	<string name="button_check_now">Check for update &#8230;</string>
 	<string name="button_reboot_short">Opnieuw opstarten</string>
 	<string name="button_flash_now">Installeer</string>
 	<!-- updates from 2013/12/18 -->
@@ -102,13 +105,29 @@
 	<string name="clean_files_feedback" formatted="false">%d Bestanden verwijderd. Klik nu \'Controleer voor updates\'</string>
 	<string name="state_error_permissions">Geen opslag-machtigingen.</string>
 	<string name="state_error_flash">Voorbereiden flashen mislukt. Wis /cache en probeer opnieuw.</string>
+	<string name="state_error_ab_flash">Failed to setup flash. Please reboot and retry.</string>
+	<string name="progress_status_0">Idle &#8230;</string>
 	<string name="progress_status_1">Zoeken naar updates &#8230;</string>
 	<string name="progress_status_2">Update beschikbaar &#8230;</string>
 	<string name="progress_status_3">Installeren &#8230;</string>
 	<string name="progress_status_4">Verifiëren &#8230;</string>
+	<string name="progress_status_5">Finalizing and Optimizing Apps &#8230;</string>
+	<string name="progress_status_6">Updated. Pending Reboot &#8230;</string>
 	<string name="progress_status_7">Rapporteer Error gebeurtenis &#8230;</string>
 	<string name="progress_status_8">Probeert Terugdraaiing &#8230;</string>
 	<string name="progress_status_9">Uitgeschakeld.</string>
 	<string name="ab_perf_mode_title">AB Prestatie Modus</string>
 	<string name="ab_perf_mode_summary">Gebruik Prestatie Modus om AB Updates te installeren</string>
+	<string name="state_error_flash_file_title">Can not flash that file</string>
+	<string name="select_file_activity_title">Select ZIP file</string>
+	<string name="button_select_file">File</string>
+	<string name="state_error_ab_flash_title">Can not flash AB update</string>
+	<string name="state_error_flash_title">Can not flash update</string>
+	<string name="file_flash_support_title">Local file flash</string>
+	<string name="file_flash_support_summary">Enable selecting a local ZIP file</string>
+	<string name="flash_file_notice_title">Local file flash</string>
+	<string name="flash_file_notice_message"><b>Attention:</b> There will be no checks if the selected ZIP file is suitable for your device!\n\n<b>Flashing the wrong ZIP can lead to a non functional device!</b></string>
+	<string name="channel_name">Update progress</string>
+	<string name="channel_description"></string>
+	<string name="text_update_file_flash_title">Update file</string>
 </resources>

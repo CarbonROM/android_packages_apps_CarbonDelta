@@ -11,7 +11,16 @@
 	<string name="network_ethernet">אינטרנט</string>
 	<string name="network_unknown">שונות</string>
 	<string name="action_about">אודות</string>
+	<string name="about_content"><![CDATA[Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
+		<br>
+		Created for <b>CarbonROM</b><br>
+		<br>
+		Licensed under the terms of the <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
+		<br>
+		Delta decoding based on <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>]]></string>
 	<string name="state_action_none">המערכת שלך מעודכנת.</string>
+	<string name="state_action_ab_flash">Installing A/B Update &#8230;</string>
+	<string name="state_action_ab_finished">Update installed. Reboot pending &#8230;</string>
 	<string name="state_action_checking">בודק אם קיימים עדכונים &#8230;</string>
 	<string name="state_action_checking_md5">מאמת קובץ &#8230;</string>
 	<string name="state_action_searching">מחפש קבצים &#8230;</string>
@@ -26,8 +35,12 @@
 	<string name="error_disk_space_sub" formatted="false">%d מגה-בתים פנויים, נדרש %d Mb</string>
 	<string name="notify_update_available">קיים עדכון זמין</string>
 	<string name="notify_checking">בודק אם קיימים עדכונים &#8230;</string>
+	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d remaining</string>
 	<string name="last_checked" formatted="false">%s ב %s</string>
 	<string name="last_checked_never">לא בדקנו, אולי תרצה לעשות זאת?</string>
+	<string name="button_check_short">Check</string>
+	<string name="button_check_now">Check for update &#8230;</string>
+	<string name="button_reboot_short">Reboot</string>
 	<string name="button_flash_now">צרוב</string>
 	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">מאובטח</string>
@@ -37,6 +50,7 @@
 	<string name="secure_mode_disabled_description"><![CDATA[עדכונים נוספים יותקנו אם קיימים. שים לב שתוכנות מסויימות (זדוניות) עלולות להיות כלולות בחבילה זו ולקבל גישה מלאה למערכת. מומלץ לכלכל בתבונה את צעדיך.]]></string>
 	<string name="recovery_notice_title">הערה</string>
 	<string name="recovery_notice_description_secure"><![CDATA[התקנת עדכונים במצב הנוכחי נתמכת רק על ידי <b>TWRP</b> ריקברי. נא וודא שמכשירך מריץ ריקברי מתאים לפני שתמשיך.]]></string>
+	<string name="recovery_notice_description_not_secure"><![CDATA[Flashing updates in the current mode is only officially supported on <b>TWRP</b> recoveries. <i>Official</i> <b>CWM</b> builds are <i>not</i> supported, though some <i>community-built</i> versions of <b>CWM</b> <i>may</i> still work. Please make sure you are running a compatible recovery before continuing.]]></string>
 	<string name="flash_after_update_notice_title">הערה</string>
 	<string name="flash_after_update_notice_description"><![CDATA[עדכונים נוספים יוצגו בתיקיית <b>FlashAfterUpdate</b>, כעת מצב מאובטח פעיל. אם תבחר להמשיך, אותם עדכונים נוספים <b>לא</b> יותקנו.]]></string>
 	<string name="state_error_not_official_title">עדכון מושבת.</string>
@@ -69,6 +83,7 @@
 	<string name="notify_title_error">בעיה בבדיקת לעדכונים</string>
 	<string name="notify_title_flash">עדכון מוכן לצריבה</string>
 	<string name="notify_title_download">עדכון מוכן להורדה</string>
+	<string name="last_checked_never_title_new">Press \'Check\' to start</string>
 	<string name="screen_state_title">מסך כבוי</string>
 	<string name="screen_state_message">הורד רק כאשר המסך כבוי</string>
 	<string name="category_scheduler">עדכן אוטומטית</string>
@@ -88,4 +103,30 @@
 	<string name="clear_files_summary">מחק קבצי עדכוני קיימים כדי לאלץ הורדת העדכון המלא</string>
 	<string name="clean_files_feedback" formatted="false">%d קבצים שנמחקו. כעת לחץ על \'בדוק אם קיימים עדכונים\'</string>
 	<string name="state_error_permissions">אין הרשאות אחסון.</string>
+	<string name="state_error_flash">Failed to setup flash. Clean /cache and retry.</string>
+	<string name="state_error_ab_flash">Failed to setup flash. Please reboot and retry.</string>
+	<string name="progress_status_0">Idle &#8230;</string>
+	<string name="progress_status_1">Checking for Updates &#8230;</string>
+	<string name="progress_status_2">Update available &#8230;</string>
+	<string name="progress_status_3">Installing &#8230;</string>
+	<string name="progress_status_4">Verifying &#8230;</string>
+	<string name="progress_status_5">Finalizing and Optimizing Apps &#8230;</string>
+	<string name="progress_status_6">Updated. Pending Reboot &#8230;</string>
+	<string name="progress_status_7">Reporting Error Event &#8230;</string>
+	<string name="progress_status_8">Attempting Rollback &#8230;</string>
+	<string name="progress_status_9">Disabled.</string>
+	<string name="ab_perf_mode_title">AB Performance Mode</string>
+	<string name="ab_perf_mode_summary">Use Performance Mode to install AB Updates</string>
+	<string name="state_error_flash_file_title">Can not flash that file</string>
+	<string name="select_file_activity_title">Select ZIP file</string>
+	<string name="button_select_file">File</string>
+	<string name="state_error_ab_flash_title">Can not flash AB update</string>
+	<string name="state_error_flash_title">Can not flash update</string>
+	<string name="file_flash_support_title">Local file flash</string>
+	<string name="file_flash_support_summary">Enable selecting a local ZIP file</string>
+	<string name="flash_file_notice_title">Local file flash</string>
+	<string name="flash_file_notice_message"><b>Attention:</b> There will be no checks if the selected ZIP file is suitable for your device!\n\n<b>Flashing the wrong ZIP can lead to a non functional device!</b></string>
+	<string name="channel_name">Update progress</string>
+	<string name="channel_description"></string>
+	<string name="text_update_file_flash_title">Update file</string>
 </resources>

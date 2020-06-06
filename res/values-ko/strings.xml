@@ -20,6 +20,8 @@
         Delta decoding based on <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
     ]]></string>
 	<string name="state_action_none">시스템이 최신 상태입니다</string>
+	<string name="state_action_ab_flash">Installing A/B Update &#8230;</string>
+	<string name="state_action_ab_finished">Update installed. Reboot pending &#8230;</string>
 	<string name="state_action_checking">업데이트 확인하는 중...</string>
 	<string name="state_action_checking_md5">파일 확인하는 중...</string>
 	<string name="state_action_searching">파일 찾는 중...</string>
@@ -34,8 +36,12 @@
 	<string name="error_disk_space_sub" formatted="false">%d MiB 사용 가능, %d MiB 필요함</string>
 	<string name="notify_update_available">사용 가능한 업데이트가 있습니다</string>
 	<string name="notify_checking">업데이트 확인하는 중...</string>
+	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d remaining</string>
 	<string name="last_checked" formatted="false">%s에서 %s</string>
 	<string name="last_checked_never">확인한 적이 없습니다, 지금 확인할까요?</string>
+	<string name="button_check_short">Check</string>
+	<string name="button_check_now">Check for update &#8230;</string>
+	<string name="button_reboot_short">Reboot</string>
 	<string name="button_flash_now">플래시</string>
 	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">보안</string>
@@ -78,6 +84,7 @@
 	<string name="notify_title_error">업데이트에 대한 문제 확인</string>
 	<string name="notify_title_flash">업데이트 플래싱 준비 됨</string>
 	<string name="notify_title_download">업데이트 내려받기 준비 됨</string>
+	<string name="last_checked_never_title_new">Press \'Check\' to start</string>
 	<string name="screen_state_title">화면 꺼짐</string>
 	<string name="screen_state_message">화면이 꺼졌을 때만 다운로드</string>
 	<string name="category_scheduler">자동 업데이트</string>
@@ -98,4 +105,29 @@
 	<string name="clean_files_feedback" formatted="false">%d 파일 삭제됨. 이제 \'업데이트 확인\'을 누르세요.</string>
 	<string name="state_error_permissions">저장소 권한 없음</string>
 	<string name="state_error_flash">플래싱 실패. /cache 를 정리하고 다시 시도하세요.</string>
+	<string name="state_error_ab_flash">Failed to setup flash. Please reboot and retry.</string>
+	<string name="progress_status_0">Idle &#8230;</string>
+	<string name="progress_status_1">Checking for Updates &#8230;</string>
+	<string name="progress_status_2">Update available &#8230;</string>
+	<string name="progress_status_3">Installing &#8230;</string>
+	<string name="progress_status_4">Verifying &#8230;</string>
+	<string name="progress_status_5">Finalizing and Optimizing Apps &#8230;</string>
+	<string name="progress_status_6">Updated. Pending Reboot &#8230;</string>
+	<string name="progress_status_7">Reporting Error Event &#8230;</string>
+	<string name="progress_status_8">Attempting Rollback &#8230;</string>
+	<string name="progress_status_9">Disabled.</string>
+	<string name="ab_perf_mode_title">AB Performance Mode</string>
+	<string name="ab_perf_mode_summary">Use Performance Mode to install AB Updates</string>
+	<string name="state_error_flash_file_title">Can not flash that file</string>
+	<string name="select_file_activity_title">Select ZIP file</string>
+	<string name="button_select_file">File</string>
+	<string name="state_error_ab_flash_title">Can not flash AB update</string>
+	<string name="state_error_flash_title">Can not flash update</string>
+	<string name="file_flash_support_title">Local file flash</string>
+	<string name="file_flash_support_summary">Enable selecting a local ZIP file</string>
+	<string name="flash_file_notice_title">Local file flash</string>
+	<string name="flash_file_notice_message"><b>Attention:</b> There will be no checks if the selected ZIP file is suitable for your device!\n\n<b>Flashing the wrong ZIP can lead to a non functional device!</b></string>
+	<string name="channel_name">Update progress</string>
+	<string name="channel_description"></string>
+	<string name="text_update_file_flash_title">Update file</string>
 </resources>

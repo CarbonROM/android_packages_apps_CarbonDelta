@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s a %s</string>
 	<string name="last_checked_never">No s\'ha comprovat mai, voldríeu fer-ho?</string>
 	<string name="button_check_short">Comprova</string>
+	<string name="button_check_now">Check for update &#8230;</string>
 	<string name="button_reboot_short">Reinicia</string>
 	<string name="button_flash_now">Instal·la</string>
 	<!-- updates from 2013/12/18 -->
@@ -110,10 +111,23 @@
 	<string name="progress_status_2">Actualització disponible &#8230;</string>
 	<string name="progress_status_3">Instal·lant &#8230;</string>
 	<string name="progress_status_4">Verificant &#8230;</string>
+	<string name="progress_status_5">Finalizing and Optimizing Apps &#8230;</string>
 	<string name="progress_status_6">Actualitzat. Pendent de reinici &#8230;</string>
 	<string name="progress_status_7">S\'ha produït un error en informar &#8230;</string>
 	<string name="progress_status_8">S\'està intentant revertir &#8230;</string>
 	<string name="progress_status_9">S\'ha desactivat.</string>
 	<string name="ab_perf_mode_title">Mode de rendiment AB</string>
 	<string name="ab_perf_mode_summary">Utilitzeu Mode de Rendiment per instal·lar actualitzacions AB</string>
+	<string name="state_error_flash_file_title">Can not flash that file</string>
+	<string name="select_file_activity_title">Select ZIP file</string>
+	<string name="button_select_file">File</string>
+	<string name="state_error_ab_flash_title">Can not flash AB update</string>
+	<string name="state_error_flash_title">Can not flash update</string>
+	<string name="file_flash_support_title">Local file flash</string>
+	<string name="file_flash_support_summary">Enable selecting a local ZIP file</string>
+	<string name="flash_file_notice_title">Local file flash</string>
+	<string name="flash_file_notice_message"><b>Attention:</b> There will be no checks if the selected ZIP file is suitable for your device!\n\n<b>Flashing the wrong ZIP can lead to a non functional device!</b></string>
+	<string name="channel_name">Update progress</string>
+	<string name="channel_description"></string>
+	<string name="text_update_file_flash_title">Update file</string>
 </resources>

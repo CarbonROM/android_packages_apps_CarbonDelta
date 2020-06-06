@@ -21,8 +21,8 @@
     ]]></string>
 	<string name="state_action_none">お使いのシステムは最新です</string>
 	<string name="state_action_ab_flash">A/B アップデートのインストール中&#8230;</string>
-	<string name="state_action_ab_finished">更新をインストールしました。再起動の保留中&#8230;</string>
-	<string name="state_action_checking">更新の確認中&#8230;</string>
+	<string name="state_action_ab_finished">アップデートをインストールしました。再起動の保留中&#8230;</string>
+	<string name="state_action_checking">アップデートの確認中&#8230;</string>
 	<string name="state_action_checking_md5">ファイルの確認中&#8230;</string>
 	<string name="state_action_searching">ファイルの検索中&#8230;</string>
 	<string name="state_action_searching_md5">ファイルの確認中&#8230;</string>
@@ -30,41 +30,41 @@
 	<string name="state_action_applying">適用中&#8230;</string>
 	<string name="state_action_applying_patch">適用中&#8230;</string>
 	<string name="state_action_applying_md5">ファイルの確認中&#8230;</string>
-	<string name="state_action_ready">更新の書き込み準備ができました</string>
+	<string name="state_action_ready">アップデートの書き込み準備ができました</string>
 	<string name="state_error_disk_space">ディスク領域不足</string>
 	<string name="state_error_unknown">不明なエラー</string>
 	<string name="error_disk_space_sub" formatted="false">空き領域 %d MB, 必要な領域 %d MB</string>
-	<string name="notify_update_available">更新が利用可能です</string>
-	<string name="notify_checking">更新の確認中&#8230;</string>
+	<string name="notify_update_available">アップデートが利用可能です</string>
+	<string name="notify_checking">アップデートの確認中&#8230;</string>
 	<string name="notify_eta_remaining" formatted="false">残り %2d%%, %02d:%02d</string>
 	<string name="last_checked" formatted="false">%s - %s</string>
 	<string name="last_checked_never">私たちは決して確認していません。きっとあなたはそうしたいでしょう?</string>
 	<string name="button_check_short">確認</string>
+	<string name="button_check_now">アップデートの確認中&#8230;</string>
 	<string name="button_reboot_short">再起動</string>
 	<string name="button_flash_now">フラッシュ</string>
 	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">セキュア</string>
 	<string name="secure_mode_enabled_title">セキュアモード: 有効</string>
-	<string name="secure_mode_enabled_description"><![CDATA[更新の暗号署名はフラッシュされる前に本物かどうかを確認するために確認され、追加の更新は書き込まれません。このモードは 
- <b>TWRP</b> のみ互換性があります。]]></string>
+	<string name="secure_mode_enabled_description"><![CDATA[アップデートの暗号署名はフラッシュされる前に本物かどうかを確認するために確認され、追加のアップデートは書き込まれません。このモードは <b>TWRP</b> のみ互換性があります。]]></string>
 	<string name="secure_mode_disabled_title">セキュアモード: 無効</string>
-	<string name="secure_mode_disabled_description"><![CDATA[追加の更新が存在する場合はフラッシュさます。どんな (悪意のある) ソフトウェアパッケージでも、これらのアップデートを適用して完全なシステムアクセスを得ることができることに注意して下さい。]]></string>
+	<string name="secure_mode_disabled_description"><![CDATA[追加のアップデートが存在する場合はフラッシュさます。どんな (悪意のある) ソフトウェアパッケージでも、これらのアップデートを適用して完全なシステムアクセスを得ることができることに注意して下さい。]]></string>
 	<string name="recovery_notice_title">注意</string>
-	<string name="recovery_notice_description_secure"><![CDATA[現在のモードでの更新の書き込みは、<b>TWRP</b> リカバリーのみサポートされています。続行する前に互換性のあるリカバリーを実行していることを確認して下さい。]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[現在のモードでの更新の書き込みは、<b>TWRP</b> リカバリーのみ正式にサポートされています。<b>CWM</b> のいくつかの<i>コミュニティビルド</i>バージョンでは動作する<i>かもしれませんが</i>、<i>公式</i> <b>CWM</b> はサポート<i>されていません</i>。続行する前に互換性のあるリカバリーを実行していることを確認して下さい。]]></string>
+	<string name="recovery_notice_description_secure"><![CDATA[現在のモードでのアップデートの書き込みは <b>TWRP</b> リカバリーのみサポートされています。続行する前に互換性のあるリカバリーを実行していることを確認して下さい。]]></string>
+	<string name="recovery_notice_description_not_secure"><![CDATA[現在のモードでのアップデートの書き込みは <b>TWRP</b> リカバリーのみ正式にサポートされています。<b>CWM</b> のいくつかの<i>コミュニティビルド</i>バージョンでは動作する<i>かもしれませんが</i>、<i>公式</i> <b>CWM</b> はサポート<i>されていません</i>。続行する前に互換性のあるリカバリーを実行していることを確認して下さい。]]></string>
 	<string name="flash_after_update_notice_title">注意</string>
-	<string name="flash_after_update_notice_description"><![CDATA[追加のアップデートは <b>FlashAfterUpdate</b> フォルダにありますが、セキュアモードは有効です。続行するとこれらの追加の更新はフラッシュ<b>されません</b>。]]></string>
-	<string name="state_error_not_official_title">更新が無効になりました</string>
+	<string name="flash_after_update_notice_description"><![CDATA[追加のアップデートは <b>FlashAfterUpdate</b> フォルダにありますが、セキュアモードは有効です。続行するとこれらの追加のアップデートはフラッシュ<b>されません</b>。]]></string>
+	<string name="state_error_not_official_title">アップデートが無効になりました</string>
 	<string name="state_error_not_official_extra" formatted="false">%sのアップデートはできません</string>
 	<string name="button_build_delta">ダウンロード</string>
 	<string name="button_stop">停止</string>
-	<string name="state_action_build">更新が利用可能です</string>
-	<string name="state_action_build_delta">Delta の更新ができます</string>
-	<string name="state_action_build_full">全ての更新ができます</string>
+	<string name="state_action_build">アップデートが利用可能です</string>
+	<string name="state_action_build_delta">Delta のアップデートができます</string>
+	<string name="state_action_build_full">全てのアップデートができます</string>
 	<string name="state_error_download">ダウンロードに問題</string>
-	<string name="text_current_version_header_title">現在のバージョン</string>
+	<string name="text_current_version_header_title">実行バージョン</string>
 	<string name="text_last_checked_header_title">最終確認</string>
-	<string name="text_update_version_title">更新バージョン</string>
+	<string name="text_update_version_title">アップデートバージョン</string>
 	<string name="text_download_size_header_title">ダウンロードサイズ</string>
 	<string name="text_download_size_unknown">不明</string>
 	<string name="auto_download">スケジュール</string>
@@ -81,13 +81,13 @@
 	<string name="twenty_five_percent">25</string>
 	<string name="fifty_percent">50</string>
 	<string name="seventy_five_percent">75</string>
-	<string name="notify_title_error">更新確認中に問題発生</string>
-	<string name="notify_title_flash">更新の書き込み準備ができました</string>
-	<string name="notify_title_download">更新のダウンロードの準備ができました</string>
+	<string name="notify_title_error">アップデート確認中に問題発生</string>
+	<string name="notify_title_flash">アップデートの書き込み準備ができました</string>
+	<string name="notify_title_download">アップデートのダウンロードの準備ができました</string>
 	<string name="last_checked_never_title_new">「確認」を押して開始</string>
 	<string name="screen_state_title">画面を消灯</string>
 	<string name="screen_state_message">画面消灯時の場合のみダウンロードする</string>
-	<string name="category_scheduler">自動更新</string>
+	<string name="category_scheduler">自動アップデート</string>
 	<string name="scheduler_mode_title">スケジュールモード</string>
 	<string name="scheduler_smart">スマート</string>
 	<string name="scheduler_daily">毎日</string>
@@ -101,21 +101,33 @@
 	<string name="state_error_connection">データ接続がありません</string>
 	<string name="category_admin">メンテナンス</string>
 	<string name="clear_files_title">アップデートファイルを削除する</string>
-	<string name="clear_files_summary">存在する更新ファイルを削除して強制的にアップデータをダウンロードする</string>
-	<string name="clean_files_feedback" formatted="false">%d個のファイルを削除しました。「更新を確認」をチェックして下さい。</string>
+	<string name="clear_files_summary">存在するアップデートファイルを削除して強制的にアップデータをダウンロードする</string>
+	<string name="clean_files_feedback" formatted="false">%d個のファイルを削除しました。「アップデートを確認」をチェックして下さい。</string>
 	<string name="state_error_permissions">ストレージの許可がありません</string>
 	<string name="state_error_flash">書き込みの開始に失敗しました。 キャッシュを削除して再試行して下さい。</string>
 	<string name="state_error_ab_flash">書き込みの開始に失敗しました。再起動して再試行して下さい。</string>
 	<string name="progress_status_0">一時停止中&#8230;</string>
-	<string name="progress_status_1">更新の確認中&#8230;</string>
-	<string name="progress_status_2">更新が利用可能です&#8230;</string>
+	<string name="progress_status_1">アップデートの確認中&#8230;</string>
+	<string name="progress_status_2">アップデートが利用可能です&#8230;</string>
 	<string name="progress_status_3">インストール中&#8230;</string>
 	<string name="progress_status_4">確認中&#8230;</string>
 	<string name="progress_status_5">ファイナライズ中&#8230;</string>
-	<string name="progress_status_6">更新しました。再起動の保留中&#8230;</string>
+	<string name="progress_status_6">アップデートしました。再起動の保留中&#8230;</string>
 	<string name="progress_status_7">エラーイベントの報告中&#8230;</string>
 	<string name="progress_status_8">ロールバックの試行中&#8230;</string>
 	<string name="progress_status_9">無効</string>
 	<string name="ab_perf_mode_title">A/B パフォーマンスモード</string>
 	<string name="ab_perf_mode_summary">A/B アップデートのインストールのためにパフォーマンスモードを使用する</string>
+	<string name="state_error_flash_file_title">そのファイルをフラッシュできません</string>
+	<string name="select_file_activity_title">ZIP ファイルの選択</string>
+	<string name="button_select_file">ファイル</string>
+	<string name="state_error_ab_flash_title">AB アップデートをフラッシュできません</string>
+	<string name="state_error_flash_title">アップデートをフラッシュできません</string>
+	<string name="file_flash_support_title">ローカルファイルのフラッシュ</string>
+	<string name="file_flash_support_summary">ローカル ZIP ファイル選択を有効化する</string>
+	<string name="flash_file_notice_title">ローカルファイルのフラッシュ</string>
+	<string name="flash_file_notice_message"><b>注意:</b>選択された ZIP ファイルがお使いの端末に適応した場合は確認が行われません!\n\n<b>間違った ZIP ファイルのフラッシュは端末を破損する恐れがあります!</b></string>
+	<string name="channel_name">アップデートの進捗状況</string>
+	<string name="channel_description"></string>
+	<string name="text_update_file_flash_title">アップデートファイル</string>
 </resources>

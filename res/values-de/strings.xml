@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s um %s</string>
 	<string name="last_checked_never">Noch niemals überprüft. Möchtest du jetzt nach Aktualisierungen suchen?</string>
 	<string name="button_check_short">Prüfen</string>
+	<string name="button_check_now">Nach Aktualisierung suchen &#8230;</string>
 	<string name="button_reboot_short">Neustarten</string>
 	<string name="button_flash_now">Jetzt aufspielen</string>
 	<!-- updates from 2013/12/18 -->
@@ -110,11 +111,23 @@
 	<string name="progress_status_2">Update verfügbar &#8230;</string>
 	<string name="progress_status_3">Installieren &#8230;</string>
 	<string name="progress_status_4">Überprüfen &#8230;</string>
-	<string name="progress_status_5">Finalisieren &#8230;</string>
+	<string name="progress_status_5">Installation wird abgeschlossen und Apps werden optimiert &#8230;</string>
 	<string name="progress_status_6">Update fertig. Warten auf Neustart &#8230;</string>
 	<string name="progress_status_7">Berichte Error Zustand &#8230;</string>
 	<string name="progress_status_8">Versuche Zurückrollen &#8230;</string>
 	<string name="progress_status_9">Deaktiviert.</string>
 	<string name="ab_perf_mode_title">AB Performance Modus</string>
 	<string name="ab_perf_mode_summary">Nutze Performance Modus um AB Updates zu installieren</string>
+	<string name="state_error_flash_file_title">Kann diese Datei nicht flashen</string>
+	<string name="select_file_activity_title">ZIP-Datei auswählen</string>
+	<string name="button_select_file">Datei</string>
+	<string name="state_error_ab_flash_title">A/B Update kann nicht installiert werden</string>
+	<string name="state_error_flash_title">Update kann nicht installiert werden</string>
+	<string name="file_flash_support_title">Lokale ZIP-Datei flash</string>
+	<string name="file_flash_support_summary">Aktiviere das lokale ZIP-Datei flashen</string>
+	<string name="flash_file_notice_title">Lokale ZIP-Datei flash</string>
+	<string name="flash_file_notice_message"><b>Achtung:</b> Es wird keine Überprüfung durchgeführt, ob die gewählte ZIP-Datei für Ihr Gerät geeignet ist!\n\n<b>Das Flashen der falschen ZIP-Datei kann zu einem nicht funktionalen Gerät führen!</b></string>
+	<string name="channel_name">Aktualisierungsfortschritt</string>
+	<string name="channel_description"></string>
+	<string name="text_update_file_flash_title">Aktualisierungsdatei</string>
 </resources>

@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s o %s</string>
 	<string name="last_checked_never">Kontrola nebola nikdy vykonaná. Chcete vykonať kontrolu teraz?</string>
 	<string name="button_check_short">Skontrolovať</string>
+	<string name="button_check_now">Check for update &#8230;</string>
 	<string name="button_reboot_short">Reštartovať</string>
 	<string name="button_flash_now">Inštalovať</string>
 	<!-- updates from 2013/12/18 -->
@@ -117,4 +118,16 @@
 	<string name="progress_status_9">Vypnuté.</string>
 	<string name="ab_perf_mode_title">Výkonný režim AB</string>
 	<string name="ab_perf_mode_summary">Na inštaláciu AB aktualizácií použiť Výkonný režim</string>
+	<string name="state_error_flash_file_title">Can not flash that file</string>
+	<string name="select_file_activity_title">Select ZIP file</string>
+	<string name="button_select_file">File</string>
+	<string name="state_error_ab_flash_title">Can not flash AB update</string>
+	<string name="state_error_flash_title">Can not flash update</string>
+	<string name="file_flash_support_title">Local file flash</string>
+	<string name="file_flash_support_summary">Enable selecting a local ZIP file</string>
+	<string name="flash_file_notice_title">Local file flash</string>
+	<string name="flash_file_notice_message"><b>Attention:</b> There will be no checks if the selected ZIP file is suitable for your device!\n\n<b>Flashing the wrong ZIP can lead to a non functional device!</b></string>
+	<string name="channel_name">Update progress</string>
+	<string name="channel_description"></string>
+	<string name="text_update_file_flash_title">Update file</string>
 </resources>

@@ -39,6 +39,7 @@
 	<string name="last_checked" formatted="false">%s a las %s</string>
 	<string name="last_checked_never">Nunca se ha comprobado, ¿Le gustaría hacerlo ahora?</string>
 	<string name="button_check_short">Comprobar</string>
+	<string name="button_check_now">Comprobar actualizaciones &#8230;</string>
 	<string name="button_reboot_short">Reiniciar</string>
 	<string name="button_flash_now">Flash</string>
 	<!-- updates from 2013/12/18 -->
@@ -116,4 +117,16 @@
 	<string name="progress_status_9">Deshabilitado.</string>
 	<string name="ab_perf_mode_title">Modo Rendimiento AB</string>
 	<string name="ab_perf_mode_summary">Usar el Modo Rendimiento para instalar las actualizaciones AB</string>
+	<string name="state_error_flash_file_title">No se puede instalar ese archivo</string>
+	<string name="select_file_activity_title">Seleccione un archivo ZIP</string>
+	<string name="button_select_file">Archivo</string>
+	<string name="state_error_ab_flash_title">No se puede instalar la actualización de AB</string>
+	<string name="state_error_flash_title">No se puede instalar la actualización de AB</string>
+	<string name="file_flash_support_title">Instalar archivo local</string>
+	<string name="file_flash_support_summary">Habilitar la selección de un archivo ZIP local</string>
+	<string name="flash_file_notice_title">Instalar archivo local</string>
+	<string name="flash_file_notice_message"><b>Atención:</b> No habrá comprobaciones si el archivo ZIP seleccionado es adecuado para tu dispositivo!\n\n<b>¡Instalar un ZIP incorrecto puede llevar a un dispositivo inutilizable!</b></string>
+	<string name="channel_name">Progreso de actualización</string>
+	<string name="channel_description"></string>
+	<string name="text_update_file_flash_title">Actualizar archivo</string>
 </resources>
