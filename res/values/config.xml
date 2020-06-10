@@ -14,34 +14,34 @@
 	<string name="filename_base">CARBON-%s</string>
 
 	<!-- Path deltas are stored, relative to sdcard root -->
-	<string name="path_base">M5Delta</string>
+	<string name="path_base">CarbonDelta</string>
 
 	<!-- URL base to find .delta files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-	<string name="url_base_delta">http://192.168.178.111:8080/%s/CarbonROM/delta/</string>
+	<string name="url_base_delta">https://mirrorbits.carbonrom.org/delta/%s/</string>
 
 	<!-- URL base to find .update and .sign files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-	<string name="url_base_update">http://192.168.178.111:8080/%s/CarbonROM/delta/</string>
+	<string name="url_base_update">https://mirrorbits.carbonrom.org/delta/%s/</string>
 
 	<!-- URL base to find the full zip files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
-	<string name="url_base_full">http://192.168.178.111:8080/%s/CarbonROM/</string>
+	<string name="url_base_full">https://mirrorbits.carbonrom.org/%s/</string>
 
 	<!-- URL base to fetch all builds -->
-	<string name="url_base_json">http://192.168.178.111:8080/deltaindex.php"</string>
+	<string name="url_base_json">https://carbonrom.org/deltaindex.json"</string>
 
 	<!-- Applies whole-file signature delta. Adds one extra delta step. Required if recovery verifies signatures -->
 	<item name="apply_signature" type="bool">true</item>
 
 	<!-- (TWRP) Set this to false if the keys below aren't your ROM's -->
-	<item name="inject_signature_enable" type="bool">false</item>
+	<item name="inject_signature_enable" type="bool">true</item>
 
 	<!-- (TWRP) Verification signatures to inject. Produced by 'dumpkey.jar' (out/host) of the release.x509 key used to sign the ZIP file -->
 	<string name="inject_signature_keys"><![CDATA[v2 {64,0x93c6cf09,{3959460039,2678893445,715776493,105143427,3752651993,2345977744,4255469659,2032111362,2584212023,2952948098,699998037,1235552547,934551829,873032484,874616196,589103154,3070919096,3405184701,2709345581,3413373753,156567781,1124940643,969727944,309840184,2623167688,2854147242,893135305,3015966208,242570692,1852872961,3380211279,3287456297,762681615,3973732207,516101632,118627739,1553988609,4071315748,1573324055,2233175202,40301256,1225474043,324642701,4250288057,278980820,3946915951,1842950933,4105548428,51607237,2763590635,1601384761,2485085100,2183867101,3152199,2227397862,3139730963,1817545808,3813793454,3329540326,1043267749,2448945358,1444359390,755148414,3429413564},{3195344778,1203102071,497939174,4178258651,3125511805,483234386,2885776941,3769629599,3404720485,1303404185,3126846896,884358772,3776789879,3086168575,2018689230,2115082478,3623399513,2734070052,3940910951,1778481129,3523530172,1344826058,89030284,3367155105,1131891459,2666883281,1200265709,4030351581,3743143635,2174031168,2618213422,2218537432,2605477546,2633644521,3712788091,3625632604,205313521,1944998142,2857342250,1514431854,1870915627,4055661202,387138816,2440761334,1882806768,153031880,3997553240,467930107,192535380,219219562,2417691338,1818159826,666249047,3768300061,3101391637,1890240512,1973385389,1708791076,2976789789,4222268227,861165292,1796465005,3662015909,2675294906}}]]></string>
 
 	<!-- (TWRP) Add secure mode setting. Requires 'apply_signature' and 'inject_signature_enable'. Limits flashing to TWRP only, verifies ZIP signature in TWRP, disables auto-flashing of additional ZIPs -->
-	<item name="secure_mode_enable" type="bool">false</item>
+	<item name="secure_mode_enable" type="bool">true</item>
 
 	<!-- (TWRP) Requires 'secure_mode_enable'. Decides whether the default setting for secure mode is enabled (true) or disabled (false) -->
-	<item name="secure_mode_default" type="bool">false</item>
+	<item name="secure_mode_default" type="bool">true</item>
 
 	<!--
     	Devices (detected using property_device) which may crash while downloading/patching/verifying when the screen is off.
@@ -54,7 +54,7 @@
 		<item>i777</item>
 	</string-array>
 
-	<string name="official_version_tag">M5EDITION</string>
+	<string name="official_version_tag">NIGHTLY</string>
 	<string name="weekly_version_tag">WEEKLY</string>
 	<string name="security_version_tag">RELEASE</string>
 
