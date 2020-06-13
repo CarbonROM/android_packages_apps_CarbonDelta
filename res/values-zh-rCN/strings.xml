@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s %s</string>
 	<string name="last_checked_never">从未检查过更新。</string>
 	<string name="button_check_short">检查</string>
+	<string name="button_check_now">检查更新 &#8230;</string>
 	<string name="button_reboot_short">重启</string>
 	<string name="button_flash_now">刷入</string>
 	<!-- updates from 2013/12/18 -->
@@ -117,4 +118,15 @@
 	<string name="progress_status_9">已禁用。</string>
 	<string name="ab_perf_mode_title">AB 高性能模式</string>
 	<string name="ab_perf_mode_summary">使用高性能模式安装 AB 更新</string>
+	<string name="state_error_flash_file_title">无法刷入该文件</string>
+	<string name="select_file_activity_title">选择 ZIP 文件</string>
+	<string name="button_select_file">文件</string>
+	<string name="state_error_ab_flash_title">无法刷入AB 更新</string>
+	<string name="state_error_flash_title">无法刷入更新</string>
+	<string name="file_flash_support_title">本地文件刷写</string>
+	<string name="file_flash_support_summary">允许选择本地ZIP文件</string>
+	<string name="flash_file_notice_title">本地文件刷写</string>
+	<string name="flash_file_notice_message"><b>注意:</b> 将不会检查选中的 ZIP 文件是否适合您的设备 ！\n\n<b>刷入错误的ZIP 可能导致设备不可用！</b></string>
+	<string name="channel_name">更新进度</string>
+	<string name="text_update_file_flash_title">更新文件</string>
 </resources>
