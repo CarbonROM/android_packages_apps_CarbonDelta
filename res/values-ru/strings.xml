@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s в %s</string>
 	<string name="last_checked_never">Поиск обновлений ещё не выполнялся. Возможно, стоит попробовать?</string>
 	<string name="button_check_short">Проверить</string>
+	<string name="button_check_now">Поиск обновлений &#8230;</string>
 	<string name="button_reboot_short">Перезагрузка</string>
 	<string name="button_flash_now">Установить</string>
 	<!-- updates from 2013/12/18 -->
@@ -117,4 +118,15 @@
 	<string name="progress_status_9">Отключено.</string>
 	<string name="ab_perf_mode_title">Режим производительности AB</string>
 	<string name="ab_perf_mode_summary">Использовать режим производительности для установки обновлений AB</string>
+	<string name="state_error_flash_file_title">Не удается установить этот файл</string>
+	<string name="select_file_activity_title">Выберите ZIP файл</string>
+	<string name="button_select_file">Файл</string>
+	<string name="state_error_ab_flash_title">Не удается установить A/B обновление</string>
+	<string name="state_error_flash_title">Не удается установить обновление</string>
+	<string name="file_flash_support_title">Установка локального файла</string>
+	<string name="file_flash_support_summary">Включить возможность выбора локального ZIP</string>
+	<string name="flash_file_notice_title">Установка локального файла</string>
+	<string name="flash_file_notice_message">&lt;b&gt;Внимание:&lt;/b&gt; Выбранный ZIP файл не пройдет проверку предназначения для вашего устройства!\n\n&lt;b&gt; Установка неверного ZIP файла может окирпичить ваше устройство!</string>
+	<string name="channel_name">Прогресс обновления</string>
+	<string name="text_update_file_flash_title">Файл обновления</string>
 </resources>
