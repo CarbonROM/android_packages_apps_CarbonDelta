@@ -1598,6 +1598,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
             Logger.d("flashUpdate - delete initial file");
         }
 
+        (new File(flashFilename)).setReadable(true, false);
         return flashFilename;
     }
 
