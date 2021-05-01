@@ -106,10 +106,7 @@ public class Config {
         filename_base = String.format(Locale.ENGLISH,
                 res.getString(R.string.filename_base), property_version);
 
-        path_base = String.format(Locale.ENGLISH, "%s%s%s%s", Environment
-                .getExternalStorageDirectory().getAbsolutePath(),
-                File.separator, res.getString(R.string.path_base),
-                File.separator);
+        path_base = String.format(Locale.ENGLISH, "%s", res.getString(R.string.download_path));
         path_flash_after_update = String.format(Locale.ENGLISH, "%s%s%s",
                 path_base, "FlashAfterUpdate", File.separator);
         url_base_delta = String.format(Locale.ENGLISH,

@@ -13,8 +13,13 @@
 	<!-- %s is expanded to property_version value. .zip, .delta, .update, .sign extensions added when needed -->
 	<string name="filename_base">CARBON-%s</string>
 
-	<!-- Path deltas are stored, relative to sdcard root -->
-	<string name="path_base">CarbonDelta</string>
+    <!-- Directory where the update files will be downloaded and stored.
+         WARNING: The application can and will delete any unknown file. -->
+    <string name="download_path" translatable="false">/data/carbonrom_updates/</string>
+
+    <!-- Directory where the downloads will be exported to.
+         The path is relative to the root of the external storage.-->
+	<string name="export_path">CarbonDelta</string>
 
 	<!-- URL base to find .delta files, %s is expanded to property_device value. Path is suffixed by (expanded) filename_base -->
 	<string name="url_base_delta">https://mirrorbits.carbonrom.org/delta/%s/</string>
