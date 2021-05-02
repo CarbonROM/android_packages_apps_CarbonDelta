@@ -63,5 +63,5 @@
 	<string name="weekly_version_tag">WEEKLY</string>
 	<string name="security_version_tag">RELEASE</string>
 
-	<string name="android_version">ro.carbon.version</string>
+	<string name="android_version">ro.carbon.build.version</string>
 </resources>

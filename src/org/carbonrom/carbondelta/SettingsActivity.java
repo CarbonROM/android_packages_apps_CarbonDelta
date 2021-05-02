@@ -348,7 +348,7 @@ public class SettingsActivity extends PreferenceActivity implements
         File[] contents = new File(dataFolder).listFiles();
         if (contents != null) {
             for (File file : contents) {
-                if (file.isFile() && file.getName().startsWith(mConfig.getFileBaseNamePrefix())) {
+                if (file.isFile()) {
                     file.delete();
                     deletedFiles++;
                 }
