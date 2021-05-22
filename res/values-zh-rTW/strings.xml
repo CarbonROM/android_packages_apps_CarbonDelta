@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s 在 %s</string>
 	<string name="last_checked_never">從未檢查過更新，現在要檢查嗎 ?</string>
 	<string name="button_check_short">檢查</string>
+	<string name="button_check_now">正在檢查更新 &#8230;</string>
 	<string name="button_reboot_short">重新啟動</string>
 	<string name="button_flash_now">刷寫</string>
 	<!-- updates from 2013/12/18 -->
@@ -111,10 +112,22 @@
 	<string name="progress_status_2">有可用的更新 &#8230;</string>
 	<string name="progress_status_3">安裝中 &#8230;</string>
 	<string name="progress_status_4">驗證中 &#8230;</string>
+	<string name="progress_status_5">正在完成和優化應用程式&#8230;</string>
 	<string name="progress_status_6">更新完成，請重新啟動 &#8230;</string>
 	<string name="progress_status_7">回報錯誤事件 &#8230;</string>
 	<string name="progress_status_8">嘗試回復 &#8230;</string>
 	<string name="progress_status_9">停用.</string>
 	<string name="ab_perf_mode_title">AB 性能模式</string>
 	<string name="ab_perf_mode_summary">使用性能模式安裝 AB 更新</string>
+	<string name="state_error_flash_file_title">無法刷寫該檔案</string>
+	<string name="select_file_activity_title">選擇 ZIP 檔案</string>
+	<string name="button_select_file">檔案</string>
+	<string name="state_error_ab_flash_title">無法刷寫 AB 更新</string>
+	<string name="state_error_flash_title">無法刷寫更新</string>
+	<string name="file_flash_support_title">本機檔案刷寫</string>
+	<string name="file_flash_support_summary">啟用選擇本機 ZIP 檔案</string>
+	<string name="flash_file_notice_title">本機檔案刷寫</string>
+	<string name="flash_file_notice_message"><b>注意：</b>不會檢查所選的 ZIP 檔案是否匹配您的設備！\n\n<b>刷寫錯誤的 ZIP 檔案可能會導致設備無法正常運行！</b></string>
+	<string name="channel_name">更新進度</string>
+	<string name="text_update_file_flash_title">更新檔案</string>
 </resources>

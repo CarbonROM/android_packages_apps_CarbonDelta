@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s lúc %s</string>
 	<string name="last_checked_never">Chúng tôi chưa bao giờ kiểm tra, có lẽ bạn sẽ muốn làm như vậy?</string>
 	<string name="button_check_short">Kiểm tra</string>
+	<string name="button_check_now">Đang kiểm tra bản cập nhật &#8230;</string>
 	<string name="button_reboot_short">Khởi động lại</string>
 	<string name="button_flash_now">Cài đặt</string>
 	<!-- updates from 2013/12/18 -->
@@ -117,4 +118,15 @@
 	<string name="progress_status_9">Đã vô hiệu hóa.</string>
 	<string name="ab_perf_mode_title">Chế độ hiệu suất AB</string>
 	<string name="ab_perf_mode_summary">Sử dụng chế độ hiệu suất để cài đặt bản Cập nhật AB</string>
+	<string name="state_error_flash_file_title">Không thể flash tệp đó</string>
+	<string name="select_file_activity_title">Chọn tập tin ZIP</string>
+	<string name="button_select_file">Tập tin</string>
+	<string name="state_error_ab_flash_title">Không thể cập nhật AB</string>
+	<string name="state_error_flash_title">Không thể cập nhật</string>
+	<string name="file_flash_support_title">Flash tệp cục bộ</string>
+	<string name="file_flash_support_summary">Cho phép chọn tệp ZIP cục bộ</string>
+	<string name="flash_file_notice_title">Flash tệp cục bộ</string>
+	<string name="flash_file_notice_message"><b> Lưu ý: </b> Sẽ không có kiểm tra xem tệp ZIP đã chọn có phù hợp với thiết bị của bạn hay không! \ n \ n <b> Việc nhấp nháy nhầm tệp ZIP có thể dẫn đến thiết bị không hoạt động! </b></string>
+	<string name="channel_name">Cập nhật tiến độ</string>
+	<string name="text_update_file_flash_title">Cập nhật tệp</string>
 </resources>

@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s o %s</string>
 	<string name="last_checked_never">Kontrola nebola nikdy vykonaná. Chcete vykonať kontrolu teraz?</string>
 	<string name="button_check_short">Skontrolovať</string>
+	<string name="button_check_now">Skontrolovať aktualizácie &#8230;</string>
 	<string name="button_reboot_short">Reštartovať</string>
 	<string name="button_flash_now">Inštalovať</string>
 	<!-- updates from 2013/12/18 -->
@@ -117,4 +118,15 @@
 	<string name="progress_status_9">Vypnuté.</string>
 	<string name="ab_perf_mode_title">Výkonný režim AB</string>
 	<string name="ab_perf_mode_summary">Na inštaláciu AB aktualizácií použiť Výkonný režim</string>
+	<string name="state_error_flash_file_title">Tento súbor nie je možné nainštalovať</string>
+	<string name="select_file_activity_title">Vyberte súbor ZIP</string>
+	<string name="button_select_file">Súbor</string>
+	<string name="state_error_ab_flash_title">Nedá sa nainštalovať AB aktualizácia</string>
+	<string name="state_error_flash_title">Aktualizácia sa nedá nainštalovať</string>
+	<string name="file_flash_support_title">Lokálny súbor inštalácie</string>
+	<string name="file_flash_support_summary">Povoliť výber lokálneho súboru ZIP</string>
+	<string name="flash_file_notice_title">Lokálny súbor inštalácie</string>
+	<string name="flash_file_notice_message"><b>Upozornenie:</b> Neexistuje kontrola, či je zvolený súbor ZIP vhodný pre vaše zariadenie!\n\n<b>Inštalácia nesprávneho súboru ZIP môže viesť k nefunkčnosti zariadenia!</b></string>
+	<string name="channel_name">Priebeh aktualizácie</string>
+	<string name="text_update_file_flash_title">Aktualizačný súbor</string>
 </resources>

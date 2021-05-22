@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s al %s</string>
 	<string name="last_checked_never">Mai eseguito controllo aggiornamenti. Vuoi farlo ora?</string>
 	<string name="button_check_short">Verifica</string>
+	<string name="button_check_now">Controlla l\'aggiornamento &#8230;</string>
 	<string name="button_reboot_short">Riavvia</string>
 	<string name="button_flash_now">Flash</string>
 	<!-- updates from 2013/12/18 -->
@@ -117,4 +118,15 @@
 	<string name="progress_status_9">Disabilitato.</string>
 	<string name="ab_perf_mode_title">Modalità performance AB</string>
 	<string name="ab_perf_mode_summary">Usa la modalità performance per installare gli aggiornamenti AB</string>
+	<string name="state_error_flash_file_title">Impossibile flashare quel file</string>
+	<string name="select_file_activity_title">Seleziona file ZIP</string>
+	<string name="button_select_file">File</string>
+	<string name="state_error_ab_flash_title">Impossibile flashare l\'aggiornamento AB</string>
+	<string name="state_error_flash_title">Impossibile aggiornare flash</string>
+	<string name="file_flash_support_title">File flash locale</string>
+	<string name="file_flash_support_summary">Abilita la selezione di un file ZIP locale</string>
+	<string name="flash_file_notice_title">File flash locale</string>
+	<string name="flash_file_notice_message"><b>Attenzione:</b> Non ci saranno controlli se il file ZIP selezionato è adatto al tuo dispositivo!\n\n<b>Il lampeggio dello ZIP errato può portare a un dispositivo non funzionale!</b></string>
+	<string name="channel_name">Progresso aggiornamento</string>
+	<string name="text_update_file_flash_title">Aggiorna file</string>
 </resources>

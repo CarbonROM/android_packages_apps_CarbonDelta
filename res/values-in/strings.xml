@@ -11,6 +11,13 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Lainnya</string>
 	<string name="action_about">Tentang</string>
+	<string name="about_content"><![CDATA[Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
+		<br>
+		Created for <b>CarbonROM</b><br>
+		<br>
+		Licensed under the terms of the <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
+		<br>
+		Delta decoding based on <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>]]></string>
 	<string name="state_action_none">Sistem anda sudah terbaru.</string>
 	<string name="state_action_ab_flash">Memasang pembaruan A/B &#8230;</string>
 	<string name="state_action_ab_finished">Pembaruan terpasang. Muat ulang ditunda &#8230;</string>
@@ -32,6 +39,7 @@
 	<string name="last_checked" formatted="false">%s pada %s</string>
 	<string name="last_checked_never">Kami belum pernah memeriksa, mungkin Anda ingin melakukannya?</string>
 	<string name="button_check_short">Cek</string>
+	<string name="button_check_now">Memeriksa pembaruan &#8230;</string>
 	<string name="button_reboot_short">Mulai ulang</string>
 	<string name="button_flash_now">Pasang</string>
 	<!-- updates from 2013/12/18 -->
@@ -102,10 +110,22 @@
 	<string name="progress_status_2">Pembaruan tersedia &#8230;</string>
 	<string name="progress_status_3">Menginstal &#8230;</string>
 	<string name="progress_status_4">Memverifikasi &#8230;</string>
+	<string name="progress_status_5">Menyelesaikan dan Mengoptimalkan Aplikasi &#8230; </string>
 	<string name="progress_status_6">Memperbarui. Reboot yang tertunda &#8230;</string>
 	<string name="progress_status_7">Melaporkan Event Error &#8230;</string>
 	<string name="progress_status_8">Mencoba Kembalikan &#8230;</string>
 	<string name="progress_status_9">Dinonaktifkan.</string>
 	<string name="ab_perf_mode_title">Mode Performa AB</string>
 	<string name="ab_perf_mode_summary">Gunakan Mode Performa untuk menginstal Pembaruan AB</string>
+	<string name="state_error_flash_file_title">Tidak dapat mem-flash file itu</string>
+	<string name="select_file_activity_title">Pilih Berkas ZIP</string>
+	<string name="button_select_file">File</string>
+	<string name="state_error_ab_flash_title">Tidak dapat mem-flash pembaruan AB</string>
+	<string name="state_error_flash_title">Tidak dapat mem-flash update</string>
+	<string name="file_flash_support_title">Flash file lokal</string>
+	<string name="file_flash_support_summary">Aktifkan memilih file ZIP lokal</string>
+	<string name="flash_file_notice_title">Flash file lokal</string>
+	<string name="flash_file_notice_message"><b>Perhatian:</b> Tidak akan ada pemeriksaan apakah file ZIP yang dipilih cocok untuk perangkat Anda!\n\n <b> Mem-flash ZIP yang salah dapat menyebabkan perangkat tidak berfungsi!</b></string>
+	<string name="channel_name">Progres pembaruan</string>
+	<string name="text_update_file_flash_title">Perbarui berkas</string>
 </resources>
