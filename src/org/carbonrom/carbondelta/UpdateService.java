@@ -1737,17 +1737,8 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
         prefs.edit().putString(PREF_CURRENT_FILENAME_NAME, flashFilename).commit();
         clearState();
 
-        // Remove the path to the storage from the filename, so we get a path
-        // relative to the root of the storage
-        String path_sd = Environment.getExternalStorageDirectory()
-                + File.separator;
-        flashFilename = flashFilename.substring(path_sd.length());
-
         // Find additional ZIPs to flash, strip path to sd
         List<String> extras = config.getFlashAfterUpdateZIPs();
-        for (int i = 0; i < extras.size(); i++) {
-            extras.set(i, extras.get(i).substring(path_sd.length()));
-        }
         Logger.d("flashUpdate - extra files to flash " + extras);
 
 
@@ -1831,15 +1822,11 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                 FileOutputStream os = new FileOutputStream(
                         "/cache/recovery/extendedcommand", false);
                 try {
-                    writeString(os, String.format("install_zip(\"%s%s\");",
-                            "/sdcard/", flashFilename));
-                    writeString(os, String.format("install_zip(\"%s%s\");",
-                            "/emmc/", flashFilename));
+                    writeString(os, String.format("install_zip(\"%s\");",
+                            flashFilename));
                     for (String file : extras) {
-                        writeString(os, String.format("install_zip(\"%s%s\");",
-                                "/sdcard/", file));
-                        writeString(os, String.format("install_zip(\"%s%s\");",
-                                "/emmc/", file));
+                        writeString(os, String.format("install_zip(\"%s\");",
+                                file));
                     }
                     writeString(os,
                             "run_program(\"/sbin/busybox\", \"rm\", \"-rf\", \"/cache/*\");");
