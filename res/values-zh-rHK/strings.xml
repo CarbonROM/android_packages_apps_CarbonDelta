@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">CarbonDelta</string>
+	<string name="title">系統更新</string>
+	<string name="action_networks">網路</string>
+	<string name="title_networks">自動下載的網絡</string>
+	<string name="network_2g">2G</string>
+	<string name="network_3g">3G</string>
+	<string name="network_4g">4G</string>
+	<string name="network_wifi">無線網絡</string>
+	<string name="network_ethernet">乙太網絡</string>
+	<string name="network_unknown">其他</string>
+	<string name="action_about">關於</string>
+	<string name="state_action_none">您的系統已是最新。</string>
+	<string name="state_action_ab_flash">正在安裝A/B更新&#8230;</string>
+	<string name="state_action_ab_finished">更新已安裝，等待重新開機&#8230;</string>
+	<string name="state_action_checking">正在檢查更新&#8230;</string>
+	<string name="state_action_checking_md5">正在驗證檔案&#8230;</string>
+	<string name="state_action_searching">正在尋找檔案&#8230;</string>
+	<string name="state_action_searching_md5">正在驗證檔案&#8230;</string>
+	<string name="state_action_downloading">正在下載&#8230;</string>
+	<string name="state_action_applying">正在應用補丁程式&#8230;</string>
+	<string name="state_action_applying_patch">正在應用補丁程式&#8230;</string>
+	<string name="state_action_applying_md5">正在驗證檔案&#8230;</string>
+	<string name="state_action_ready">更新已準備好以供刷寫。</string>
+	<string name="state_error_disk_space">磁盤空間不足！</string>
+	<string name="state_error_unknown">未知錯誤。</string>
+	<string name="error_disk_space_sub" formatted="false">%d MiB可用，需要%d MiB</string>
+	<string name="notify_update_available">一個更新可用</string>
+	<string name="notify_checking">正在檢查更新&#8230;</string>
+	<string name="notify_eta_remaining" formatted="false">%2d%%，剩餘%02d:%02d</string>
+	<string name="last_checked" formatted="false">%s 於 %s</string>
+	<string name="last_checked_never">我們從未檢查過，也許您想這樣做？</string>
+	<string name="button_check_short">檢查</string>
+	<string name="button_reboot_short">重新開機</string>
+	<string name="button_flash_now">刷寫</string>
+	<!-- updates from 2013/12/18 -->
+	<string name="action_secure_mode">安全</string>
+	<string name="secure_mode_enabled_title">安全模式：啟用</string>
+	<string name="secure_mode_enabled_description"><![CDATA[該更新的加密簽名將在刷寫之前被驗證，以確保其來源可靠，且不會刷寫附加更新。此模式僅與<b>TWRP</b>相容。]]></string>
+	<string name="secure_mode_disabled_title">安全模式：禁用</string>
+	<string name="secure_mode_disabled_description"><![CDATA[附加更新若存在，將被刷寫。請注意：任何（惡意）軟件都可以進行這些更新，以獲得完全系統存取權限。請謹慎操作！]]></string>
+	<string name="recovery_notice_title">通知</string>
+	<string name="recovery_notice_description_secure"><![CDATA[在當前模式下刷寫更新僅在<b>TWRP</b>恢復環境受支援。請確保於繼續操作之前運行相容的恢復環境！]]></string>
+	<string name="recovery_notice_description_not_secure"><![CDATA[在當前模式下刷寫更新僅<b>TWRP</b>恢復環境受官方支援。<i>官方</i><b>CWM</b>版本<i>不</i>受支援，儘管一些<i>社區建立</i>的<b>CWM版本</b><i>可能</i>會有效。請在繼續操作之前，確保您正在運行受支援的恢復環境。]]></string>
+	<string name="flash_after_update_notice_title">通知</string>
+	<string name="flash_after_update_notice_description"><![CDATA[附加更新於<b>FlashAfterUpdate</b>檔案夾中存在，但安全模式已啟用。若您繼續操作，這些附加更新將<b>不會</b>被刷寫。]]></string>
+	<string name="state_error_not_official_title">更新已禁用。</string>
+	<string name="state_error_not_official_extra" formatted="false">無法更新%s</string>
+	<string name="button_build_delta">下載</string>
+	<string name="button_stop">停止</string>
+	<string name="state_action_build">更新可用。</string>
+	<string name="progress_status_3">正在安裝&#8230;</string>
+	<string name="progress_status_4">正在驗證&#8230;</string>
+	<string name="progress_status_5">正在完成與優化應用程式&#8230;</string>
+	<string name="progress_status_6">已更新。等待重新開機&#8230;</string>
+	<string name="progress_status_7">報告錯誤事件&#8230;</string>
+	<string name="progress_status_8">試圖迴轉更新&#8230;</string>
+	<string name="progress_status_9">已禁用</string>
+	<string name="ab_perf_mode_title">AB能效模式</string>
+	<string name="ab_perf_mode_summary">以能效模式安裝AB更新</string>
+</resources>

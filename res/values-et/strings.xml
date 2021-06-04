@@ -40,6 +40,7 @@
 	<string name="last_checked" formatted="false">%s / %s</string>
 	<string name="last_checked_never">Me pole kunagi otsinud, võib-olla soovid seda teha?</string>
 	<string name="button_check_short">Vali</string>
+	<string name="button_check_now">Kontrolli uuendusi&#8230;</string>
 	<string name="button_reboot_short">Taaskäivita</string>
 	<string name="button_flash_now">Välk</string>
 	<!-- updates from 2013/12/18 -->
@@ -117,4 +118,8 @@
 	<string name="progress_status_9">Keelatud.</string>
 	<string name="ab_perf_mode_title">AP jõudlusega režiim</string>
 	<string name="ab_perf_mode_summary">Kasuta jõudlusega režiimi AB uuenduste paigaldamiseks</string>
+	<string name="select_file_activity_title">Vali ZIP-fail</string>
+	<string name="button_select_file">Fail</string>
+	<string name="channel_name">Uuendamise edenemine</string>
+	<string name="text_update_file_flash_title">Uuenda faili</string>
 </resources>

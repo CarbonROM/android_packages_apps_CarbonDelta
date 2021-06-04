@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<string name="app_name">CarbonDelta</string>
 	<string name="title">Järjestelmäpäivitykset</string>
 	<string name="action_networks">Verkot</string>
 	<string name="title_networks">Automaattisen latauksen verkot</string>
@@ -20,6 +21,7 @@
 	<string name="state_action_ready">Päivitys on valmis asennettavaksi.</string>
 	<string name="state_error_disk_space">Ei tarpeeksi levytilaa!</string>
 	<string name="state_error_unknown">Tuntematon virhe.</string>
+	<string name="error_disk_space_sub" formatted="false">%d MT vapaana, %d MT vaaditaan</string>
 	<string name="notify_update_available">Päivitys on saatavilla</string>
 	<string name="notify_checking">Tarkistetaan päivityksiä&#8230;</string>
 	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d jäljellä</string>
@@ -29,6 +31,12 @@
 	<string name="button_reboot_short">Käynnistä uudelleen</string>
 	<string name="button_flash_now">Asenna</string>
 	<!-- updates from 2013/12/18 -->
+	<string name="action_secure_mode">Turvattu</string>
+	<string name="secure_mode_enabled_title">Turvatila: käytössä</string>
+	<string name="secure_mode_disabled_title">Turvatila: ei käytössä</string>
+	<string name="recovery_notice_title">Ilmoitus</string>
+	<string name="flash_after_update_notice_title">Ilmoitus</string>
+	<string name="flash_after_update_notice_description"><![CDATA[Muita päivityksiä on saatavilla <b>FlashAfterUpdate</b> -kansiossa, mutta turvatila on käytössä. Jos jatkat tätä, lisäpäivityksiä <b>ei</b> asenneta.]]></string>
 	<string name="button_build_delta">Lataa</string>
 	<string name="button_stop">Pysäytä</string>
 	<string name="state_action_build">Päivitys saatavilla.</string>

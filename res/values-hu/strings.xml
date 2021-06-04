@@ -110,9 +110,11 @@
 	<string name="progress_status_2">Frissítés elérhető &#8230;</string>
 	<string name="progress_status_3">Telepítés &#8230;</string>
 	<string name="progress_status_4">Fájl ellenőrzése &#8230;</string>
+	<string name="progress_status_5">Az applikációk véglegesítése és optimalizálása &#8230;</string>
 	<string name="progress_status_6">Frissítve. Újraindítás függőben &#8230;</string>
 	<string name="progress_status_7">Hiba esemény jelentése &#8230;</string>
 	<string name="progress_status_8">Visszaállás megkísérlése &#8230;</string>
 	<string name="progress_status_9">Letiltva.</string>
+	<string name="ab_perf_mode_title">Alacsony teljesítmény mód</string>
 	<string name="ab_perf_mode_summary">Teljesítménymód használata AB frissítések telepítése közben</string>
 </resources>

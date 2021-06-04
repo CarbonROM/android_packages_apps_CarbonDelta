@@ -117,4 +117,9 @@
 	<string name="progress_status_9">Désactivé.</string>
 	<string name="ab_perf_mode_title">Mode de performance AB</string>
 	<string name="ab_perf_mode_summary">Utiliser le mode Performance pour installer les mises à jour AB</string>
+	<string name="select_file_activity_title">Sélectionner un fichier ZIP</string>
+	<string name="button_select_file">Fichier</string>
+	<string name="file_flash_support_summary">Activer la sélection d\'un fichier ZIP local</string>
+	<string name="flash_file_notice_message"><b>Attention :</b> Il n\'y aura aucune vérification si le fichier ZIP sélectionné convient à votre appareil !\n\n<b>Flasher le mauvais ZIP peut conduire à un appareil non fonctionnel !</b></string>
+	<string name="channel_name">Progression de la mise à jour</string>
 </resources>

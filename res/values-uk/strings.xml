@@ -112,6 +112,7 @@
 	<string name="progress_status_2">Доступне оновлення &#8230;</string>
 	<string name="progress_status_3">Встановлення &#8230;</string>
 	<string name="progress_status_4">Верифікація файлу &#8230;</string>
+	<string name="progress_status_5">Завершення та оптимізація додатків &#8230;</string>
 	<string name="progress_status_6">Оновлено. Очікування перезавантаження &#8230;</string>
 	<string name="progress_status_7">Повідомлення про помилку &#8230;</string>
 	<string name="progress_status_8">Спроба відкату &#8230;</string>

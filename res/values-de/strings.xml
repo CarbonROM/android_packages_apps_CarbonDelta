@@ -111,7 +111,7 @@
 	<string name="progress_status_2">Update verfügbar &#8230;</string>
 	<string name="progress_status_3">Installieren &#8230;</string>
 	<string name="progress_status_4">Überprüfen &#8230;</string>
-	<string name="progress_status_5">Installation wird abgeschlossen und Apps werden optimiert &#8230;</string>
+	<string name="progress_status_5">Finalisieren &#8230;</string>
 	<string name="progress_status_6">Update fertig. Warten auf Neustart &#8230;</string>
 	<string name="progress_status_7">Berichte Error Zustand &#8230;</string>
 	<string name="progress_status_8">Versuche Zurückrollen &#8230;</string>

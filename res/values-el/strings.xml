@@ -26,6 +26,7 @@
 	<string name="error_disk_space_sub" formatted="false">%d MiB διαθέσιμα, %d MiB απαιτούνται</string>
 	<string name="notify_update_available">Υπάρχει διαθέσιμη ενημέρωση</string>
 	<string name="notify_checking">Έλεγχος για ενημερώσεις&#8230;</string>
+	<string name="notify_eta_remaining" formatted="false">Απομένουν: %2d%%, %02d:%02d</string>
 	<string name="last_checked_never">Δεν έχει γίνει έλεγχος ακόμα, θέλετε να ελέγξετε εσείς;</string>
 	<string name="button_check_short">Έλεγχος</string>
 	<string name="button_reboot_short">Επανεκκίνηση</string>
@@ -80,5 +81,19 @@
 	<string name="scheduler_daily_time">Ώρα</string>
 	<string name="scheduler_week_day">Ημέρα</string>
 	<string name="networks_title">Δίκτυα</string>
+	<string name="networks_message">Λήψη μόνο σε τύπους δικτύου:</string>
 	<string name="category_flashing">Εγκατάσταση</string>
+	<string name="state_error_connection">Δεν υπάρχει σύνδεση δεδομένων.</string>
+	<string name="category_admin">Συντήρηση</string>
+	<string name="clear_files_title">Εκκαθάριση αρχείων ενημέρωσης</string>
+	<string name="state_error_permissions">Δεν υπάρχουν άδειες για τον αποθηκευτικό χώρο</string>
+	<string name="state_error_flash">Αποτυχία εκκίνησης εγκατάστασης. Καθαρίστε τον /cache και προσπαθήστε ξανά</string>
+	<string name="state_error_ab_flash">Αποτυχία εκκίνησης εγκατάστασης. Επανεκκινήστε την συσκευή και προσπαθήστε ξανά</string>
+	<string name="progress_status_1">Έλεγχος για ενημερώσεις &#8230;</string>
+	<string name="progress_status_2">Υπάρχει διαθέσιμη ενημέρωση &#8230;</string>
+	<string name="progress_status_3">Εγκατάσταση &#8230;</string>
+	<string name="progress_status_4">Επιβεβαίωση</string>
+	<string name="progress_status_6">Αναμένεται επανεκκίνηση &#8230;</string>
+	<string name="progress_status_8">Προσπάθεια Επαναφοράς &#8230;</string>
+	<string name="progress_status_9">Απενεργοποιημένο</string>
 </resources>
