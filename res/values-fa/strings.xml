@@ -12,29 +12,28 @@
 	<string name="network_unknown">سایر</string>
 	<string name="action_about">درباره</string>
 	<string name="state_action_none">سیستم شما به روز است.</string>
-	<string name="state_action_ab_flash">نصب بروزرسانی A/B &#8230;</string>
-	<string name="state_action_ab_finished">بروزرسانی نصب شد. منتظر راه اندازی مجدد &#8230;</string>
-	<string name="state_action_checking">بررسی برای بروزرسانی ها &#8230;</string>
-	<string name="state_action_checking_md5">تایید فایل &#8230;</string>
-	<string name="state_action_searching">جستجو برای فایل ها &#8230;</string>
-	<string name="state_action_searching_md5">تایید فایل &#8230;</string>
-	<string name="state_action_downloading">در حال دانلود &#8230;</string>
-	<string name="state_action_applying">در حال وصله کردن &#8230;</string>
-	<string name="state_action_applying_patch">در حال وصله کردن &#8230;</string>
-	<string name="state_action_applying_md5">در حال تایید فایل &#8230;</string>
+	<string name="state_action_ab_flash">نصب بروزرسانی A/B …</string>
+	<string name="state_action_ab_finished">بروزرسانی نصب شد. منتظر راه اندازی مجدد …</string>
+	<string name="state_action_checking">بررسی برای بروزرسانی ها …</string>
+	<string name="state_action_checking_md5">تایید فایل …</string>
+	<string name="state_action_searching">جستجو برای فایل ها …</string>
+	<string name="state_action_searching_md5">تایید فایل …</string>
+	<string name="state_action_downloading">در حال دانلود …</string>
+	<string name="state_action_applying">در حال وصله کردن …</string>
+	<string name="state_action_applying_patch">در حال وصله کردن …</string>
+	<string name="state_action_applying_md5">در حال تایید فایل …</string>
 	<string name="state_action_ready">بروز رسانی آماده فلش.</string>
 	<string name="state_error_disk_space">فضای دیسک کافی نیست!</string>
 	<string name="state_error_unknown">خطای نامعلوم.</string>
 	<string name="error_disk_space_sub" formatted="false">%d مگابایت در دسترس، %d مگابایت مورد نیاز</string>
 	<string name="notify_update_available">یک بروزرسانی موجود است</string>
-	<string name="notify_checking">بررسی برای بروزرسانی &#8230;</string>
+	<string name="notify_checking">بررسی برای بروزرسانی …</string>
 	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d باقی مانده است</string>
 	<string name="last_checked" formatted="false">%s در %s</string>
 	<string name="last_checked_never">ما اصلا بررسی نکرده ایم، شما مایل به انجام این کار هستید؟</string>
 	<string name="button_check_short">بررسی</string>
 	<string name="button_reboot_short">راه‌اندازی مجدد</string>
 	<string name="button_flash_now">فلش</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">امن</string>
 	<string name="secure_mode_enabled_title">حالت امن: فعال</string>
 	<string name="secure_mode_disabled_title">حالت امن: عیر‌فعال</string>
@@ -72,9 +71,9 @@
 	<string name="networks_title">شبکه‌ها</string>
 	<string name="clear_files_title">پاکسازی فایل‌های بروزرسانی</string>
 	<string name="state_error_permissions">دسترسی ذخیره‌سازی وجود ندارد.</string>
-	<string name="progress_status_1">بررسی برای بروزرسانی‌های &#8230;</string>
-	<string name="progress_status_2">بروزرسانی موجود &#8230;</string>
-	<string name="progress_status_3">نصب &#8230;</string>
-	<string name="progress_status_8">تلاش برای برگشت به &#8230;</string>
+	<string name="progress_status_1">بررسی برای بروزرسانی‌های …</string>
+	<string name="progress_status_2">بروزرسانی موجود …</string>
+	<string name="progress_status_3">نصب …</string>
+	<string name="progress_status_8">تلاش برای برگشت به …</string>
 	<string name="progress_status_9">غیر فعال شده.</string>
 </resources>

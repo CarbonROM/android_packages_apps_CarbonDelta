@@ -11,17 +11,17 @@
 	<string name="network_ethernet">乙太網路</string>
 	<string name="network_unknown">其他</string>
 	<string name="action_about">關於</string>
-	<string name="about_content"><![CDATA[        版權 &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        为<b>Carbon項目</b>而建立<br>
-        <br>
-        授權許可 <b>GNU 通用公共授權，版本3.0 (GPLv3)</b><br>
-        <br>
-        Delta解碼基於 <b>xdelta</b>, 版權&copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        版權 &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        为&lt;b&gt;Carbon項目&lt;/b&gt;而建立&lt;br&gt;
+        &lt;br&gt;
+        授權許可 &lt;b&gt;GNU 通用公共授權，版本3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Delta解碼基於 &lt;b&gt;xdelta&lt;/b&gt;, 版權&amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">您的系統已是最新版本。</string>
-	<string name="state_action_ab_flash">安裝 A/B 更新 &#8230;</string>
-	<string name="state_action_ab_finished">已安裝更新 重新開機以啟用 &#8230;</string>
+	<string name="state_action_ab_flash">安裝 A/B 更新 …</string>
+	<string name="state_action_ab_finished">已安裝更新 重新開機以啟用 …</string>
 	<string name="state_action_checking">檢查更新中...</string>
 	<string name="state_action_checking_md5">校對檔案...</string>
 	<string name="state_action_searching">正在搜尋檔案...</string>
@@ -40,20 +40,20 @@
 	<string name="last_checked" formatted="false">%s 在 %s</string>
 	<string name="last_checked_never">從未檢查過更新，現在要檢查嗎 ?</string>
 	<string name="button_check_short">檢查</string>
+	<string name="button_check_now">正在檢查更新 …</string>
 	<string name="button_reboot_short">重新啟動</string>
 	<string name="button_flash_now">刷寫</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">安全</string>
 	<string name="secure_mode_enabled_title">安全模式 : 已開啟</string>
-	<string name="secure_mode_enabled_description"><![CDATA[在刷寫更新前會校對加密的韌體簽名從而確認未經第三方修改，並且不會刷寫附加更新。
-這個模式只適用 <b>TWRP</b>。]]></string>
+	<string name="secure_mode_enabled_description">在刷寫更新前會校對加密的韌體簽名從而確認未經第三方修改，並且不會刷寫附加更新。
+這個模式只適用 &lt;b&gt;TWRP&lt;/b&gt;。</string>
 	<string name="secure_mode_disabled_title">安全模式 : 已關閉</string>
-	<string name="secure_mode_disabled_description"><![CDATA[會自動刷寫附加更新(如果有的話)。 注意 : 任何附加軟體(甚至是惡意的)都可能會被刷寫進系統並獲得完整系統權限，請小心操作。]]></string>
+	<string name="secure_mode_disabled_description">會自動刷寫附加更新(如果有的話)。 注意 : 任何附加軟體(甚至是惡意的)都可能會被刷寫進系統並獲得完整系統權限，請小心操作。</string>
 	<string name="recovery_notice_title">通知</string>
-	<string name="recovery_notice_description_secure"><![CDATA[更新刷寫功能目前只能在 <b>TWRP</b> 系列的 Recovery 中執行，在繼續前，請確認您正在使用適用的 Recovery。]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[在目前的模式中，更新刷寫功能只在 <b>TWRP</b> 的 Recovery 中獲得 <i>正式</i> 支援。而 <b>CWM</b> 並沒有被 <i>正式</i> 支援。但是有些 <i>修改版</i> 的<b>CWM</b> <i>可能</i> 能夠支援。在繼續前，請確認您正在使用的 Recovery 能夠支援。]]></string>
+	<string name="recovery_notice_description_secure">更新刷寫功能目前只能在 &lt;b&gt;TWRP&lt;/b&gt; 系列的 Recovery 中執行，在繼續前，請確認您正在使用適用的 Recovery。</string>
+	<string name="recovery_notice_description_not_secure">在目前的模式中，更新刷寫功能只在 &lt;b&gt;TWRP&lt;/b&gt; 的 Recovery 中獲得 &lt;i&gt;正式&lt;/i&gt; 支援。而 &lt;b&gt;CWM&lt;/b&gt; 並沒有被 &lt;i&gt;正式&lt;/i&gt; 支援。但是有些 &lt;i&gt;修改版&lt;/i&gt; 的&lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;可能&lt;/i&gt; 能夠支援。在繼續前，請確認您正在使用的 Recovery 能夠支援。</string>
 	<string name="flash_after_update_notice_title">通知</string>
-	<string name="flash_after_update_notice_description"><![CDATA[附加更新目前是放在 <b>FlashAfterUpdate</b> 資料夾中，但是由於安全模式已開啟，如果選擇繼續，這些附加的功能將 <b>不會</b> 被刷寫。]]></string>
+	<string name="flash_after_update_notice_description">附加更新目前是放在 &lt;b&gt;FlashAfterUpdate&lt;/b&gt; 資料夾中，但是由於安全模式已開啟，如果選擇繼續，這些附加的功能將 &lt;b&gt;不會&lt;/b&gt; 被刷寫。</string>
 	<string name="state_error_not_official_title">更新已關閉</string>
 	<string name="state_error_not_official_extra" formatted="false">不能執行 %s 的更新</string>
 	<string name="button_build_delta">下載</string>
@@ -106,15 +106,27 @@
 	<string name="state_error_permissions">沒有存取儲存空間的權限</string>
 	<string name="state_error_flash">刷寫失敗，請清除 /cache 後在試一次。</string>
 	<string name="state_error_ab_flash">刷寫失敗，充新啟動後在試一次。</string>
-	<string name="progress_status_0">閒置 &#8230;</string>
-	<string name="progress_status_1">檢查更新 &#8230;</string>
-	<string name="progress_status_2">有可用的更新 &#8230;</string>
-	<string name="progress_status_3">安裝中 &#8230;</string>
-	<string name="progress_status_4">驗證中 &#8230;</string>
-	<string name="progress_status_6">更新完成，請重新啟動 &#8230;</string>
-	<string name="progress_status_7">回報錯誤事件 &#8230;</string>
-	<string name="progress_status_8">嘗試回復 &#8230;</string>
+	<string name="progress_status_0">閒置 …</string>
+	<string name="progress_status_1">檢查更新 …</string>
+	<string name="progress_status_2">有可用的更新 …</string>
+	<string name="progress_status_3">安裝中 …</string>
+	<string name="progress_status_4">驗證中 …</string>
+	<string name="progress_status_5">正在完成和優化應用程式…</string>
+	<string name="progress_status_6">更新完成，請重新啟動 …</string>
+	<string name="progress_status_7">回報錯誤事件 …</string>
+	<string name="progress_status_8">嘗試回復 …</string>
 	<string name="progress_status_9">停用.</string>
 	<string name="ab_perf_mode_title">AB 性能模式</string>
 	<string name="ab_perf_mode_summary">使用性能模式安裝 AB 更新</string>
+	<string name="state_error_flash_file_title">無法刷寫該檔案</string>
+	<string name="select_file_activity_title">選擇 ZIP 檔案</string>
+	<string name="button_select_file">檔案</string>
+	<string name="state_error_ab_flash_title">無法刷寫 AB 更新</string>
+	<string name="state_error_flash_title">無法刷寫更新</string>
+	<string name="file_flash_support_title">本機檔案刷寫</string>
+	<string name="file_flash_support_summary">啟用選擇本機 ZIP 檔案</string>
+	<string name="flash_file_notice_title">本機檔案刷寫</string>
+	<string name="flash_file_notice_message"><b>注意：</b>不會檢查所選的 ZIP 檔案是否匹配您的設備！\n\n<b>刷寫錯誤的 ZIP 檔案可能會導致設備無法正常運行！</b></string>
+	<string name="channel_name">更新進度</string>
+	<string name="text_update_file_flash_title">更新檔案</string>
 </resources>

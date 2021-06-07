@@ -11,5 +11,4 @@
 	<string name="network_unknown">Остало</string>
 	<string name="action_about">Основни подаци</string>
 	<string name="state_action_none">Ваш систем је ажуриран.</string>
-	<!-- updates from 2013/12/18 -->
-</resources>
+	</resources>
