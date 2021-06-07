@@ -11,14 +11,14 @@
 	<string name="network_ethernet">이더넷</string>
 	<string name="network_unknown">기타</string>
 	<string name="action_about">더 많은 정보</string>
-	<string name="about_content"><![CDATA[        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Created for <b>CarbonROM</b><br>
-        <br>
-        Licensed under the terms of the <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
-        <br>
-        Delta decoding based on <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Copyright &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Created for &lt;b&gt;CarbonROM&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Licensed under the terms of the &lt;b&gt;GNU General Public License, version 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Delta decoding based on &lt;b&gt;xdelta&lt;/b&gt;, copyright &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">시스템이 최신 상태입니다</string>
 	<string name="state_action_checking">업데이트 확인하는 중...</string>
 	<string name="state_action_checking_md5">파일 확인하는 중...</string>
@@ -37,17 +37,16 @@
 	<string name="last_checked" formatted="false">%s에서 %s</string>
 	<string name="last_checked_never">확인한 적이 없습니다, 지금 확인할까요?</string>
 	<string name="button_flash_now">플래시</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">보안</string>
 	<string name="secure_mode_enabled_title">안전 모드: 사용중</string>
-	<string name="secure_mode_enabled_description"><![CDATA[업데이트를 적용하기 전에 원본 여부를 확인하기 위해 업데이트 파일의 암호화 서명을 검증하게 되며, 별도의 추가적인 업데이트는 적용되지 않습니다. 이 모드는 <b>TWRP</b>에서만 호환됩니다.]]></string>
+	<string name="secure_mode_enabled_description">업데이트를 적용하기 전에 원본 여부를 확인하기 위해 업데이트 파일의 암호화 서명을 검증하게 되며, 별도의 추가적인 업데이트는 적용되지 않습니다. 이 모드는 &lt;b&gt;TWRP&lt;/b&gt;에서만 호환됩니다.</string>
 	<string name="secure_mode_disabled_title">안전 모드: 사용하지 않음</string>
-	<string name="secure_mode_disabled_description"><![CDATA[별도의 추가적인 업데이트가 있는 경우 이를 적용합니다. 악성 소프트웨어 패키지가 별도의 업데이트를 무단으로 배치시킬 수 있으며 이 경우 시스템 전반에 접근할 수 있게 됩니다. 주의가 필요합니다.]]></string>
+	<string name="secure_mode_disabled_description">별도의 추가적인 업데이트가 있는 경우 이를 적용합니다. 악성 소프트웨어 패키지가 별도의 업데이트를 무단으로 배치시킬 수 있으며 이 경우 시스템 전반에 접근할 수 있게 됩니다. 주의가 필요합니다.</string>
 	<string name="recovery_notice_title">주의 사항</string>
-	<string name="recovery_notice_description_secure"><![CDATA[현재 모드에서 업데이트를 적용하려면 반드시 <b>TWRP</b> 리커버리가 필요합니다. 계속하기 전에 호환되는 리커버리를 사용중인지를 확인하세요.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[현재 모드에서 업데이트를 적용하려면 반드시 <b>TWRP</b> 리커버리가 필요합니다. 일부 비공식 개조 CWM 리커버리는 호환이 될 수도 있지만 공식 CWM 리커버리는 호환되지 않습니다. 계속하기 전에 호환되는 리커버리를 사용중인지를 확인하세요.]]></string>
+	<string name="recovery_notice_description_secure">현재 모드에서 업데이트를 적용하려면 반드시 &lt;b&gt;TWRP&lt;/b&gt; 리커버리가 필요합니다. 계속하기 전에 호환되는 리커버리를 사용중인지를 확인하세요.</string>
+	<string name="recovery_notice_description_not_secure">현재 모드에서 업데이트를 적용하려면 반드시 &lt;b&gt;TWRP&lt;/b&gt; 리커버리가 필요합니다. 일부 비공식 개조 CWM 리커버리는 호환이 될 수도 있지만 공식 CWM 리커버리는 호환되지 않습니다. 계속하기 전에 호환되는 리커버리를 사용중인지를 확인하세요.</string>
 	<string name="flash_after_update_notice_title">주의 사항</string>
-	<string name="flash_after_update_notice_description"><![CDATA[<b>FlashAfterUpdate</b> 폴더에 별도의 추가적인 업데이트가 존재하지만, 현재 안전 모드를 사용중입니다. 계속 진행하게 되면 별도의 추가적인 업데이트는 <b>적용되지 않습니다.</b>]]></string>
+	<string name="flash_after_update_notice_description">&lt;b&gt;FlashAfterUpdate&lt;/b&gt; 폴더에 별도의 추가적인 업데이트가 존재하지만, 현재 안전 모드를 사용중입니다. 계속 진행하게 되면 별도의 추가적인 업데이트는 &lt;b&gt;적용되지 않습니다.&lt;/b&gt;</string>
 	<string name="state_error_not_official_title">업데이트를 사용할 수 없습니다.</string>
 	<string name="state_error_not_official_extra" formatted="false">%s 업데이트가 불가능합니다.</string>
 	<string name="button_build_delta">다운로드</string>

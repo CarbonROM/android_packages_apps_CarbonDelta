@@ -11,49 +11,48 @@
 	<string name="network_ethernet">イーサネット</string>
 	<string name="network_unknown">その他</string>
 	<string name="action_about">概要</string>
-	<string name="about_content"><![CDATA[        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Created for <b>CarbonROM</b><br>
-        <br>
-        Licensed under the terms of the <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
-        <br>
-        Delta decoding based on <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Copyright &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Created for &lt;b&gt;CarbonROM&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Licensed under the terms of the &lt;b&gt;GNU General Public License, version 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Delta decoding based on &lt;b&gt;xdelta&lt;/b&gt;, copyright &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">お使いのシステムは最新です</string>
-	<string name="state_action_ab_flash">A/B アップデートのインストール中&#8230;</string>
-	<string name="state_action_ab_finished">アップデートをインストールしました。再起動の保留中&#8230;</string>
-	<string name="state_action_checking">アップデートの確認中&#8230;</string>
-	<string name="state_action_checking_md5">ファイルの確認中&#8230;</string>
-	<string name="state_action_searching">ファイルの検索中&#8230;</string>
-	<string name="state_action_searching_md5">ファイルの確認中&#8230;</string>
-	<string name="state_action_downloading">ダウンロード中&#8230;</string>
-	<string name="state_action_applying">適用中&#8230;</string>
-	<string name="state_action_applying_patch">適用中&#8230;</string>
-	<string name="state_action_applying_md5">ファイルの確認中&#8230;</string>
+	<string name="state_action_ab_flash">A/B アップデートのインストール中…</string>
+	<string name="state_action_ab_finished">アップデートをインストールしました。再起動の保留中…</string>
+	<string name="state_action_checking">アップデートの確認中…</string>
+	<string name="state_action_checking_md5">ファイルの確認中…</string>
+	<string name="state_action_searching">ファイルの検索中…</string>
+	<string name="state_action_searching_md5">ファイルの確認中…</string>
+	<string name="state_action_downloading">ダウンロード中…</string>
+	<string name="state_action_applying">適用中…</string>
+	<string name="state_action_applying_patch">適用中…</string>
+	<string name="state_action_applying_md5">ファイルの確認中…</string>
 	<string name="state_action_ready">アップデートの書き込み準備ができました</string>
 	<string name="state_error_disk_space">ディスク領域不足</string>
 	<string name="state_error_unknown">不明なエラー</string>
 	<string name="error_disk_space_sub" formatted="false">空き領域 %d MB, 必要な領域 %d MB</string>
 	<string name="notify_update_available">アップデートが利用可能です</string>
-	<string name="notify_checking">アップデートの確認中&#8230;</string>
+	<string name="notify_checking">アップデートの確認中…</string>
 	<string name="notify_eta_remaining" formatted="false">残り %2d%%, %02d:%02d</string>
 	<string name="last_checked" formatted="false">%s - %s</string>
 	<string name="last_checked_never">私たちは決して確認していません。きっとあなたはそうしたいでしょう?</string>
 	<string name="button_check_short">確認</string>
-	<string name="button_check_now">アップデートの確認中&#8230;</string>
+	<string name="button_check_now">アップデートの確認中…</string>
 	<string name="button_reboot_short">再起動</string>
 	<string name="button_flash_now">フラッシュ</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">セキュア</string>
 	<string name="secure_mode_enabled_title">セキュアモード: 有効</string>
-	<string name="secure_mode_enabled_description"><![CDATA[アップデートの暗号署名はフラッシュされる前に本物かどうかを確認するために確認され、追加のアップデートは書き込まれません。このモードは <b>TWRP</b> のみ互換性があります。]]></string>
+	<string name="secure_mode_enabled_description">アップデートの暗号署名はフラッシュされる前に本物かどうかを確認するために確認され、追加のアップデートは書き込まれません。このモードは &lt;b&gt;TWRP&lt;/b&gt; のみ互換性があります。</string>
 	<string name="secure_mode_disabled_title">セキュアモード: 無効</string>
-	<string name="secure_mode_disabled_description"><![CDATA[追加のアップデートが存在する場合はフラッシュさます。どんな (悪意のある) ソフトウェアパッケージでも、これらのアップデートを適用して完全なシステムアクセスを得ることができることに注意して下さい。]]></string>
+	<string name="secure_mode_disabled_description">追加のアップデートが存在する場合はフラッシュさます。どんな (悪意のある) ソフトウェアパッケージでも、これらのアップデートを適用して完全なシステムアクセスを得ることができることに注意して下さい。</string>
 	<string name="recovery_notice_title">注意</string>
-	<string name="recovery_notice_description_secure"><![CDATA[現在のモードでのアップデートの書き込みは <b>TWRP</b> リカバリーのみサポートされています。続行する前に互換性のあるリカバリーを実行していることを確認して下さい。]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[現在のモードでのアップデートの書き込みは <b>TWRP</b> リカバリーのみ正式にサポートされています。<b>CWM</b> のいくつかの<i>コミュニティビルド</i>バージョンでは動作する<i>かもしれませんが</i>、<i>公式</i> <b>CWM</b> はサポート<i>されていません</i>。続行する前に互換性のあるリカバリーを実行していることを確認して下さい。]]></string>
+	<string name="recovery_notice_description_secure">現在のモードでのアップデートの書き込みは &lt;b&gt;TWRP&lt;/b&gt; リカバリーのみサポートされています。続行する前に互換性のあるリカバリーを実行していることを確認して下さい。</string>
+	<string name="recovery_notice_description_not_secure">現在のモードでのアップデートの書き込みは &lt;b&gt;TWRP&lt;/b&gt; リカバリーのみ正式にサポートされています。&lt;b&gt;CWM&lt;/b&gt; のいくつかの&lt;i&gt;コミュニティビルド&lt;/i&gt;バージョンでは動作する&lt;i&gt;かもしれませんが&lt;/i&gt;、&lt;i&gt;公式&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt; はサポート&lt;i&gt;されていません&lt;/i&gt;。続行する前に互換性のあるリカバリーを実行していることを確認して下さい。</string>
 	<string name="flash_after_update_notice_title">注意</string>
-	<string name="flash_after_update_notice_description"><![CDATA[追加のアップデートは <b>FlashAfterUpdate</b> フォルダにありますが、セキュアモードは有効です。続行するとこれらの追加のアップデートはフラッシュ<b>されません</b>。]]></string>
+	<string name="flash_after_update_notice_description">追加のアップデートは &lt;b&gt;FlashAfterUpdate&lt;/b&gt; フォルダにありますが、セキュアモードは有効です。続行するとこれらの追加のアップデートはフラッシュ&lt;b&gt;されません&lt;/b&gt;。</string>
 	<string name="state_error_not_official_title">アップデートが無効になりました</string>
 	<string name="state_error_not_official_extra" formatted="false">%sのアップデートはできません</string>
 	<string name="button_build_delta">ダウンロード</string>
@@ -106,15 +105,15 @@
 	<string name="state_error_permissions">ストレージの許可がありません</string>
 	<string name="state_error_flash">書き込みの開始に失敗しました。 キャッシュを削除して再試行して下さい。</string>
 	<string name="state_error_ab_flash">書き込みの開始に失敗しました。再起動して再試行して下さい。</string>
-	<string name="progress_status_0">一時停止中&#8230;</string>
-	<string name="progress_status_1">アップデートの確認中&#8230;</string>
-	<string name="progress_status_2">アップデートが利用可能です&#8230;</string>
-	<string name="progress_status_3">インストール中&#8230;</string>
-	<string name="progress_status_4">確認中&#8230;</string>
-	<string name="progress_status_5">ファイナライズ中&#8230;</string>
-	<string name="progress_status_6">アップデートしました。再起動の保留中&#8230;</string>
-	<string name="progress_status_7">エラーイベントの報告中&#8230;</string>
-	<string name="progress_status_8">ロールバックの試行中&#8230;</string>
+	<string name="progress_status_0">一時停止中…</string>
+	<string name="progress_status_1">アップデートの確認中…</string>
+	<string name="progress_status_2">アップデートが利用可能です…</string>
+	<string name="progress_status_3">インストール中…</string>
+	<string name="progress_status_4">確認中…</string>
+	<string name="progress_status_5">ファイナライズ中…</string>
+	<string name="progress_status_6">アップデートしました。再起動の保留中…</string>
+	<string name="progress_status_7">エラーイベントの報告中…</string>
+	<string name="progress_status_8">ロールバックの試行中…</string>
 	<string name="progress_status_9">無効</string>
 	<string name="ab_perf_mode_title">A/B パフォーマンスモード</string>
 	<string name="ab_perf_mode_summary">A/B アップデートのインストールのためにパフォーマンスモードを使用する</string>

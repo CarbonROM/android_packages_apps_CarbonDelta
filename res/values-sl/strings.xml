@@ -11,48 +11,47 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Drugo</string>
 	<string name="action_about">O programu</string>
-	<string name="about_content"><![CDATA[        Avtorske pravice &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Izvirno ustvarjeno za <b>Projekt Carbon</b><br>
-        <br>
-        Program uporablja dovoljenje pod pogoji <b>Splošnega dovoljenja GNU različice 3.0 (GPLv3)</b><br>
-        <br>
-        Odkodiranje Delta osnovano na <b>xdelti</b>, avtorske pravice &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Avtorske pravice &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Izvirno ustvarjeno za &lt;b&gt;Projekt Carbon&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Program uporablja dovoljenje pod pogoji &lt;b&gt;Splošnega dovoljenja GNU različice 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Odkodiranje Delta osnovano na &lt;b&gt;xdelti&lt;/b&gt;, avtorske pravice &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">Vaš sistem je posodobljen.</string>
-	<string name="state_action_ab_flash">Nameščanje A/B posodobitve &#8230;</string>
-	<string name="state_action_ab_finished">Posodobitev nameščena. Čakanje na ponovni zagon &#8230;</string>
-	<string name="state_action_checking">Preverjanje za posodobitve &#8230;</string>
-	<string name="state_action_checking_md5">Preverjanje datoteke &#8230;</string>
-	<string name="state_action_searching">Iskanje datotek &#8230;</string>
-	<string name="state_action_searching_md5">Preverjanje datoteke &#8230;</string>
-	<string name="state_action_downloading">Prejemanje &#8230;</string>
-	<string name="state_action_applying">Popravljanje &#8230;</string>
-	<string name="state_action_applying_patch">Popravljanje &#8230;</string>
-	<string name="state_action_applying_md5">Preverjanje datoteke &#8230;</string>
+	<string name="state_action_ab_flash">Nameščanje A/B posodobitve …</string>
+	<string name="state_action_ab_finished">Posodobitev nameščena. Čakanje na ponovni zagon …</string>
+	<string name="state_action_checking">Preverjanje za posodobitve …</string>
+	<string name="state_action_checking_md5">Preverjanje datoteke …</string>
+	<string name="state_action_searching">Iskanje datotek …</string>
+	<string name="state_action_searching_md5">Preverjanje datoteke …</string>
+	<string name="state_action_downloading">Prejemanje …</string>
+	<string name="state_action_applying">Popravljanje …</string>
+	<string name="state_action_applying_patch">Popravljanje …</string>
+	<string name="state_action_applying_md5">Preverjanje datoteke …</string>
 	<string name="state_action_ready">Posodobitev pripravljena za namestitev.</string>
 	<string name="state_error_disk_space">Ni dovolj prostora na disku!</string>
 	<string name="state_error_unknown">Neznana napaka.</string>
 	<string name="error_disk_space_sub" formatted="false">Na voljo %d MiB, zahtevano %d MiB</string>
 	<string name="notify_update_available">Na voljo je posodobitev</string>
-	<string name="notify_checking">Preverjanje za posodobitve &#8230;</string>
+	<string name="notify_checking">Preverjanje za posodobitve …</string>
 	<string name="notify_eta_remaining" formatted="false">Ostalo %2d%%, %02d:%02d</string>
 	<string name="last_checked" formatted="false">%s ob %s</string>
 	<string name="last_checked_never">Še ni bilo preverjeno, ali bi radi to storili?</string>
 	<string name="button_check_short">Preveri</string>
 	<string name="button_reboot_short">Ponoven zagon</string>
 	<string name="button_flash_now">Namesti</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Varno</string>
 	<string name="secure_mode_enabled_title">Varni način: omogočen</string>
-	<string name="secure_mode_enabled_description"><![CDATA[Pred namestitvijo bo preverjen tajnopisni podpis posodobitve za preverjanje njenega izvora.  Nobena dodatna posodobitev ne bo nameščena.  Ta način je združljiv samo s <b>TWRP-jem</b>.]]></string>
+	<string name="secure_mode_enabled_description">Pred namestitvijo bo preverjen tajnopisni podpis posodobitve za preverjanje njenega izvora.  Nobena dodatna posodobitev ne bo nameščena.  Ta način je združljiv samo s &lt;b&gt;TWRP-jem&lt;/b&gt;.</string>
 	<string name="secure_mode_disabled_title">Varni način: onemogočen</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Dodatne posodobitve bodo nameščene če so prisotne.  Upoštevajte, da lahko katerakoli (zlonamerna) programska oprema namesti te posodobitve in pridobi poln dostop do sistema.  Bodite previdni.]]></string>
+	<string name="secure_mode_disabled_description">Dodatne posodobitve bodo nameščene če so prisotne.  Upoštevajte, da lahko katerakoli (zlonamerna) programska oprema namesti te posodobitve in pridobi poln dostop do sistema.  Bodite previdni.</string>
 	<string name="recovery_notice_title">Obvestilo</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Nameščanje posodobitev v trenutnem načinu je podprto samo v obnovitvah <b>TWRP</b>.  Pred nadaljevanjem se prepričajte, da izvajate združljivo obnovitev.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Nameščanje posodobitev v trenutnem načinu je podprto samo v obnovitvah <b>TWRP</b>.  <i>Uradne</i> izgradnje <b>CWM</b> <i>niso</i> podprte, čeprav lahko nekatere </i>različice</i>  <b>CWM-a</b>, <i>ki jih je izgradila skupnost</i>, še vedno delujejo.  Pred nadaljevanjem se prepričajte, da izvajate združljivo obnovitev.]]></string>
+	<string name="recovery_notice_description_secure">Nameščanje posodobitev v trenutnem načinu je podprto samo v obnovitvah &lt;b&gt;TWRP&lt;/b&gt;.  Pred nadaljevanjem se prepričajte, da izvajate združljivo obnovitev.</string>
+	<string name="recovery_notice_description_not_secure">Nameščanje posodobitev v trenutnem načinu je podprto samo v obnovitvah &lt;b&gt;TWRP&lt;/b&gt;.  &lt;i&gt;Uradne&lt;/i&gt; izgradnje &lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;niso&lt;/i&gt; podprte, čeprav lahko nekatere &lt;/i&gt;različice&lt;/i&gt;  &lt;b&gt;CWM-a&lt;/b&gt;, &lt;i&gt;ki jih je izgradila skupnost&lt;/i&gt;, še vedno delujejo.  Pred nadaljevanjem se prepričajte, da izvajate združljivo obnovitev.</string>
 	<string name="flash_after_update_notice_title">Obvestilo</string>
-	<string name="flash_after_update_notice_description"><![CDATA[V mapi <b>FlashAfterUpdate</b> so prisotne dodatne posodobitve, vendar je varni način omogočen.  Če nadaljujete, te posodobitve <b>ne</b> bodo nameščene.]]></string>
+	<string name="flash_after_update_notice_description">V mapi &lt;b&gt;FlashAfterUpdate&lt;/b&gt; so prisotne dodatne posodobitve, vendar je varni način omogočen.  Če nadaljujete, te posodobitve &lt;b&gt;ne&lt;/b&gt; bodo nameščene.</string>
 	<string name="state_error_not_official_title">Posodobitve onemogočene.</string>
 	<string name="state_error_not_official_extra" formatted="false">Posodobitev %s ni mogoča</string>
 	<string name="button_build_delta">Prejmi</string>
@@ -105,15 +104,15 @@
 	<string name="state_error_permissions">Ni dovoljenja za pomnilniško napravo.</string>
 	<string name="state_error_flash">Nastavitev namestitve je spodletela.  Počistite /cache in poizkusite znova.</string>
 	<string name="state_error_ab_flash">Nastavitev namestitve je spodletela. Ponovno zaženite napravo in poskusite znova.</string>
-	<string name="progress_status_0">Čakanje &#8230;</string>
-	<string name="progress_status_1">Preverjanje za posodobitve &#8230;</string>
-	<string name="progress_status_2">Posodobitev na voljo &#8230;</string>
-	<string name="progress_status_3">Nameščanje &#8230;</string>
-	<string name="progress_status_4">Preverjanje &#8230;</string>
-	<string name="progress_status_5">Zaključevanje &#8230;</string>
-	<string name="progress_status_6">Posodobljeno. Čakanje na ponovni zagon &#8230;</string>
-	<string name="progress_status_7">Poročanje o napaki &#8230;</string>
-	<string name="progress_status_8">Poskus vrnitve v prejšnje stanje &#8230;</string>
+	<string name="progress_status_0">Čakanje …</string>
+	<string name="progress_status_1">Preverjanje za posodobitve …</string>
+	<string name="progress_status_2">Posodobitev na voljo …</string>
+	<string name="progress_status_3">Nameščanje …</string>
+	<string name="progress_status_4">Preverjanje …</string>
+	<string name="progress_status_5">Zaključevanje …</string>
+	<string name="progress_status_6">Posodobljeno. Čakanje na ponovni zagon …</string>
+	<string name="progress_status_7">Poročanje o napaki …</string>
+	<string name="progress_status_8">Poskus vrnitve v prejšnje stanje …</string>
 	<string name="progress_status_9">Onemogočeno.</string>
 	<string name="ab_perf_mode_title">AB zmogljivostni način</string>
 	<string name="ab_perf_mode_summary">Uporabite zmogljivostni način za nameščanje AB posodobitev</string>

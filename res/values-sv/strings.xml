@@ -11,49 +11,48 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Annat</string>
 	<string name="action_about">Om</string>
-	<string name="about_content"><![CDATA[        
-        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Skapad för <b>CarbonROM</b><br>
-        <br>
-        Licensierad enligt villkoren i <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
-        <br>
-        Deltaavkodning baserad på <b>xdelta</b>, Copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-      ]]></string>
+	<string name="about_content">        
+        Copyright &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Skapad för &lt;b&gt;CarbonROM&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Licensierad enligt villkoren i &lt;b&gt;GNU General Public License, version 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Deltaavkodning baserad på &lt;b&gt;xdelta&lt;/b&gt;, Copyright &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+      </string>
 	<string name="state_action_none">Ditt system är uppdaterat.</string>
-	<string name="state_action_ab_flash">Installerar A/B-uppdateringen &#8230;</string>
-	<string name="state_action_ab_finished">Uppdateringen installerades. Omstart väntar &#8230;</string>
-	<string name="state_action_checking">Söker efter uppdateringar&#8230;</string>
-	<string name="state_action_checking_md5">Verifierar fil&#8230;</string>
-	<string name="state_action_searching">Söker efter filer&#8230;</string>
-	<string name="state_action_searching_md5">Verifierar fil&#8230;</string>
-	<string name="state_action_downloading">Laddar ned&#8230;</string>
-	<string name="state_action_applying">Sammanfogar&#8230;</string>
-	<string name="state_action_applying_patch">Sammanfogar&#8230;</string>
-	<string name="state_action_applying_md5">Verifierar fil&#8230;</string>
+	<string name="state_action_ab_flash">Installerar A/B-uppdateringen …</string>
+	<string name="state_action_ab_finished">Uppdateringen installerades. Omstart väntar …</string>
+	<string name="state_action_checking">Söker efter uppdateringar…</string>
+	<string name="state_action_checking_md5">Verifierar fil…</string>
+	<string name="state_action_searching">Söker efter filer…</string>
+	<string name="state_action_searching_md5">Verifierar fil…</string>
+	<string name="state_action_downloading">Laddar ned…</string>
+	<string name="state_action_applying">Sammanfogar…</string>
+	<string name="state_action_applying_patch">Sammanfogar…</string>
+	<string name="state_action_applying_md5">Verifierar fil…</string>
 	<string name="state_action_ready">Uppdatering redo att installeras.</string>
 	<string name="state_error_disk_space">Inte tillräckligt diskutrymme!</string>
 	<string name="state_error_unknown">Okänt fel.</string>
 	<string name="error_disk_space_sub" formatted="false">%d MiB tillgängligt, %d MiB behövs</string>
 	<string name="notify_update_available">En uppdatering är tillgänglig</string>
-	<string name="notify_checking">Söker efter uppdatering &#8230;</string>
+	<string name="notify_checking">Söker efter uppdatering …</string>
 	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d återstår</string>
 	<string name="last_checked" formatted="false">%s på %s</string>
 	<string name="last_checked_never">Du har aldrig sökt. Vill du göra det nu?</string>
 	<string name="button_check_short">Kontrollera</string>
 	<string name="button_reboot_short">Starta om</string>
 	<string name="button_flash_now">Blixt</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Säkert läge</string>
 	<string name="secure_mode_enabled_title">Säkert läge aktiverat</string>
-	<string name="secure_mode_enabled_description"><![CDATA[Uppdateringens kryptografiska signatur kommer att verifieras innan installationen för att bekräfta dess ursprung, och inga övriga uppdateringar kommer att installeras. Detta läge är endast kompatibelt med <b>TWRP</b>.]]></string>
+	<string name="secure_mode_enabled_description">Uppdateringens kryptografiska signatur kommer att verifieras innan installationen för att bekräfta dess ursprung, och inga övriga uppdateringar kommer att installeras. Detta läge är endast kompatibelt med &lt;b&gt;TWRP&lt;/b&gt;.</string>
 	<string name="secure_mode_disabled_title">Säkert läge inaktiverat</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Ytterligare uppdateringar kommer att installeras om tillgängliga. Lägg märke till att vilken (illasinnad) mjukvara som helst kan finnas i dessa uppdateringar och genom det få fulla rättigheter till systemet. Försiktighet bör iakttas.]]></string>
+	<string name="secure_mode_disabled_description">Ytterligare uppdateringar kommer att installeras om tillgängliga. Lägg märke till att vilken (illasinnad) mjukvara som helst kan finnas i dessa uppdateringar och genom det få fulla rättigheter till systemet. Försiktighet bör iakttas.</string>
 	<string name="recovery_notice_title">Notis</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Installation av uppdateringar i det nuvarande läget stöds endast av <b>TWRP</b>. Var god försäkra dig om att du kör en kompatibel recovery innan du fortsätter.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Installation av uppdateringar i det nuvarande läget är endast officiellt stött av <b>TWRP</b>. <i>Officiella</i> <b>CWM</b>-recoveries är <i>inte</i> stödda, dock finns <i>möjligheten</i> att några <i>communityutvecklade</i> versioner av <b>CWM</b> fortfarande fungerar. Var god se till att du kör en kompatibel recovery innan du fortsätter.]]></string>
+	<string name="recovery_notice_description_secure">Installation av uppdateringar i det nuvarande läget stöds endast av &lt;b&gt;TWRP&lt;/b&gt;. Var god försäkra dig om att du kör en kompatibel recovery innan du fortsätter.</string>
+	<string name="recovery_notice_description_not_secure">Installation av uppdateringar i det nuvarande läget är endast officiellt stött av &lt;b&gt;TWRP&lt;/b&gt;. &lt;i&gt;Officiella&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt;-recoveries är &lt;i&gt;inte&lt;/i&gt; stödda, dock finns &lt;i&gt;möjligheten&lt;/i&gt; att några &lt;i&gt;communityutvecklade&lt;/i&gt; versioner av &lt;b&gt;CWM&lt;/b&gt; fortfarande fungerar. Var god se till att du kör en kompatibel recovery innan du fortsätter.</string>
 	<string name="flash_after_update_notice_title">Notis</string>
-	<string name="flash_after_update_notice_description"><![CDATA[Ytterligare uppdateringar finns tillgängliga i mappen <b>FlashAfterUpdate</b>, men säkert läge är aktiverat. Om du fortsätter kommer dessa uppdateringar <b>inte</b> att installeras.]]></string>
+	<string name="flash_after_update_notice_description">Ytterligare uppdateringar finns tillgängliga i mappen &lt;b&gt;FlashAfterUpdate&lt;/b&gt;, men säkert läge är aktiverat. Om du fortsätter kommer dessa uppdateringar &lt;b&gt;inte&lt;/b&gt; att installeras.</string>
 	<string name="state_error_not_official_title">Uppdatering inaktiverad.</string>
 	<string name="state_error_not_official_extra" formatted="false">Uppdatering av %s inte möjligt</string>
 	<string name="button_build_delta">Ladda ner</string>
@@ -106,15 +105,15 @@
 	<string name="state_error_permissions">Inga lagringsbehörigheter.</string>
 	<string name="state_error_flash">Misslyckades med att installera. Rensa /cache och försök igen.</string>
 	<string name="state_error_ab_flash">Misslyckades med att ställa in flashningen. Vänligen starta om och försök igen.</string>
-	<string name="progress_status_0">Vila &#8230;</string>
-	<string name="progress_status_1">Letar efter uppdateringar &#8230;</string>
-	<string name="progress_status_2">Uppdatering tillgänglig &#8230;</string>
-	<string name="progress_status_3">Installerar &#8230;</string>
-	<string name="progress_status_4">Bekräftar &#8230;</string>
-	<string name="progress_status_5">Slutför &#8230;</string>
-	<string name="progress_status_6">Uppdaterade. Avvaktande omstart &#8230;</string>
-	<string name="progress_status_7">Rapporterar felhändelsen &#8230;</string>
-	<string name="progress_status_8">Försöker rulla tillbaka &#8230;</string>
+	<string name="progress_status_0">Vila …</string>
+	<string name="progress_status_1">Letar efter uppdateringar …</string>
+	<string name="progress_status_2">Uppdatering tillgänglig …</string>
+	<string name="progress_status_3">Installerar …</string>
+	<string name="progress_status_4">Bekräftar …</string>
+	<string name="progress_status_5">Slutför …</string>
+	<string name="progress_status_6">Uppdaterade. Avvaktande omstart …</string>
+	<string name="progress_status_7">Rapporterar felhändelsen …</string>
+	<string name="progress_status_8">Försöker rulla tillbaka …</string>
 	<string name="progress_status_9">Inaktiverat.</string>
 	<string name="ab_perf_mode_title">AB prestanda-läge</string>
 	<string name="ab_perf_mode_summary">Använd Prestanda-läge för att installera AB-uppdateringar</string>

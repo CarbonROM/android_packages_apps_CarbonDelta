@@ -11,49 +11,48 @@
 	<string name="network_ethernet">以太网</string>
 	<string name="network_unknown">其他</string>
 	<string name="action_about">关于</string>
-	<string name="about_content"><![CDATA[        版权 &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        为<b>Carbon项目</b>而创建<br>
-        <br>
-        授权许可 <b>GNU 通用公共授权，版本3.0 (GPLv3)</b><br>
-        <br>
-        Delta解码基于 <b>xdelta</b>, 版权&copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        版权 &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        为&lt;b&gt;Carbon项目&lt;/b&gt;而创建&lt;br&gt;
+        &lt;br&gt;
+        授权许可 &lt;b&gt;GNU 通用公共授权，版本3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Delta解码基于 &lt;b&gt;xdelta&lt;/b&gt;, 版权&amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">您的系统已经是最新版本</string>
-	<string name="state_action_ab_flash">正在安装 A/B 更新 &#8230;</string>
-	<string name="state_action_ab_finished">更新完毕。等待重启中 &#8230;</string>
-	<string name="state_action_checking">正在检查更新 &#8230;</string>
-	<string name="state_action_checking_md5">正在校验文件 &#8230;</string>
-	<string name="state_action_searching">正在查找文件 &#8230;</string>
-	<string name="state_action_searching_md5">正在校验文件 &#8230;</string>
-	<string name="state_action_downloading">正在下载 &#8230;</string>
-	<string name="state_action_applying">正在整合 &#8230;</string>
-	<string name="state_action_applying_patch">正在整合 &#8230;</string>
-	<string name="state_action_applying_md5">正在校验文件 &#8230;</string>
+	<string name="state_action_ab_flash">正在安装 A/B 更新 …</string>
+	<string name="state_action_ab_finished">更新完毕。等待重启中 …</string>
+	<string name="state_action_checking">正在检查更新 …</string>
+	<string name="state_action_checking_md5">正在校验文件 …</string>
+	<string name="state_action_searching">正在查找文件 …</string>
+	<string name="state_action_searching_md5">正在校验文件 …</string>
+	<string name="state_action_downloading">正在下载 …</string>
+	<string name="state_action_applying">正在整合 …</string>
+	<string name="state_action_applying_patch">正在整合 …</string>
+	<string name="state_action_applying_md5">正在校验文件 …</string>
 	<string name="state_action_ready">已准备好刷入更新。</string>
 	<string name="state_error_disk_space">存储空间不足！</string>
 	<string name="state_error_unknown">未知错误。</string>
 	<string name="error_disk_space_sub" formatted="false">%d MiB 可用，需要 %d MiB</string>
 	<string name="notify_update_available">更新可用</string>
-	<string name="notify_checking">正在检查更新&#8230;&#8230;</string>
+	<string name="notify_checking">正在检查更新……</string>
 	<string name="notify_eta_remaining" formatted="false">剩余 %2d%%，%02d:%02d</string>
 	<string name="last_checked" formatted="false">%s %s</string>
 	<string name="last_checked_never">从未检查过更新。</string>
 	<string name="button_check_short">检查</string>
-	<string name="button_check_now">检查更新 &#8230;</string>
+	<string name="button_check_now">检查更新 …</string>
 	<string name="button_reboot_short">重启</string>
 	<string name="button_flash_now">刷入</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">安全</string>
 	<string name="secure_mode_enabled_title">安全模式：已启用</string>
-	<string name="secure_mode_enabled_description"><![CDATA[在刷入前会验证更新的加密签名从而确认它的来源，并且不会刷入附加更新。这个模式仅兼容 <b>TWRP</b> 。]]></string>
+	<string name="secure_mode_enabled_description">在刷入前会验证更新的加密签名从而确认它的来源，并且不会刷入附加更新。这个模式仅兼容 &lt;b&gt;TWRP&lt;/b&gt; 。</string>
 	<string name="secure_mode_disabled_title">安全模式：已禁用</string>
-	<string name="secure_mode_disabled_description"><![CDATA[会自动刷入附加更新（如果有的话）。注意：任何软件包（甚至是恶意的）都可能会被刷入系统并获得完整访问权限，请谨慎行事。]]></string>
+	<string name="secure_mode_disabled_description">会自动刷入附加更新（如果有的话）。注意：任何软件包（甚至是恶意的）都可能会被刷入系统并获得完整访问权限，请谨慎行事。</string>
 	<string name="recovery_notice_title">通知</string>
-	<string name="recovery_notice_description_secure"><![CDATA[更新刷入功能目前仅在 <b>TWRP</b> 系列的 Recovery 中工作，在继续前，请确保您正在使用兼容的 Recovery 。]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[在当前的模式中的更新刷入功能仅在 <b>TWRP</b> 的 Recovery 中得到 <i>正式</i> 支持。而 <b>CWM</b> 并没有被 <i>正式</i> 支持。但是有一些 <i>社区构建</i> 的<b>CWM</b> <i>可能</i> 能够工作。在继续前，请确保您目前正在使用的 Recovery 能够兼容。]]></string>
+	<string name="recovery_notice_description_secure">更新刷入功能目前仅在 &lt;b&gt;TWRP&lt;/b&gt; 系列的 Recovery 中工作，在继续前，请确保您正在使用兼容的 Recovery 。</string>
+	<string name="recovery_notice_description_not_secure">在当前的模式中的更新刷入功能仅在 &lt;b&gt;TWRP&lt;/b&gt; 的 Recovery 中得到 &lt;i&gt;正式&lt;/i&gt; 支持。而 &lt;b&gt;CWM&lt;/b&gt; 并没有被 &lt;i&gt;正式&lt;/i&gt; 支持。但是有一些 &lt;i&gt;社区构建&lt;/i&gt; 的&lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;可能&lt;/i&gt; 能够工作。在继续前，请确保您目前正在使用的 Recovery 能够兼容。</string>
 	<string name="flash_after_update_notice_title">通知</string>
-	<string name="flash_after_update_notice_description"><![CDATA[附加更新目前是放在 <b>FlashAfterUpdate</b> 文件夹中，但是由于安全模式已开启，如果您选择继续，这些附加的功能将 <b>不会</b> 被刷入。]]></string>
+	<string name="flash_after_update_notice_description">附加更新目前是放在 &lt;b&gt;FlashAfterUpdate&lt;/b&gt; 文件夹中，但是由于安全模式已开启，如果您选择继续，这些附加的功能将 &lt;b&gt;不会&lt;/b&gt; 被刷入。</string>
 	<string name="state_error_not_official_title">更新已禁用。</string>
 	<string name="state_error_not_official_extra" formatted="false">不能执行 %s 的更新</string>
 	<string name="button_build_delta">下载</string>
@@ -106,15 +105,15 @@
 	<string name="state_error_permissions">没有存储权限。</string>
 	<string name="state_error_flash">刷入失败，请清除 /cache 后再试。</string>
 	<string name="state_error_ab_flash">刷入设置失败。请重启后再试。</string>
-	<string name="progress_status_0">闲置中 &#8230;</string>
-	<string name="progress_status_1">正在检查更新 &#8230;</string>
-	<string name="progress_status_2">查到更新 &#8230;</string>
-	<string name="progress_status_3">正在安装 &#8230;</string>
-	<string name="progress_status_4">正在验证 &#8230;</string>
-	<string name="progress_status_5">正在完成和优化应用程序 &#8230;</string>
-	<string name="progress_status_6">更新完毕。等待重启中 &#8230;</string>
-	<string name="progress_status_7">正在提交事件错误报告 &#8230;</string>
-	<string name="progress_status_8">还原尝试中 &#8230;</string>
+	<string name="progress_status_0">闲置中 …</string>
+	<string name="progress_status_1">正在检查更新 …</string>
+	<string name="progress_status_2">查到更新 …</string>
+	<string name="progress_status_3">正在安装 …</string>
+	<string name="progress_status_4">正在验证 …</string>
+	<string name="progress_status_5">正在完成和优化应用程序 …</string>
+	<string name="progress_status_6">更新完毕。等待重启中 …</string>
+	<string name="progress_status_7">正在提交事件错误报告 …</string>
+	<string name="progress_status_8">还原尝试中 …</string>
 	<string name="progress_status_9">已禁用。</string>
 	<string name="ab_perf_mode_title">AB 高性能模式</string>
 	<string name="ab_perf_mode_summary">使用高性能模式安装 AB 更新</string>

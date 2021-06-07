@@ -11,50 +11,49 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Diğer</string>
 	<string name="action_about">Hakkında</string>
-	<string name="about_content"><![CDATA[        Telif hakkı&copy; _COPYRIGHT_CARBONDELTA_<b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        <b>Carbon Projesi</b>için oluşturulmuştur<br>
-        <br>
-        <b>GNU Umûmî Ruhsat, sürüm 3.0 (GPLv3)</b> şartları altında ruhsat verilmiştir<br>
-        <br>
-        Delta decoding <b>xdelta</b> tabanlıdır, telif hakkı &copy; _COPYRIGHT_XDELTA_<b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Telif hakkı&amp;copy; _COPYRIGHT_CARBONDELTA_&lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;Carbon Projesi&lt;/b&gt;için oluşturulmuştur&lt;br&gt;
+        &lt;br&gt;
+        &lt;b&gt;GNU Umûmî Ruhsat, sürüm 3.0 (GPLv3)&lt;/b&gt; şartları altında ruhsat verilmiştir&lt;br&gt;
+        &lt;br&gt;
+        Delta decoding &lt;b&gt;xdelta&lt;/b&gt; tabanlıdır, telif hakkı &amp;copy; _COPYRIGHT_XDELTA_&lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">Sisteminiz güncel</string>
-	<string name="state_action_ab_flash">A/B güncellemesi yükleniyor &#8230;</string>
-	<string name="state_action_ab_finished">Güncelleme yüklendi. Yeniden başlatma bekleniyor &#8230;</string>
-	<string name="state_action_checking">Güncellemeler denetleniyor &#8230;</string>
-	<string name="state_action_checking_md5">Dosya doğrulanıyor &#8230;</string>
-	<string name="state_action_searching">Dosyalar aranıyor &#8230;</string>
-	<string name="state_action_searching_md5">Dosya doğrulanıyor &#8230;</string>
-	<string name="state_action_downloading">İndiriliyor &#8230;</string>
-	<string name="state_action_applying">Uygulanıyor &#8230;</string>
-	<string name="state_action_applying_patch">Uygulanıyor &#8230;</string>
-	<string name="state_action_applying_md5">Dosya doğrulanıyor &#8230;</string>
+	<string name="state_action_ab_flash">A/B güncellemesi yükleniyor …</string>
+	<string name="state_action_ab_finished">Güncelleme yüklendi. Yeniden başlatma bekleniyor …</string>
+	<string name="state_action_checking">Güncellemeler denetleniyor …</string>
+	<string name="state_action_checking_md5">Dosya doğrulanıyor …</string>
+	<string name="state_action_searching">Dosyalar aranıyor …</string>
+	<string name="state_action_searching_md5">Dosya doğrulanıyor …</string>
+	<string name="state_action_downloading">İndiriliyor …</string>
+	<string name="state_action_applying">Uygulanıyor …</string>
+	<string name="state_action_applying_patch">Uygulanıyor …</string>
+	<string name="state_action_applying_md5">Dosya doğrulanıyor …</string>
 	<string name="state_action_ready">Güncelleme yüklenmeye hazır</string>
 	<string name="state_error_disk_space">Yeterli disk alanı yok</string>
 	<string name="state_error_unknown">Bilinmeyen hata.</string>
 	<string name="error_disk_space_sub" formatted="false">%d MiB kullanılabilir, %d MiB gerekli</string>
 	<string name="notify_update_available">Yeni güncelleme mevcut</string>
-	<string name="notify_checking">Güncelleme denetleniyor &#8230;</string>
+	<string name="notify_checking">Güncelleme denetleniyor …</string>
 	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d kalan</string>
 	<string name="last_checked" formatted="false">%s, %s tarihinde</string>
 	<string name="last_checked_never">Hiç kontrol yapılmadı, kontrol etmek ister misiniz?</string>
 	<string name="button_check_short">Kontrol et</string>
-	<string name="button_check_now">Güncellemeler denetleniyor &#8230;</string>
+	<string name="button_check_now">Güncellemeler denetleniyor …</string>
 	<string name="button_reboot_short">Yeniden başlat</string>
 	<string name="button_flash_now">Yükle</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Güvenli</string>
 	<string name="secure_mode_enabled_title">Güvenli mod: etkin</string>
-	<string name="secure_mode_enabled_description"><![CDATA[Güncellemenin şifreleme imzasının kökeni yüklemeden önce doğrulanmalıdır. Ek olarak, hiçbir güncelleme yüklenmedi. Bu mod sadece <b>TWRP</b> kurtarma bölümüyle uyumludur.]]></string>
+	<string name="secure_mode_enabled_description">Güncellemenin şifreleme imzasının kökeni yüklemeden önce doğrulanmalıdır. Ek olarak, hiçbir güncelleme yüklenmedi. Bu mod sadece &lt;b&gt;TWRP&lt;/b&gt; kurtarma bölümüyle uyumludur.</string>
 	<string name="secure_mode_disabled_title">Güvenli mod: devre dışı</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Ek güncelleştirmeler varsa uygulanacak. Not herhangi bir (zararlı) yazılım paketi bu güncelleştirmelere yerleşebilir ve tam sistem erişimi kazanabilir. Dikkatli olunması tavsiye edilir.]]></string>
+	<string name="secure_mode_disabled_description">Ek güncelleştirmeler varsa uygulanacak. Not herhangi bir (zararlı) yazılım paketi bu güncelleştirmelere yerleşebilir ve tam sistem erişimi kazanabilir. Dikkatli olunması tavsiye edilir.</string>
 	<string name="recovery_notice_title">Bildiri</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Güncellemeleri sadece <b>TWRP</b> kurtarma bölümü ile yükleyebilirsiniz. Lütfen devam etmeden önce uyumlu bir kurtarma bölümüne sahip olduğunuzdan emin olun.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Mevcut modda güncellemeleri yüklemek sadece desteklenen <b>TWRP</b> recovery yazılımları üzerinde desteklenir.
- <i>Resmi</i> <b>CWM</b> derlemeleri <i>desteklenmemektedir</i>, fakat yine de <i>topluluk tarafından derlenen</i> bazı <b>CWM</b> sürümleri <i>çalışabilir.</i> Lütfen devam etmeden önce uyumlu bir recovery yazılımına sahip olduğunuzdan emin olun.]]></string>
+	<string name="recovery_notice_description_secure">Güncellemeleri sadece &lt;b&gt;TWRP&lt;/b&gt; kurtarma bölümü ile yükleyebilirsiniz. Lütfen devam etmeden önce uyumlu bir kurtarma bölümüne sahip olduğunuzdan emin olun.</string>
+	<string name="recovery_notice_description_not_secure">Mevcut modda güncellemeleri yüklemek sadece desteklenen &lt;b&gt;TWRP&lt;/b&gt; recovery yazılımları üzerinde desteklenir.
+ &lt;i&gt;Resmi&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt; derlemeleri &lt;i&gt;desteklenmemektedir&lt;/i&gt;, fakat yine de &lt;i&gt;topluluk tarafından derlenen&lt;/i&gt; bazı &lt;b&gt;CWM&lt;/b&gt; sürümleri &lt;i&gt;çalışabilir.&lt;/i&gt; Lütfen devam etmeden önce uyumlu bir recovery yazılımına sahip olduğunuzdan emin olun.</string>
 	<string name="flash_after_update_notice_title">Bildiri</string>
-	<string name="flash_after_update_notice_description"><![CDATA[Ek güncellemeler <b>FlashAfterUpdate</b> klasöründe mevcut, fakat güvenli mod etkin. Devam ederseniz, bu ek güncellemeler <b>yüklenmeyecek.</b>.]]></string>
+	<string name="flash_after_update_notice_description">Ek güncellemeler &lt;b&gt;FlashAfterUpdate&lt;/b&gt; klasöründe mevcut, fakat güvenli mod etkin. Devam ederseniz, bu ek güncellemeler &lt;b&gt;yüklenmeyecek.&lt;/b&gt;.</string>
 	<string name="state_error_not_official_title">Güncelleme devre dışı.</string>
 	<string name="state_error_not_official_extra" formatted="false">%s yazılımının güncellenmesi mümkün değil</string>
 	<string name="button_build_delta">İndir</string>
@@ -107,15 +106,15 @@
 	<string name="state_error_permissions">Depolama izinleri yok.</string>
 	<string name="state_error_flash">Yükleme başarısız oldu. Önbelleği temizleyin ve tekrar deneyin.</string>
 	<string name="state_error_ab_flash">Yükleme ayarlanamadı. Lütfen yeniden başlatıp tekrar deneyin.</string>
-	<string name="progress_status_0">Boşta &#8230;</string>
-	<string name="progress_status_1">Güncellemeler kontrol ediliyor &#8230;</string>
-	<string name="progress_status_2">Güncelleme kullanılabilir &#8230;</string>
-	<string name="progress_status_3">Yükleniyor &#8230;</string>
-	<string name="progress_status_4">Doğrulanıyor &#8230;</string>
-	<string name="progress_status_5">Tamamlanıyor &#8230;</string>
-	<string name="progress_status_6">Güncellendi. Yeniden başlatma bekleniyor &#8230;</string>
-	<string name="progress_status_7">Etkinliği raporlama hatası &#8230;</string>
-	<string name="progress_status_8">Geri almaya çalışıyor &#8230;</string>
+	<string name="progress_status_0">Boşta …</string>
+	<string name="progress_status_1">Güncellemeler kontrol ediliyor …</string>
+	<string name="progress_status_2">Güncelleme kullanılabilir …</string>
+	<string name="progress_status_3">Yükleniyor …</string>
+	<string name="progress_status_4">Doğrulanıyor …</string>
+	<string name="progress_status_5">Tamamlanıyor …</string>
+	<string name="progress_status_6">Güncellendi. Yeniden başlatma bekleniyor …</string>
+	<string name="progress_status_7">Etkinliği raporlama hatası …</string>
+	<string name="progress_status_8">Geri almaya çalışıyor …</string>
 	<string name="progress_status_9">Devredışı.</string>
 	<string name="ab_perf_mode_title">AB performans modu</string>
 	<string name="ab_perf_mode_summary">AB güncellemelerini yüklemek için performans modunu kullanın</string>
@@ -125,9 +124,9 @@
 	<string name="state_error_ab_flash_title">AB güncellemesi kurulamıyor</string>
 	<string name="state_error_flash_title">Güncelleme kurulamıyor</string>
 	<string name="file_flash_support_title">Yerel dosya kurma</string>
-	<string name="file_flash_support_summary">Yerel bir ZIP dosyasını seçmenize imkân sağlar</string>
+	<string name="file_flash_support_summary">Yerel bir ZIP dosyasını seçmenize imkan sağlar</string>
 	<string name="flash_file_notice_title">Yerel dosya kurma</string>
-	<string name="flash_file_notice_message"><b>Dikkat:</b> Seçilen ZIP dosyasının cihazınıza uygun olup olmadığına dâir herhangi bir yoklama olmayacaktır!\n\n<b>Yanlış bir ZIP dosyasını kurmak cihazınızı kullanılamaz hâle getirebilir!</b></string>
+	<string name="flash_file_notice_message"><b>Dikkat:</b> Seçilen ZIP dosyasının cihazınıza uygun olup olmadığına dair herhangi bir yoklama olmayacaktır!\n\n<b>Yanlış bir ZIP dosyasını kurmak cihazınızı kullanılamaz hale getirebilir!</b></string>
 	<string name="channel_name">Güncelleme ilerleme durumu</string>
 	<string name="text_update_file_flash_title">Güncelleme dosyası</string>
 </resources>

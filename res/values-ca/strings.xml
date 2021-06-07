@@ -11,48 +11,47 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Altres</string>
 	<string name="action_about">Sobre</string>
-	<string name="about_content"><![CDATA[        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Creat originalment per <b>CarbonROM</b><br>
-        <br>
-        Llicència segons els termes de la <b>GNU General Public License, versió 3.0 (GPLv3)</b><br>
-        <br>
-        Descodificació Delta basada en <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Copyright &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Creat originalment per &lt;b&gt;CarbonROM&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Llicència segons els termes de la &lt;b&gt;GNU General Public License, versió 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Descodificació Delta basada en &lt;b&gt;xdelta&lt;/b&gt;, copyright &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">El sistema està actualitzat.</string>
-	<string name="state_action_ab_flash">S\'està instal·lant l\'actualització de l\'A/B &#8230;</string>
-	<string name="state_action_ab_finished">Actualització instal·lada. Reinicia pendent &#8230;</string>
-	<string name="state_action_checking">Comprovant si hi ha actualitzacions disponibles &#8230;</string>
-	<string name="state_action_checking_md5">Verificant arxiu &#8230;</string>
-	<string name="state_action_searching">Buscant arxius &#8230;</string>
-	<string name="state_action_searching_md5">Verificant arxiu &#8230;</string>
-	<string name="state_action_downloading">S\'està baixant &#8230;</string>
-	<string name="state_action_applying">Apedaçant &#8230;</string>
-	<string name="state_action_applying_patch">Apedaçant &#8230;</string>
-	<string name="state_action_applying_md5">Verificant arxiu &#8230;</string>
+	<string name="state_action_ab_flash">S\'està instal·lant l\'actualització de l\'A/B …</string>
+	<string name="state_action_ab_finished">Actualització instal·lada. Reinicia pendent …</string>
+	<string name="state_action_checking">Comprovant si hi ha actualitzacions disponibles …</string>
+	<string name="state_action_checking_md5">Verificant arxiu …</string>
+	<string name="state_action_searching">Buscant arxius …</string>
+	<string name="state_action_searching_md5">Verificant arxiu …</string>
+	<string name="state_action_downloading">S\'està baixant …</string>
+	<string name="state_action_applying">Apedaçant …</string>
+	<string name="state_action_applying_patch">Apedaçant …</string>
+	<string name="state_action_applying_md5">Verificant arxiu …</string>
 	<string name="state_action_ready">Actualització llesta per instal·lar.</string>
 	<string name="state_error_disk_space">No hi ha prou espai al disc!</string>
 	<string name="state_error_unknown">Error desconegut.</string>
 	<string name="error_disk_space_sub" formatted="false">%d MiB disponible, %d MiB necesari</string>
 	<string name="notify_update_available">Una actualització està disponible</string>
-	<string name="notify_checking">S\'està cercant una actualització &#8230;</string>
+	<string name="notify_checking">S\'està cercant una actualització …</string>
 	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d restant</string>
 	<string name="last_checked" formatted="false">%s a %s</string>
 	<string name="last_checked_never">No s\'ha comprovat mai, voldríeu fer-ho?</string>
 	<string name="button_check_short">Comprova</string>
 	<string name="button_reboot_short">Reinicia</string>
 	<string name="button_flash_now">Instal·la</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Mode Segur</string>
 	<string name="secure_mode_enabled_title">Mode segur: habilitat</string>
-	<string name="secure_mode_enabled_description"><![CDATA[Es verificarà la signatura criptogràfica de l\'actualització abans d\'instal lar-la per confirmar el seu origen, i no s\'instal laran actualitzacions addicionals. Aquest mode només és compatible amb el <b>TWRP</b>.]]></string>
+	<string name="secure_mode_enabled_description">Es verificarà la signatura criptogràfica de l\'actualització abans d\'instal lar-la per confirmar el seu origen, i no s\'instal laran actualitzacions addicionals. Aquest mode només és compatible amb el &lt;b&gt;TWRP&lt;/b&gt;.</string>
 	<string name="secure_mode_disabled_title">Mode segur: inhabilitat</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Les actualitzacions són aplicades si estan presents. Tingueu en compte que qualsevol paquet de programari (maliciós) pot obtenir accés complet al sistema. Es recomana precaució.]]></string>
+	<string name="secure_mode_disabled_description">Les actualitzacions són aplicades si estan presents. Tingueu en compte que qualsevol paquet de programari (maliciós) pot obtenir accés complet al sistema. Es recomana precaució.</string>
 	<string name="recovery_notice_title">Avís</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Aplicar actualitzacions en la manera actual és només suportat amb el recovery <b>TWRP</b>. Si us plau, assegureu que heu recovery compatible abans de continuar.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Aplicar actualitzacions en la manera actual és només suportat amb el recovery <b>TWRP</b>. <i>El recovery oficial</i> de <b>CWM</b> <i>no</i> és suportat, encara que algunes <i> versions construïdes per la comunitat </i>de<b> CWM </b> <i> poden </i> funcionar. Assegureu-vos que està utilitzant el recovery compatible abans de continuar.]]></string>
+	<string name="recovery_notice_description_secure">Aplicar actualitzacions en la manera actual és només suportat amb el recovery &lt;b&gt;TWRP&lt;/b&gt;. Si us plau, assegureu que heu recovery compatible abans de continuar.</string>
+	<string name="recovery_notice_description_not_secure">Aplicar actualitzacions en la manera actual és només suportat amb el recovery &lt;b&gt;TWRP&lt;/b&gt;. &lt;i&gt;El recovery oficial&lt;/i&gt; de &lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;no&lt;/i&gt; és suportat, encara que algunes &lt;i&gt; versions construïdes per la comunitat &lt;/i&gt;de&lt;b&gt; CWM &lt;/b&gt; &lt;i&gt; poden &lt;/i&gt; funcionar. Assegureu-vos que està utilitzant el recovery compatible abans de continuar.</string>
 	<string name="flash_after_update_notice_title">Avís</string>
-	<string name="flash_after_update_notice_description"><![CDATA[Hi ha actualitzacions addicionals a la carpeta <b>FlashAfterUpdate</b>, però el mode segur està habilitat. Si continueu, les actualitzacions addicionals <b>no</b> s\'instal·laran.]]></string>
+	<string name="flash_after_update_notice_description">Hi ha actualitzacions addicionals a la carpeta &lt;b&gt;FlashAfterUpdate&lt;/b&gt;, però el mode segur està habilitat. Si continueu, les actualitzacions addicionals &lt;b&gt;no&lt;/b&gt; s\'instal·laran.</string>
 	<string name="state_error_not_official_title">Actualització inhabilitada.</string>
 	<string name="state_error_not_official_extra" formatted="false">No es pot actualitzar %s</string>
 	<string name="button_build_delta">Baixa</string>
@@ -105,14 +104,14 @@
 	<string name="state_error_permissions">Sense permisos d\'emmagatzematge.</string>
 	<string name="state_error_flash">No s\'ha pogut preparar la instal·lació. Netegeu la memòria cau i torneu-ho a intentar.</string>
 	<string name="state_error_ab_flash">No s\'ha pogut configurar el flaix. Reinicieu i torneu a intentar.</string>
-	<string name="progress_status_0">Inactiu &#8230;</string>
-	<string name="progress_status_1">S\'estan consultant actualitzacions &#8230;</string>
-	<string name="progress_status_2">Actualització disponible &#8230;</string>
-	<string name="progress_status_3">Instal·lant &#8230;</string>
-	<string name="progress_status_4">Verificant &#8230;</string>
-	<string name="progress_status_6">Actualitzat. Pendent de reinici &#8230;</string>
-	<string name="progress_status_7">S\'ha produït un error en informar &#8230;</string>
-	<string name="progress_status_8">S\'està intentant revertir &#8230;</string>
+	<string name="progress_status_0">Inactiu …</string>
+	<string name="progress_status_1">S\'estan consultant actualitzacions …</string>
+	<string name="progress_status_2">Actualització disponible …</string>
+	<string name="progress_status_3">Instal·lant …</string>
+	<string name="progress_status_4">Verificant …</string>
+	<string name="progress_status_6">Actualitzat. Pendent de reinici …</string>
+	<string name="progress_status_7">S\'ha produït un error en informar …</string>
+	<string name="progress_status_8">S\'està intentant revertir …</string>
 	<string name="progress_status_9">S\'ha desactivat.</string>
 	<string name="ab_perf_mode_title">Mode de rendiment AB</string>
 	<string name="ab_perf_mode_summary">Utilitzeu Mode de Rendiment per instal·lar actualitzacions AB</string>

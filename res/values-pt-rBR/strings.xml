@@ -11,28 +11,28 @@
 	<string name="network_ethernet">Internet</string>
 	<string name="network_unknown">Outras</string>
 	<string name="action_about">Sobre</string>
-	<string name="about_content"><![CDATA[        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Originalmente criado para o projeto de <b>CarbonROM</b><br>
-        licenciado sob os termos da <b>GNU General Public License, versão 3.0 (GPLv3)</b><br>
-        baseada em decodificação <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>]]></string>
+	<string name="about_content">        Copyright &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Originalmente criado para o projeto de &lt;b&gt;CarbonROM&lt;/b&gt;&lt;br&gt;
+        licenciado sob os termos da &lt;b&gt;GNU General Public License, versão 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        baseada em decodificação &lt;b&gt;xdelta&lt;/b&gt;, copyright &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;</string>
 	<string name="state_action_none">Seu sistema está atualizado.</string>
-	<string name="state_action_ab_flash">Instalando Atualização A/B &#8230;</string>
-	<string name="state_action_ab_finished">Atualização instalada. Reinicialização pendente &#8230;</string>
-	<string name="state_action_checking">Verificando atualizações&#8230;</string>
-	<string name="state_action_checking_md5">Verificando arquivo&#8230;</string>
-	<string name="state_action_searching">Procurando arquivos&#8230;</string>
-	<string name="state_action_searching_md5">Verificando arquivo&#8230;</string>
-	<string name="state_action_downloading">Baixando &#8230;</string>
-	<string name="state_action_applying">Remendando&#8230;</string>
-	<string name="state_action_applying_patch">Remendando&#8230;</string>
-	<string name="state_action_applying_md5">Verificando arquivo&#8230;</string>
+	<string name="state_action_ab_flash">Instalando Atualização A/B …</string>
+	<string name="state_action_ab_finished">Atualização instalada. Reinicialização pendente …</string>
+	<string name="state_action_checking">Verificando atualizações…</string>
+	<string name="state_action_checking_md5">Verificando arquivo…</string>
+	<string name="state_action_searching">Procurando arquivos…</string>
+	<string name="state_action_searching_md5">Verificando arquivo…</string>
+	<string name="state_action_downloading">Baixando …</string>
+	<string name="state_action_applying">Remendando…</string>
+	<string name="state_action_applying_patch">Remendando…</string>
+	<string name="state_action_applying_md5">Verificando arquivo…</string>
 	<string name="state_action_ready">Pronto para a atualização.</string>
 	<string name="state_error_disk_space">Espaço na memória é insuficiente!</string>
 	<string name="state_error_unknown">Erro desconhecido.</string>
 	<string name="error_disk_space_sub" formatted="false">%d Mb disponíveis, %d Mb necessários</string>
 	<string name="notify_update_available">Há uma atualização disponível</string>
-	<string name="notify_checking">Verificando atualizações&#8230;</string>
+	<string name="notify_checking">Verificando atualizações…</string>
 	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d restantes</string>
 	<string name="last_checked" formatted="false">%s em %s</string>
 	<string name="last_checked_never">Nunca verificamos, talvez você queira fazê-lo?</string>
@@ -40,17 +40,16 @@
 	<string name="button_check_now">Verificar atualizações</string>
 	<string name="button_reboot_short">Reiniciar</string>
 	<string name="button_flash_now">Instalar</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Seguro</string>
 	<string name="secure_mode_enabled_title">Modo seguro: habilitado</string>
-	<string name="secure_mode_enabled_description"><![CDATA[Assinatura criptográfica da atualização será verificada antes de atualizar para confirmação de origem, e nenhuma atualização adicional será atualizada. Este modo só é compatível com <b>TWRP</b>.]]></string>
+	<string name="secure_mode_enabled_description">Assinatura criptográfica da atualização será verificada antes de atualizar para confirmação de origem, e nenhuma atualização adicional será atualizada. Este modo só é compatível com &lt;b&gt;TWRP&lt;/b&gt;.</string>
 	<string name="secure_mode_disabled_title">Modo seguro: desativado</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Atualizações adicionais são aplicadas se presente. Note que qualquer pacote de software (mesmo malicioso) pode adicionar tais atualizações e escalar acesso completo ao sistema. Recomenda-se ter cautela.]]></string>
+	<string name="secure_mode_disabled_description">Atualizações adicionais são aplicadas se presente. Note que qualquer pacote de software (mesmo malicioso) pode adicionar tais atualizações e escalar acesso completo ao sistema. Recomenda-se ter cautela.</string>
 	<string name="recovery_notice_title">Aviso</string>
-	<string name="recovery_notice_description_secure"><![CDATA[A aplicação de atualizações é apenas suportada na recuperação <b>TWRP</b>. Por favor, certifique-se de que está rodando uma recuperação compatível antes de prosseguir.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[A aplicação de atualizações é apenas suportada na recuperação <b>TWRP</b>. Trabalhos <i>Oficiais</i> <b>CWM</b> <i>não</i> são suportadas, apesar de algumas versões <i>da comunidade</i> com <b>CWM</b> <i>possivelmente</i> funcionarão. Por favor, certifique-se de que está rodando uma recovery compatível antes de prosseguir.]]></string>
+	<string name="recovery_notice_description_secure">A aplicação de atualizações é apenas suportada na recuperação &lt;b&gt;TWRP&lt;/b&gt;. Por favor, certifique-se de que está rodando uma recuperação compatível antes de prosseguir.</string>
+	<string name="recovery_notice_description_not_secure">A aplicação de atualizações é apenas suportada na recuperação &lt;b&gt;TWRP&lt;/b&gt;. Trabalhos &lt;i&gt;Oficiais&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;não&lt;/i&gt; são suportadas, apesar de algumas versões &lt;i&gt;da comunidade&lt;/i&gt; com &lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;possivelmente&lt;/i&gt; funcionarão. Por favor, certifique-se de que está rodando uma recovery compatível antes de prosseguir.</string>
 	<string name="flash_after_update_notice_title">Aviso</string>
-	<string name="flash_after_update_notice_description"><![CDATA[Atualizações adicionais serão apresentadas no diretório <b>FlashAfterUpdate</b>, porém o modo seguro será habilitado. Se você prosseguir, estas atualizações <b>não</b> serão aplicadas.]]></string>
+	<string name="flash_after_update_notice_description">Atualizações adicionais serão apresentadas no diretório &lt;b&gt;FlashAfterUpdate&lt;/b&gt;, porém o modo seguro será habilitado. Se você prosseguir, estas atualizações &lt;b&gt;não&lt;/b&gt; serão aplicadas.</string>
 	<string name="state_error_not_official_title">Atualização desabilitada.</string>
 	<string name="state_error_not_official_extra" formatted="false">Atualização do %s não é possível</string>
 	<string name="button_build_delta">Baixar</string>
@@ -103,15 +102,15 @@
 	<string name="state_error_permissions">Nenhuma permissão de armazenamento.</string>
 	<string name="state_error_flash">Falha de instalação do flash. Limpar /cache e tente novamente.</string>
 	<string name="state_error_ab_flash">Falha de instalação do flash. Por favor reinicie e tente novamente.</string>
-	<string name="progress_status_0">Inativo &#8230;</string>
-	<string name="progress_status_1">Verificando atualizações &#8230;</string>
-	<string name="progress_status_2">Atualização disponível &#8230;</string>
-	<string name="progress_status_3">Instalando &#8230;</string>
-	<string name="progress_status_4">Verificando &#8230;</string>
-	<string name="progress_status_5">Finalizando &#8230;</string>
-	<string name="progress_status_6">Atualizado. Reinicialização pendente &#8230;</string>
-	<string name="progress_status_7">Reportando evento de erro &#8230;</string>
-	<string name="progress_status_8">Tentativa de reversão &#8230;</string>
+	<string name="progress_status_0">Inativo …</string>
+	<string name="progress_status_1">Verificando atualizações …</string>
+	<string name="progress_status_2">Atualização disponível …</string>
+	<string name="progress_status_3">Instalando …</string>
+	<string name="progress_status_4">Verificando …</string>
+	<string name="progress_status_5">Finalizando …</string>
+	<string name="progress_status_6">Atualizado. Reinicialização pendente …</string>
+	<string name="progress_status_7">Reportando evento de erro …</string>
+	<string name="progress_status_8">Tentativa de reversão …</string>
 	<string name="progress_status_9">Desativado.</string>
 	<string name="ab_perf_mode_title">Modo de desempenho AB</string>
 	<string name="ab_perf_mode_summary">Use o modo de desempenho para instalar atualizações do AB</string>
