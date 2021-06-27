@@ -11,49 +11,48 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Ostatní</string>
 	<string name="action_about">O aplikaci</string>
-	<string name="about_content"><![CDATA[Všechna práva vyhrazena &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Původně vytvořeno pro <b>Projekt Carbon</b><br>
-        <br>
-        Licencováno na základě podmínek <b>GNU General Public License, verze 3.0 (GPLv3)</b><br>
-        <br>
-        Delta dekódování na základě <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-   ]]></string>
+	<string name="about_content">Všechna práva vyhrazena &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Původně vytvořeno pro &lt;b&gt;Projekt Carbon&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Licencováno na základě podmínek &lt;b&gt;GNU General Public License, verze 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Delta dekódování na základě &lt;b&gt;xdelta&lt;/b&gt;, copyright &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+   </string>
 	<string name="state_action_none">Váš systém je aktuální.</string>
-	<string name="state_action_ab_flash">Instalace aktualizace A/B &#8230;</string>
-	<string name="state_action_ab_finished">Aktualizace nainstalována. Čekání na restart &#8230;</string>
-	<string name="state_action_checking">Kontroluji aktualizace &#8230;</string>
-	<string name="state_action_checking_md5">Ověřování souboru &#8230;</string>
-	<string name="state_action_searching">Hledání souborů &#8230;</string>
-	<string name="state_action_searching_md5">Ověřování souboru &#8230;</string>
-	<string name="state_action_downloading">Stahování &#8230;</string>
-	<string name="state_action_applying">Provádění změn &#8230;</string>
-	<string name="state_action_applying_patch">Provádění změn &#8230;</string>
-	<string name="state_action_applying_md5">Ověřování souboru &#8230;</string>
+	<string name="state_action_ab_flash">Instalace aktualizace A/B …</string>
+	<string name="state_action_ab_finished">Aktualizace nainstalována. Čekání na restart …</string>
+	<string name="state_action_checking">Kontroluji aktualizace …</string>
+	<string name="state_action_checking_md5">Ověřování souboru …</string>
+	<string name="state_action_searching">Hledání souborů …</string>
+	<string name="state_action_searching_md5">Ověřování souboru …</string>
+	<string name="state_action_downloading">Stahování …</string>
+	<string name="state_action_applying">Provádění změn …</string>
+	<string name="state_action_applying_patch">Provádění změn …</string>
+	<string name="state_action_applying_md5">Ověřování souboru …</string>
 	<string name="state_action_ready">Aktualizace je připravena na flash.</string>
 	<string name="state_error_disk_space">Není dostatek místa na úložišti!</string>
 	<string name="state_error_unknown">Neznámá chyba.</string>
 	<string name="error_disk_space_sub" formatted="false">%d MiB volných, %d MiB požadovaných</string>
 	<string name="notify_update_available">Aktualizace je k dispozici</string>
-	<string name="notify_checking">Kontrola aktualizací &#8230;</string>
+	<string name="notify_checking">Kontrola aktualizací …</string>
 	<string name="notify_eta_remaining" formatted="false">Zbývá %2d%%, %02d:%02d</string>
 	<string name="last_checked" formatted="false">%s v %s</string>
 	<string name="last_checked_never">Kontrola nebyla nikdy provedena, možná chcete provést kontrolu nyní?</string>
 	<string name="button_check_short">Zkontrolovat</string>
-	<string name="button_check_now">Zkontrolovat aktualizace &#8230;</string>
+	<string name="button_check_now">Zkontrolovat aktualizace …</string>
 	<string name="button_reboot_short">Restartovat</string>
 	<string name="button_flash_now">Flash</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Zabezpečení</string>
 	<string name="secure_mode_enabled_title">Zabezpečený režim: povoleno</string>
-	<string name="secure_mode_enabled_description"><![CDATA[Před nahráním aktualizace bude ověřen digitální podpis pro ověření původu aktualizace. Tento režim je kompatibilní pouze s <b>TWRP</b>.]]></string>
+	<string name="secure_mode_enabled_description">Před nahráním aktualizace bude ověřen digitální podpis pro ověření původu aktualizace. Tento režim je kompatibilní pouze s &lt;b&gt;TWRP&lt;/b&gt;.</string>
 	<string name="secure_mode_disabled_title">Zabezpečený režim: zakázáno</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Aktualizace budou nahrány do zařízení. Všimněte si, že jakákoliv škodlivá aplikace sem může umístit tyto aktualizace a získat plný přístup. Opatrnost je na místě.]]></string>
+	<string name="secure_mode_disabled_description">Aktualizace budou nahrány do zařízení. Všimněte si, že jakákoliv škodlivá aplikace sem může umístit tyto aktualizace a získat plný přístup. Opatrnost je na místě.</string>
 	<string name="recovery_notice_title">Upozornění</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Flashování aktualizací je v současném režimu podporováno pouze na <b>TWRP</b> recovery. Zkontrolujte prosím před spuštěním kompatibilitu recovery.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Flashování aktualizací je v současném režimu podporováno pouze na <b>TWRP</b> recovery.<i>Oficiální</i><b>CWM</b> vydání <i>není</i> podporováno, ale některé<i>neoficiální</i> verze <b>CWM</b><i>mohou</i> přesto pracovat správně. Zkontrolujte si prosím kompatibilitu recovery před spuštěním.]]></string>
+	<string name="recovery_notice_description_secure">Flashování aktualizací je v současném režimu podporováno pouze na &lt;b&gt;TWRP&lt;/b&gt; recovery. Zkontrolujte prosím před spuštěním kompatibilitu recovery.</string>
+	<string name="recovery_notice_description_not_secure">Flashování aktualizací je v současném režimu podporováno pouze na &lt;b&gt;TWRP&lt;/b&gt; recovery.&lt;i&gt;Oficiální&lt;/i&gt;&lt;b&gt;CWM&lt;/b&gt; vydání &lt;i&gt;není&lt;/i&gt; podporováno, ale některé&lt;i&gt;neoficiální&lt;/i&gt; verze &lt;b&gt;CWM&lt;/b&gt;&lt;i&gt;mohou&lt;/i&gt; přesto pracovat správně. Zkontrolujte si prosím kompatibilitu recovery před spuštěním.</string>
 	<string name="flash_after_update_notice_title">Upozornění</string>
-	<string name="flash_after_update_notice_description"><![CDATA[Další aktualizace jsou přítomny ve složce <b>FlashAfterUpdate</b>, ale je povolen zabezpečený režim. Budete-li pokračovat, tyto další aktualizace se <b>nebudou</b> instalovat.]]></string>
+	<string name="flash_after_update_notice_description">Další aktualizace jsou přítomny ve složce &lt;b&gt;FlashAfterUpdate&lt;/b&gt;, ale je povolen zabezpečený režim. Budete-li pokračovat, tyto další aktualizace se &lt;b&gt;nebudou&lt;/b&gt; instalovat.</string>
 	<string name="state_error_not_official_title">Aktualizace zakázána.</string>
 	<string name="state_error_not_official_extra" formatted="false">Aktualizace %s není možná</string>
 	<string name="button_build_delta">Stáhnout</string>
@@ -106,15 +105,15 @@
 	<string name="state_error_permissions">Není oprávnění k přístupu na úložiště.</string>
 	<string name="state_error_flash">Nepodařilo se nastavení flash. Vymažte /cache a akci opakujte.</string>
 	<string name="state_error_ab_flash">Nepodařilo se nastavení instalace. Restartujte a zkuste to znovu.</string>
-	<string name="progress_status_0">Čekání &#8230;</string>
-	<string name="progress_status_1">Kontroluji aktualizace &#8230;</string>
-	<string name="progress_status_2">Aktualizace k dispozici &#8230;</string>
-	<string name="progress_status_3">Instalace &#8230;</string>
-	<string name="progress_status_4">Ověřování &#8230;</string>
-	<string name="progress_status_5">Dokončování &#8230;</string>
-	<string name="progress_status_6">Aktualizováno. Čekání na restart &#8230;</string>
-	<string name="progress_status_7">Hlášení o chybě &#8230;</string>
-	<string name="progress_status_8">Pokus o návrat &#8230;</string>
+	<string name="progress_status_0">Čekání …</string>
+	<string name="progress_status_1">Kontroluji aktualizace …</string>
+	<string name="progress_status_2">Aktualizace k dispozici …</string>
+	<string name="progress_status_3">Instalace …</string>
+	<string name="progress_status_4">Ověřování …</string>
+	<string name="progress_status_5">Dokončování …</string>
+	<string name="progress_status_6">Aktualizováno. Čekání na restart …</string>
+	<string name="progress_status_7">Hlášení o chybě …</string>
+	<string name="progress_status_8">Pokus o návrat …</string>
 	<string name="progress_status_9">Zakázáno.</string>
 	<string name="ab_perf_mode_title">Výkonný režim AB</string>
 	<string name="ab_perf_mode_summary">Chcete-li nainstalovat aktualizace AB, použijte výkonný režim</string>

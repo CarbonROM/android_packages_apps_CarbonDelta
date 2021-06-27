@@ -11,49 +11,48 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Iné</string>
 	<string name="action_about">O aplikácii</string>
-	<string name="about_content"><![CDATA[        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Pôvodne vytvorené pre <b>Projekt Carbon</b><br>
-        <br>
-        Licencované pod <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
-        <br>
-        Delta dekódovanie založené na <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Copyright &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Pôvodne vytvorené pre &lt;b&gt;Projekt Carbon&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Licencované pod &lt;b&gt;GNU General Public License, version 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Delta dekódovanie založené na &lt;b&gt;xdelta&lt;/b&gt;, copyright &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">Váš systém je aktuálny.</string>
-	<string name="state_action_ab_flash">Inštalácia A/B aktualizácie &#8230;</string>
-	<string name="state_action_ab_finished">Aktualizácia nainštalovaná. Čaká sa na reštart &#8230;</string>
-	<string name="state_action_checking">Kontrolujú sa aktualizácie &#8230;</string>
-	<string name="state_action_checking_md5">Overuje sa súbor &#8230;</string>
-	<string name="state_action_searching">Vyhľadávajú sa súbory &#8230;</string>
-	<string name="state_action_searching_md5">Overuje sa súbor &#8230;</string>
-	<string name="state_action_downloading">Preberá sa &#8230;</string>
-	<string name="state_action_applying">Aplikujú sa záplaty &#8230;</string>
-	<string name="state_action_applying_patch">Aplikujú sa záplaty &#8230;</string>
-	<string name="state_action_applying_md5">Overuje sa súbor &#8230;</string>
+	<string name="state_action_ab_flash">Inštalácia A/B aktualizácie …</string>
+	<string name="state_action_ab_finished">Aktualizácia nainštalovaná. Čaká sa na reštart …</string>
+	<string name="state_action_checking">Kontrolujú sa aktualizácie …</string>
+	<string name="state_action_checking_md5">Overuje sa súbor …</string>
+	<string name="state_action_searching">Vyhľadávajú sa súbory …</string>
+	<string name="state_action_searching_md5">Overuje sa súbor …</string>
+	<string name="state_action_downloading">Preberá sa …</string>
+	<string name="state_action_applying">Aplikujú sa záplaty …</string>
+	<string name="state_action_applying_patch">Aplikujú sa záplaty …</string>
+	<string name="state_action_applying_md5">Overuje sa súbor …</string>
 	<string name="state_action_ready">Aktualizácia pripravená na flash.</string>
 	<string name="state_error_disk_space">Nedostatok miesta na disku!</string>
 	<string name="state_error_unknown">Neznáma chyba.</string>
 	<string name="error_disk_space_sub" formatted="false">%d MiB dostupných, %d MiB potrebných</string>
 	<string name="notify_update_available">Je dostupná aktualizácia</string>
-	<string name="notify_checking">Kontroluje sa aktualizácia &#8230;</string>
+	<string name="notify_checking">Kontroluje sa aktualizácia …</string>
 	<string name="notify_eta_remaining" formatted="false">Zostáva: %2d%%, %02d:%02d</string>
 	<string name="last_checked" formatted="false">%s o %s</string>
 	<string name="last_checked_never">Kontrola nebola nikdy vykonaná. Chcete vykonať kontrolu teraz?</string>
 	<string name="button_check_short">Skontrolovať</string>
-	<string name="button_check_now">Skontrolovať aktualizácie &#8230;</string>
+	<string name="button_check_now">Skontrolovať aktualizácie …</string>
 	<string name="button_reboot_short">Reštartovať</string>
 	<string name="button_flash_now">Inštalovať</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Zabezpečenie</string>
 	<string name="secure_mode_enabled_title">Zabezpečený režim: povolený</string>
-	<string name="secure_mode_enabled_description"><![CDATA[Kvôli overeniu pôvodu aktualizácie bude pred jej zapísaním overený digitálny podpis a žiadne ďalšie aktualizácie nebudú nainštalované. Tento režim je kompatibilný iba s <b>TWRP</b>.]]></string>
+	<string name="secure_mode_enabled_description">Kvôli overeniu pôvodu aktualizácie bude pred jej zapísaním overený digitálny podpis a žiadne ďalšie aktualizácie nebudú nainštalované. Tento režim je kompatibilný iba s &lt;b&gt;TWRP&lt;/b&gt;.</string>
 	<string name="secure_mode_disabled_title">Zabezpečený režim: zakázaný</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Všetky ďalšie prítomné aktualizácie budú nainštalované. Majte na mysli, že akákoľvek (škodlivá) aplikácia sem môže umiestniť vlastnú aktualizáciu a prevziať kontrolu nad zariadením. Preto buďte opatrní.]]></string>
+	<string name="secure_mode_disabled_description">Všetky ďalšie prítomné aktualizácie budú nainštalované. Majte na mysli, že akákoľvek (škodlivá) aplikácia sem môže umiestniť vlastnú aktualizáciu a prevziať kontrolu nad zariadením. Preto buďte opatrní.</string>
 	<string name="recovery_notice_title">Oznam</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Inštalácia aktualizácií v aktuálnom režime je podporovaná iba cez <b>TWRP</b> recovery. Pred tým, ako budete pokračovať, sa uistite, že používate kompatibilnú verziu recovery.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Inštalácia aktualizácií v aktuálnom režime je oficiálne podporovaná len cez <b>TWRP</b> recovery. <i>Oficiálnel</i> <b>CWM</b> recovery <i>nie sú</i> podporované, aj keď niektoré <i>komunitné</i> verzie <b>CWM</b> <i>môžu</i> stále fungovať. Pred tým, než budete pokračovať, sa prosím uistite, že používate kompatibilnú recovery.]]></string>
+	<string name="recovery_notice_description_secure">Inštalácia aktualizácií v aktuálnom režime je podporovaná iba cez &lt;b&gt;TWRP&lt;/b&gt; recovery. Pred tým, ako budete pokračovať, sa uistite, že používate kompatibilnú verziu recovery.</string>
+	<string name="recovery_notice_description_not_secure">Inštalácia aktualizácií v aktuálnom režime je oficiálne podporovaná len cez &lt;b&gt;TWRP&lt;/b&gt; recovery. &lt;i&gt;Oficiálnel&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt; recovery &lt;i&gt;nie sú&lt;/i&gt; podporované, aj keď niektoré &lt;i&gt;komunitné&lt;/i&gt; verzie &lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;môžu&lt;/i&gt; stále fungovať. Pred tým, než budete pokračovať, sa prosím uistite, že používate kompatibilnú recovery.</string>
 	<string name="flash_after_update_notice_title">Oznam</string>
-	<string name="flash_after_update_notice_description"><![CDATA[V adresári <b>FlashAfterUpdate</b> sú prítomné ďalšie aktualizácie, ale zároveň je zapnutý zabezpečený režim. Ak sa rozhodnete pokračovať, tieto ďalšie aktualizácie <b>nebudú</b> nainštalované.]]></string>
+	<string name="flash_after_update_notice_description">V adresári &lt;b&gt;FlashAfterUpdate&lt;/b&gt; sú prítomné ďalšie aktualizácie, ale zároveň je zapnutý zabezpečený režim. Ak sa rozhodnete pokračovať, tieto ďalšie aktualizácie &lt;b&gt;nebudú&lt;/b&gt; nainštalované.</string>
 	<string name="state_error_not_official_title">Aktualizácia je zakázaná.</string>
 	<string name="state_error_not_official_extra" formatted="false">Aktualizácia %s nie je možná</string>
 	<string name="button_build_delta">Prevziať</string>
@@ -106,15 +105,15 @@
 	<string name="state_error_permissions">Chýba povolenie na prístup k úložisku.</string>
 	<string name="state_error_flash">Zlyhalo nastavenie inštalácie. Vyčistite oddiel /cache a skúste to znovu.</string>
 	<string name="state_error_ab_flash">Zlyhalo nastavenie inštalácie. Prosím reštartujte a skúste to znovu.</string>
-	<string name="progress_status_0">Čaká sa &#8230;</string>
-	<string name="progress_status_1">Kontrolujú sa aktualizácie &#8230;</string>
-	<string name="progress_status_2">Aktualizácia k dispozícii &#8230;</string>
-	<string name="progress_status_3">Inštalácia &#8230;</string>
-	<string name="progress_status_4">Overuje sa &#8230;</string>
-	<string name="progress_status_5">Dokončuje sa &#8230;</string>
-	<string name="progress_status_6">Aktualizované. Čaká sa na reštart &#8230;</string>
-	<string name="progress_status_7">Hlásenie chybovej udalosti &#8230;</string>
-	<string name="progress_status_8">Pokus o vrátenie späť &#8230;</string>
+	<string name="progress_status_0">Čaká sa …</string>
+	<string name="progress_status_1">Kontrolujú sa aktualizácie …</string>
+	<string name="progress_status_2">Aktualizácia k dispozícii …</string>
+	<string name="progress_status_3">Inštalácia …</string>
+	<string name="progress_status_4">Overuje sa …</string>
+	<string name="progress_status_5">Dokončuje sa …</string>
+	<string name="progress_status_6">Aktualizované. Čaká sa na reštart …</string>
+	<string name="progress_status_7">Hlásenie chybovej udalosti …</string>
+	<string name="progress_status_8">Pokus o vrátenie späť …</string>
 	<string name="progress_status_9">Vypnuté.</string>
 	<string name="ab_perf_mode_title">Výkonný režim AB</string>
 	<string name="ab_perf_mode_summary">Na inštaláciu AB aktualizácií použiť Výkonný režim</string>

@@ -11,49 +11,48 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Khác</string>
 	<string name="action_about">Giới thiệu</string>
-	<string name="about_content"><![CDATA[        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Created for <b>CarbonROM</b><br>
-        <br>
-        Licensed under the terms of the <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
-        <br>
-        Delta decoding based on <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Copyright &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Created for &lt;b&gt;CarbonROM&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Licensed under the terms of the &lt;b&gt;GNU General Public License, version 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Delta decoding based on &lt;b&gt;xdelta&lt;/b&gt;, copyright &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">Hệ thống đã được cập nhật.</string>
-	<string name="state_action_ab_flash">Đang cài đặt bản cập nhật A/B &#8230;</string>
-	<string name="state_action_ab_finished">Đã cài đặt bản cập nhật. Đang chờ khởi động lại &#8230;</string>
-	<string name="state_action_checking">Đang kiểm tra cập nhật &#8230;</string>
-	<string name="state_action_checking_md5">Đang xác thực bản cập nhật &#8230;</string>
-	<string name="state_action_searching">Đang tìm kiếm các bản cập nhật &#8230;</string>
-	<string name="state_action_searching_md5">Đang xác thực bản cập nhật &#8230;</string>
-	<string name="state_action_downloading">Đang tải xuống &#8230;</string>
-	<string name="state_action_applying">Đang vá &#8230;</string>
-	<string name="state_action_applying_patch">Đang vá &#8230;</string>
-	<string name="state_action_applying_md5">Đang xác thực tệp tin &#8230;</string>
+	<string name="state_action_ab_flash">Đang cài đặt bản cập nhật A/B …</string>
+	<string name="state_action_ab_finished">Đã cài đặt bản cập nhật. Đang chờ khởi động lại …</string>
+	<string name="state_action_checking">Đang kiểm tra cập nhật …</string>
+	<string name="state_action_checking_md5">Đang xác thực bản cập nhật …</string>
+	<string name="state_action_searching">Đang tìm kiếm các bản cập nhật …</string>
+	<string name="state_action_searching_md5">Đang xác thực bản cập nhật …</string>
+	<string name="state_action_downloading">Đang tải xuống …</string>
+	<string name="state_action_applying">Đang vá …</string>
+	<string name="state_action_applying_patch">Đang vá …</string>
+	<string name="state_action_applying_md5">Đang xác thực tệp tin …</string>
 	<string name="state_action_ready">Bản cập nhật đã sẵn sàng để cài đặt.</string>
 	<string name="state_error_disk_space">Không đủ dung lượng!</string>
 	<string name="state_error_unknown">Lỗi không xác định.</string>
 	<string name="error_disk_space_sub" formatted="false">Hiện có %d MiB, cần thêm %d MiB</string>
 	<string name="notify_update_available">Đã có bản cập nhật</string>
-	<string name="notify_checking">Đang kiểm tra bản cập nhật &#8230;</string>
+	<string name="notify_checking">Đang kiểm tra bản cập nhật …</string>
 	<string name="notify_eta_remaining" formatted="false">Còn lại %2d%%, %02d:%02d</string>
 	<string name="last_checked" formatted="false">%s lúc %s</string>
 	<string name="last_checked_never">Chúng tôi chưa bao giờ kiểm tra, có lẽ bạn sẽ muốn làm như vậy?</string>
 	<string name="button_check_short">Kiểm tra</string>
-	<string name="button_check_now">Đang kiểm tra bản cập nhật &#8230;</string>
+	<string name="button_check_now">Đang kiểm tra bản cập nhật …</string>
 	<string name="button_reboot_short">Khởi động lại</string>
 	<string name="button_flash_now">Cài đặt</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">An toàn</string>
 	<string name="secure_mode_enabled_title">Chế độ an toàn: đã bật</string>
-	<string name="secure_mode_enabled_description"><![CDATA[Chữ ký số của bản cập nhật sẽ được xác thực trước khi cài đặt để xác nhận nguồn gốc của nó, và không cài đặt thêm bản cập nhật bổ sung. Chế độ này chỉ tương thích với <b>TWRP</b>.]]></string>
+	<string name="secure_mode_enabled_description">Chữ ký số của bản cập nhật sẽ được xác thực trước khi cài đặt để xác nhận nguồn gốc của nó, và không cài đặt thêm bản cập nhật bổ sung. Chế độ này chỉ tương thích với &lt;b&gt;TWRP&lt;/b&gt;.</string>
 	<string name="secure_mode_disabled_title">Chế độ an toàn: đã vô hiệu hóa</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Bản cập nhật bổ sung sẽ được cài đặt nếu có. Lưu ý rằng một số phần mềm (độc hại) có thể nằm trong các bản cập nhật này và được toàn quyền truy cập hệ thống. Hãy thận trọng.]]></string>
+	<string name="secure_mode_disabled_description">Bản cập nhật bổ sung sẽ được cài đặt nếu có. Lưu ý rằng một số phần mềm (độc hại) có thể nằm trong các bản cập nhật này và được toàn quyền truy cập hệ thống. Hãy thận trọng.</string>
 	<string name="recovery_notice_title">Chú ý</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Cài đặt các bản cập nhật ở chế độ hiện tại chỉ được hỗ trợ trên <b>TWRP</b> recovery. Hãy chắc chắn rằng bạn đang chạy recovery tương thích trước khi tiếp tục.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Cài đặt các bản cập nhật ở chế độ hiện tại chỉ được hỗ trợ chính thức trên <b>TWRP</b> recovery. <i>Các bản chính thức</i> <b>CWM</b> <i>không</i> được hỗ trợ, mặc dù một số <i></i> phiên bản của <b>CWM</b> <i>có thể vẫn hoạt động</i>. Hãy chắc chắn rằng bạn đang chạy recovery tương thích trước khi tiếp tục.]]></string>
+	<string name="recovery_notice_description_secure">Cài đặt các bản cập nhật ở chế độ hiện tại chỉ được hỗ trợ trên &lt;b&gt;TWRP&lt;/b&gt; recovery. Hãy chắc chắn rằng bạn đang chạy recovery tương thích trước khi tiếp tục.</string>
+	<string name="recovery_notice_description_not_secure">Cài đặt các bản cập nhật ở chế độ hiện tại chỉ được hỗ trợ chính thức trên &lt;b&gt;TWRP&lt;/b&gt; recovery. &lt;i&gt;Các bản chính thức&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;không&lt;/i&gt; được hỗ trợ, mặc dù một số &lt;i&gt;&lt;/i&gt; phiên bản của &lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;có thể vẫn hoạt động&lt;/i&gt;. Hãy chắc chắn rằng bạn đang chạy recovery tương thích trước khi tiếp tục.</string>
 	<string name="flash_after_update_notice_title">Chú ý</string>
-	<string name="flash_after_update_notice_description"><![CDATA[Bản cập nhật bổ sung có mặt trong thư mục <b>FlashAfterUpdate</b>, nhưng chế độ an toàn được kích hoạt. Nếu bạn tiếp tục, các bản cập nhật bổ sung sẽ <b>không</b> được flash.]]></string>
+	<string name="flash_after_update_notice_description">Bản cập nhật bổ sung có mặt trong thư mục &lt;b&gt;FlashAfterUpdate&lt;/b&gt;, nhưng chế độ an toàn được kích hoạt. Nếu bạn tiếp tục, các bản cập nhật bổ sung sẽ &lt;b&gt;không&lt;/b&gt; được flash.</string>
 	<string name="state_error_not_official_title">Cập nhật đã vô hiệu hóa.</string>
 	<string name="state_error_not_official_extra" formatted="false">Cập nhật of %s không khả thi</string>
 	<string name="button_build_delta">Tải về</string>
@@ -106,15 +105,15 @@
 	<string name="state_error_permissions">Không có quyền truy cập bộ nhớ.</string>
 	<string name="state_error_flash">Thất bại khi cài đặt flash. Dọn dẹp /cache và thử lại.</string>
 	<string name="state_error_ab_flash">Thất bại khi cài đặt flash. Vui lòng khởi động lại và thử lại.</string>
-	<string name="progress_status_0">Nghỉ &#8230;</string>
-	<string name="progress_status_1">Đang kiểm tra bản cập nhật &#8230;</string>
-	<string name="progress_status_2">Đã có bản cập nhật &#8230;</string>
-	<string name="progress_status_3">Đang cài đặt &#8230;</string>
-	<string name="progress_status_4">Đang xác thực tệp tin &#8230;</string>
-	<string name="progress_status_5">Đang hoàn thiện &#8230;</string>
-	<string name="progress_status_6">Đã cập nhật. Đang chờ khởi động lại &#8230;</string>
-	<string name="progress_status_7">Đang báo cáo lỗi sự kiện &#8230;</string>
-	<string name="progress_status_8">Đang cố gắng quay ngược lại &#8230;</string>
+	<string name="progress_status_0">Nghỉ …</string>
+	<string name="progress_status_1">Đang kiểm tra bản cập nhật …</string>
+	<string name="progress_status_2">Đã có bản cập nhật …</string>
+	<string name="progress_status_3">Đang cài đặt …</string>
+	<string name="progress_status_4">Đang xác thực tệp tin …</string>
+	<string name="progress_status_5">Đang hoàn thiện …</string>
+	<string name="progress_status_6">Đã cập nhật. Đang chờ khởi động lại …</string>
+	<string name="progress_status_7">Đang báo cáo lỗi sự kiện …</string>
+	<string name="progress_status_8">Đang cố gắng quay ngược lại …</string>
 	<string name="progress_status_9">Đã vô hiệu hóa.</string>
 	<string name="ab_perf_mode_title">Chế độ hiệu suất AB</string>
 	<string name="ab_perf_mode_summary">Sử dụng chế độ hiệu suất để cài đặt bản Cập nhật AB</string>

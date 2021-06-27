@@ -11,49 +11,48 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Andere</string>
 	<string name="action_about">Über</string>
-	<string name="about_content"><![CDATA[        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Ürsprünglich erstellt für <b>CarbonROM</b><br>
-        <br>
-        Lizensiert unter den Bedingungen der <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
-        <br>
-        Delta-Decoding basierend auf <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Copyright &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Ürsprünglich erstellt für &lt;b&gt;CarbonROM&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Lizensiert unter den Bedingungen der &lt;b&gt;GNU General Public License, version 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Delta-Decoding basierend auf &lt;b&gt;xdelta&lt;/b&gt;, copyright &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">Dein System ist auf dem neuesten Stand.</string>
-	<string name="state_action_ab_flash">Installiere A/B Update &#8230;</string>
-	<string name="state_action_ab_finished">Update Installiert. Warte auf Neustart &#8230;</string>
-	<string name="state_action_checking">Suche nach Aktualisierungen &#8230;</string>
-	<string name="state_action_checking_md5">Überprüfe Datei &#8230;</string>
-	<string name="state_action_searching">Suche nach Dateien &#8230;</string>
-	<string name="state_action_searching_md5">Überprüfe Datei &#8230;</string>
-	<string name="state_action_downloading">Lade herunter &#8230;</string>
-	<string name="state_action_applying">Spiele ein &#8230;</string>
-	<string name="state_action_applying_patch">Spiele ein &#8230;</string>
-	<string name="state_action_applying_md5">Überprüfe Datei &#8230;</string>
+	<string name="state_action_ab_flash">Installiere A/B Update …</string>
+	<string name="state_action_ab_finished">Update Installiert. Warte auf Neustart …</string>
+	<string name="state_action_checking">Suche nach Aktualisierungen …</string>
+	<string name="state_action_checking_md5">Überprüfe Datei …</string>
+	<string name="state_action_searching">Suche nach Dateien …</string>
+	<string name="state_action_searching_md5">Überprüfe Datei …</string>
+	<string name="state_action_downloading">Lade herunter …</string>
+	<string name="state_action_applying">Spiele ein …</string>
+	<string name="state_action_applying_patch">Spiele ein …</string>
+	<string name="state_action_applying_md5">Überprüfe Datei …</string>
 	<string name="state_action_ready">Aktualisierung bereit zum aufspielen.</string>
 	<string name="state_error_disk_space">Nicht genügend Speicherplatz vorhanden!</string>
 	<string name="state_error_unknown">Unbekannter Fehler.</string>
 	<string name="error_disk_space_sub" formatted="false">%d MiB verfügbar, %d MiB benötigt</string>
 	<string name="notify_update_available">Eine Aktualisierung ist verfügbar</string>
-	<string name="notify_checking">Suche nach Aktualisierung &#8230;</string>
+	<string name="notify_checking">Suche nach Aktualisierung …</string>
 	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d verbleibend</string>
 	<string name="last_checked" formatted="false">%s um %s</string>
 	<string name="last_checked_never">Noch niemals überprüft. Möchtest du jetzt nach Aktualisierungen suchen?</string>
 	<string name="button_check_short">Prüfen</string>
-	<string name="button_check_now">Nach Aktualisierung suchen &#8230;</string>
+	<string name="button_check_now">Nach Aktualisierung suchen …</string>
 	<string name="button_reboot_short">Neustarten</string>
 	<string name="button_flash_now">Jetzt aufspielen</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Sicherheit</string>
 	<string name="secure_mode_enabled_title">Sicherer Modus: aktiviert</string>
-	<string name="secure_mode_enabled_description"><![CDATA[Die Signatur der Aktualisierung wird vor dem Installieren überprüft, um die Echtheit zu garantieren. Es werden keine zusätzlichen Aktualisierungen installiert. Dieser Modus funktioniert nur mit <b>TWRP</b>.]]></string>
+	<string name="secure_mode_enabled_description">Die Signatur der Aktualisierung wird vor dem Installieren überprüft, um die Echtheit zu garantieren. Es werden keine zusätzlichen Aktualisierungen installiert. Dieser Modus funktioniert nur mit &lt;b&gt;TWRP&lt;/b&gt;.</string>
 	<string name="secure_mode_disabled_title">Sicherer Modus: deaktiviert</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Zusätzliche Aktualisierungen werden installiert, falls diese vorhanden sind. Beachte das jedes (böswillige) Softwarepaket Aktualisierungen installieren kann und somit vollen Systemzugriff erhält. Vorsicht ist geboten.]]></string>
+	<string name="secure_mode_disabled_description">Zusätzliche Aktualisierungen werden installiert, falls diese vorhanden sind. Beachte das jedes (böswillige) Softwarepaket Aktualisierungen installieren kann und somit vollen Systemzugriff erhält. Vorsicht ist geboten.</string>
 	<string name="recovery_notice_title">Hinweis</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Das Installieren von Aktualisierungen im aktuellen Modus wird nur von <b>TWRP</b> Recoveries unterstützt. Bitte vergewissern Sie sich, dass ein kompatibles Recovery installiert ist, bevor Sie fortfahren.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Das Installieren von Aktualisierungen im aktuellen Modus wird offiziell nur vom <b>TWRP</b>-Recovery unterstützt. <i>Offizielle</i> <b>CWM</b> Versionen werden <i>nicht</i> unterstützt, dennoch können einige <i>Community-Built</i> Versionen von <b>CWM</b> <i>eventuell</i> funktionieren. Bitte vergewissern Sie sich, dass ein kompatibles Recovery installiert ist, bevor Sie fortfahren.]]></string>
+	<string name="recovery_notice_description_secure">Das Installieren von Aktualisierungen im aktuellen Modus wird nur von &lt;b&gt;TWRP&lt;/b&gt; Recoveries unterstützt. Bitte vergewissern Sie sich, dass ein kompatibles Recovery installiert ist, bevor Sie fortfahren.</string>
+	<string name="recovery_notice_description_not_secure">Das Installieren von Aktualisierungen im aktuellen Modus wird offiziell nur vom &lt;b&gt;TWRP&lt;/b&gt;-Recovery unterstützt. &lt;i&gt;Offizielle&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt; Versionen werden &lt;i&gt;nicht&lt;/i&gt; unterstützt, dennoch können einige &lt;i&gt;Community-Built&lt;/i&gt; Versionen von &lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;eventuell&lt;/i&gt; funktionieren. Bitte vergewissern Sie sich, dass ein kompatibles Recovery installiert ist, bevor Sie fortfahren.</string>
 	<string name="flash_after_update_notice_title">Hinweis</string>
-	<string name="flash_after_update_notice_description"><![CDATA[Es sind zusätzliche Aktualisierungen im Ordner <b>FlashAfterUpdate</b> vorhanden, aber der sichere Modus ist aktiviert. Wenn du fortfährst, werden diese zusätzlichen Aktualisierungen <b>nicht</b> installiert.]]></string>
+	<string name="flash_after_update_notice_description">Es sind zusätzliche Aktualisierungen im Ordner &lt;b&gt;FlashAfterUpdate&lt;/b&gt; vorhanden, aber der sichere Modus ist aktiviert. Wenn du fortfährst, werden diese zusätzlichen Aktualisierungen &lt;b&gt;nicht&lt;/b&gt; installiert.</string>
 	<string name="state_error_not_official_title">Aktualisierung deaktiviert.</string>
 	<string name="state_error_not_official_extra" formatted="false">Aktualisierung von %s nicht möglich</string>
 	<string name="button_build_delta">Herunterladen</string>
@@ -106,15 +105,15 @@
 	<string name="state_error_permissions">Keine Berechtigung zum speichern.</string>
 	<string name="state_error_flash">Fehler beim Vorbereiten zum Einspielen. Bitte \"/cache \" bereinigen und wiederholen.</string>
 	<string name="state_error_ab_flash">Fehler beim Vorbereiten. Bitte nach Neustart erneut versuchen.</string>
-	<string name="progress_status_0">Leerlauf &#8230;</string>
-	<string name="progress_status_1">Suche nach Aktualisierungen &#8230;</string>
-	<string name="progress_status_2">Update verfügbar &#8230;</string>
-	<string name="progress_status_3">Installieren &#8230;</string>
-	<string name="progress_status_4">Überprüfen &#8230;</string>
-	<string name="progress_status_5">Installation wird abgeschlossen und Apps werden optimiert &#8230;</string>
-	<string name="progress_status_6">Update fertig. Warten auf Neustart &#8230;</string>
-	<string name="progress_status_7">Berichte Error Zustand &#8230;</string>
-	<string name="progress_status_8">Versuche Zurückrollen &#8230;</string>
+	<string name="progress_status_0">Leerlauf …</string>
+	<string name="progress_status_1">Suche nach Aktualisierungen …</string>
+	<string name="progress_status_2">Update verfügbar …</string>
+	<string name="progress_status_3">Installieren …</string>
+	<string name="progress_status_4">Überprüfen …</string>
+	<string name="progress_status_5">Installation wird abgeschlossen und Apps werden optimiert …</string>
+	<string name="progress_status_6">Update fertig. Warten auf Neustart …</string>
+	<string name="progress_status_7">Berichte Error Zustand …</string>
+	<string name="progress_status_8">Versuche Zurückrollen …</string>
 	<string name="progress_status_9">Deaktiviert.</string>
 	<string name="ab_perf_mode_title">AB Performance Modus</string>
 	<string name="ab_perf_mode_summary">Nutze Performance Modus um AB Updates zu installieren</string>

@@ -11,48 +11,47 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Egyéb</string>
 	<string name="action_about">Névjegy</string>
-	<string name="about_content"><![CDATA[        Szerzői jog &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Eredetileg <b>Az Carbon Projekt</b> részére készítve<br>
-        <br>
-        A következő engedélyek szerint liszenszelt: <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
-        <br>
-        Delta dekódolás alapja: <b>xdelta</b>, szerzői jog &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Szerzői jog &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Eredetileg &lt;b&gt;Az Carbon Projekt&lt;/b&gt; részére készítve&lt;br&gt;
+        &lt;br&gt;
+        A következő engedélyek szerint liszenszelt: &lt;b&gt;GNU General Public License, version 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Delta dekódolás alapja: &lt;b&gt;xdelta&lt;/b&gt;, szerzői jog &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">A rendszer naprakész.</string>
-	<string name="state_action_ab_flash">A/B frissítés telepítése &#8230;</string>
-	<string name="state_action_ab_finished">Frissítés telepítve. Újraindítás függőben &#8230;</string>
-	<string name="state_action_checking">Frissítések keresése &#8230;</string>
-	<string name="state_action_checking_md5">Fájl ellenőrzése &#8230;</string>
-	<string name="state_action_searching">Keresés a fájlok után &#8230;</string>
-	<string name="state_action_searching_md5">Fájl ellenőrzése &#8230;</string>
-	<string name="state_action_downloading">Letöltés &#8230;</string>
-	<string name="state_action_applying">Patchelés &#8230;</string>
-	<string name="state_action_applying_patch">Patchelés &#8230;</string>
-	<string name="state_action_applying_md5">Fájl ellenőrzése &#8230;</string>
+	<string name="state_action_ab_flash">A/B frissítés telepítése …</string>
+	<string name="state_action_ab_finished">Frissítés telepítve. Újraindítás függőben …</string>
+	<string name="state_action_checking">Frissítések keresése …</string>
+	<string name="state_action_checking_md5">Fájl ellenőrzése …</string>
+	<string name="state_action_searching">Keresés a fájlok után …</string>
+	<string name="state_action_searching_md5">Fájl ellenőrzése …</string>
+	<string name="state_action_downloading">Letöltés …</string>
+	<string name="state_action_applying">Patchelés …</string>
+	<string name="state_action_applying_patch">Patchelés …</string>
+	<string name="state_action_applying_md5">Fájl ellenőrzése …</string>
 	<string name="state_action_ready">Frissítés flashelésre kész.</string>
 	<string name="state_error_disk_space">Nincs elég tárhely!</string>
 	<string name="state_error_unknown">Ismeretlen hiba.</string>
 	<string name="error_disk_space_sub" formatted="false">%d MiB elérhető, %d MiB szükséges</string>
 	<string name="notify_update_available">Egy frissítés elérhető</string>
-	<string name="notify_checking">Frissítések keresése &#8230;</string>
+	<string name="notify_checking">Frissítések keresése …</string>
 	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d van hátra</string>
 	<string name="last_checked" formatted="false">%s ekkor: %s</string>
 	<string name="last_checked_never">Mi soha nem ellenőriztük, talán szeretné most megtenni?</string>
 	<string name="button_check_short">Ellenőrzés</string>
 	<string name="button_reboot_short">Újraindítás</string>
 	<string name="button_flash_now">Flash</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Biztonságos</string>
 	<string name="secure_mode_enabled_title">Biztonságos üzemmód: engedélyezve</string>
-	<string name="secure_mode_enabled_description"><![CDATA[A frissítés kriptográfiai aláírása ellenőrzésre kerül a telepítés előtt az eredetiség megerősítéséhez, további frissítés nem került telepítésre. Ez az üzemmód csak <b>TWRP</b> kompatibilis.]]></string>
+	<string name="secure_mode_enabled_description">A frissítés kriptográfiai aláírása ellenőrzésre kerül a telepítés előtt az eredetiség megerősítéséhez, további frissítés nem került telepítésre. Ez az üzemmód csak &lt;b&gt;TWRP&lt;/b&gt; kompatibilis.</string>
 	<string name="secure_mode_disabled_title">Biztonságos üzemmód: letiltva</string>
-	<string name="secure_mode_disabled_description"><![CDATA[További frissítések is telepítésre kerülnek, ha elérhetőek. Ne feledje, hogy minden (rosszindulatú) szoftvercsomag elhelyezheti ezeket a frissítéseket, és átveheti a teljes rendszer hozzáférést. Óvatosság javasolt.]]></string>
+	<string name="secure_mode_disabled_description">További frissítések is telepítésre kerülnek, ha elérhetőek. Ne feledje, hogy minden (rosszindulatú) szoftvercsomag elhelyezheti ezeket a frissítéseket, és átveheti a teljes rendszer hozzáférést. Óvatosság javasolt.</string>
 	<string name="recovery_notice_title">Figyelmeztetés</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Frissítések telepítése az aktuális módban csak a <b>TWRP</b> recovery által támogatott. Kérjük, a folytatás előtt győződjön meg róla, hogy egy kompatibilis recovery-t használ.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Frissítések telepítése az aktuális módban csak a <b>TWRP</b> recovery által támogatott. <i>Hivatalos</i> <b>CWM</b> kiadások <i>nem</i> támogatottak, bár néhány <i>közösségi kiadású</i> verziója a <b>CWM</b>-nak <i>talán</i> mégis működhet. Kérjük, a folytatás előtt győződjön meg róla, hogy egy kompatibilis recovery-t használ.]]></string>
+	<string name="recovery_notice_description_secure">Frissítések telepítése az aktuális módban csak a &lt;b&gt;TWRP&lt;/b&gt; recovery által támogatott. Kérjük, a folytatás előtt győződjön meg róla, hogy egy kompatibilis recovery-t használ.</string>
+	<string name="recovery_notice_description_not_secure">Frissítések telepítése az aktuális módban csak a &lt;b&gt;TWRP&lt;/b&gt; recovery által támogatott. &lt;i&gt;Hivatalos&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt; kiadások &lt;i&gt;nem&lt;/i&gt; támogatottak, bár néhány &lt;i&gt;közösségi kiadású&lt;/i&gt; verziója a &lt;b&gt;CWM&lt;/b&gt;-nak &lt;i&gt;talán&lt;/i&gt; mégis működhet. Kérjük, a folytatás előtt győződjön meg róla, hogy egy kompatibilis recovery-t használ.</string>
 	<string name="flash_after_update_notice_title">Figyelmeztetés</string>
-	<string name="flash_after_update_notice_description"><![CDATA[További frissítések találhatóak a <b>FlashAfterUpdate</b> mappában, de a biztonságos mód engedélyezve van. Ha folytatja, ezek a további frissítések <b>nem</b> fognak települni.]]></string>
+	<string name="flash_after_update_notice_description">További frissítések találhatóak a &lt;b&gt;FlashAfterUpdate&lt;/b&gt; mappában, de a biztonságos mód engedélyezve van. Ha folytatja, ezek a további frissítések &lt;b&gt;nem&lt;/b&gt; fognak települni.</string>
 	<string name="state_error_not_official_title">Frissítés letiltva.</string>
 	<string name="state_error_not_official_extra" formatted="false">%s frissítése nem lehetséges</string>
 	<string name="button_build_delta">Letöltés</string>
@@ -105,14 +104,16 @@
 	<string name="state_error_permissions">Nincs tárhely engedély.</string>
 	<string name="state_error_flash">Zseblámpa beállítása sikertelen. Törölje a /cache-t és próbálja újra.</string>
 	<string name="state_error_ab_flash">Frissítés telepítése sikertelen. Indítsd újra a készüléket és próbáld újra.</string>
-	<string name="progress_status_0">Tétlen &#8230;</string>
-	<string name="progress_status_1">Frissítések keresése &#8230;</string>
-	<string name="progress_status_2">Frissítés elérhető &#8230;</string>
-	<string name="progress_status_3">Telepítés &#8230;</string>
-	<string name="progress_status_4">Fájl ellenőrzése &#8230;</string>
-	<string name="progress_status_6">Frissítve. Újraindítás függőben &#8230;</string>
-	<string name="progress_status_7">Hiba esemény jelentése &#8230;</string>
-	<string name="progress_status_8">Visszaállás megkísérlése &#8230;</string>
+	<string name="progress_status_0">Tétlen …</string>
+	<string name="progress_status_1">Frissítések keresése …</string>
+	<string name="progress_status_2">Frissítés elérhető …</string>
+	<string name="progress_status_3">Telepítés …</string>
+	<string name="progress_status_4">Fájl ellenőrzése …</string>
+	<string name="progress_status_5">Az applikációk véglegesítése és optimalizálása …</string>
+	<string name="progress_status_6">Frissítve. Újraindítás függőben …</string>
+	<string name="progress_status_7">Hiba esemény jelentése …</string>
+	<string name="progress_status_8">Visszaállás megkísérlése …</string>
 	<string name="progress_status_9">Letiltva.</string>
+	<string name="ab_perf_mode_title">Alacsony teljesítmény mód</string>
 	<string name="ab_perf_mode_summary">Teljesítménymód használata AB frissítések telepítése közben</string>
 </resources>

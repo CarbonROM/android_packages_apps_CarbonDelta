@@ -11,50 +11,49 @@
 	<string name="network_ethernet">Ethernet</string>
 	<string name="network_unknown">Інші</string>
 	<string name="action_about">Про додаток</string>
-	<string name="about_content"><![CDATA[        Авторські права &copy;_COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>     
-        <br>
-           Створено для <b> Carbon</b><br>
-        <br>
-        Публічна Ліцензія, версія 3.0 (GPLv3)</b>
-<br>
-        <br>
-        Дельта кодування на основі <b>xdelta</b>, авторські права &copy;_COPYRIGHT_XDELTA_ 
-<b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Авторські права &amp;copy;_COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;     
+        &lt;br&gt;
+           Створено для &lt;b&gt; Carbon&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Публічна Ліцензія, версія 3.0 (GPLv3)&lt;/b&gt;
+&lt;br&gt;
+        &lt;br&gt;
+        Дельта кодування на основі &lt;b&gt;xdelta&lt;/b&gt;, авторські права &amp;copy;_COPYRIGHT_XDELTA_ 
+&lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">Установлена остання версія ПЗ.</string>
-	<string name="state_action_ab_flash">Встановлення A/B оновлення &#8230;</string>
-	<string name="state_action_ab_finished">Оновлення встановлено. Очікування перезавантаження &#8230;</string>
-	<string name="state_action_checking">Перевірка оновлень&#8230;</string>
-	<string name="state_action_checking_md5">Верифікація файлу&#8230;</string>
-	<string name="state_action_searching">Пошук файлів&#8230;</string>
-	<string name="state_action_searching_md5">Верифікація файлу&#8230;</string>
-	<string name="state_action_downloading">Завантажується&#8230;</string>
-	<string name="state_action_applying">Внесення змін &#8230;</string>
-	<string name="state_action_applying_patch">Внесення змін &#8230;</string>
-	<string name="state_action_applying_md5">Верифікація файлу&#8230;</string>
+	<string name="state_action_ab_flash">Встановлення A/B оновлення …</string>
+	<string name="state_action_ab_finished">Оновлення встановлено. Очікування перезавантаження …</string>
+	<string name="state_action_checking">Перевірка оновлень…</string>
+	<string name="state_action_checking_md5">Верифікація файлу…</string>
+	<string name="state_action_searching">Пошук файлів…</string>
+	<string name="state_action_searching_md5">Верифікація файлу…</string>
+	<string name="state_action_downloading">Завантажується…</string>
+	<string name="state_action_applying">Внесення змін …</string>
+	<string name="state_action_applying_patch">Внесення змін …</string>
+	<string name="state_action_applying_md5">Верифікація файлу…</string>
 	<string name="state_action_ready">Оновлення готове до встановлення.</string>
 	<string name="state_error_disk_space">Недостатньо місця на диску!</string>
 	<string name="state_error_unknown">Невідома помилка.</string>
 	<string name="error_disk_space_sub" formatted="false">%d МБ доступно, %d Мбайт необхідно</string>
 	<string name="notify_update_available">Доступне оновлення</string>
-	<string name="notify_checking">Перевірка наявності оновлень&#8230;</string>
+	<string name="notify_checking">Перевірка наявності оновлень…</string>
 	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d залишилося</string>
 	<string name="last_checked" formatted="false">%s в %s</string>
 	<string name="last_checked_never">Пошук оновлень ще не виконувався. Можливо, варто спробувати?</string>
 	<string name="button_check_short">Перевірити</string>
 	<string name="button_reboot_short">Перезавантажити</string>
 	<string name="button_flash_now">Встановити</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Безпечний режим</string>
 	<string name="secure_mode_enabled_title">Безпечний режим: увімкнено</string>
-	<string name="secure_mode_enabled_description"><![CDATA[Криптографічний підпис оновлення буде перевірено перед встановленням, щоб підтвердити походження оновлення, і впевнитись що ніякі додаткові файли не будуть встановлені. Цей режим сумісний тільки з <b>TWRP</b>.]]></string>
+	<string name="secure_mode_enabled_description">Криптографічний підпис оновлення буде перевірено перед встановленням, щоб підтвердити походження оновлення, і впевнитись що ніякі додаткові файли не будуть встановлені. Цей режим сумісний тільки з &lt;b&gt;TWRP&lt;/b&gt;.</string>
 	<string name="secure_mode_disabled_title">Безпечний режим: вимкнуто</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Додаткові файли будуть встановлені, якщо вони є. Зауважимо, що будь-який (шкідливий) пакет програмного забезпечення можна розмістити в ці оновлення і отримати повний доступ до системи. Використовуйте цей режим на свій погляд.]]></string>
+	<string name="secure_mode_disabled_description">Додаткові файли будуть встановлені, якщо вони є. Зауважимо, що будь-який (шкідливий) пакет програмного забезпечення можна розмістити в ці оновлення і отримати повний доступ до системи. Використовуйте цей режим на свій погляд.</string>
 	<string name="recovery_notice_title">Зверніть увагу</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Встановлення оновлень в поточному режимі підтримується тільки з <b>TWRP</b> рекавері. Будь ласка, впевніться, що ви використовуєте сумісні рекавері, перш ніж продовжити.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Встановлення оновлень в даному режимі офіційно підтримується тільки за допомогою <b>TWRP</b> рекавері. <i>Офіційно</i> <b>CWM</b>  <i>не</i> підтримується, але деякі <i>користувальницькі збірки</i> <b>CWM</b> <i>можливо</i> сумісні. Будь ласка, впевніться, що у вас сумісні рекавері, перш ніж продовжити.]]></string>
+	<string name="recovery_notice_description_secure">Встановлення оновлень в поточному режимі підтримується тільки з &lt;b&gt;TWRP&lt;/b&gt; рекавері. Будь ласка, впевніться, що ви використовуєте сумісні рекавері, перш ніж продовжити.</string>
+	<string name="recovery_notice_description_not_secure">Встановлення оновлень в даному режимі офіційно підтримується тільки за допомогою &lt;b&gt;TWRP&lt;/b&gt; рекавері. &lt;i&gt;Офіційно&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt;  &lt;i&gt;не&lt;/i&gt; підтримується, але деякі &lt;i&gt;користувальницькі збірки&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;можливо&lt;/i&gt; сумісні. Будь ласка, впевніться, що у вас сумісні рекавері, перш ніж продовжити.</string>
 	<string name="flash_after_update_notice_title">Зверніть увагу</string>
-	<string name="flash_after_update_notice_description"><![CDATA[Додаткові оновлення розташовуються в теці <b>FlashAfterUpdate</b>, але Безпечний режим активовано. Якщо ви продовжуєте, всі додаткові файли <b>не будуть</b> встановлені.]]></string>
+	<string name="flash_after_update_notice_description">Додаткові оновлення розташовуються в теці &lt;b&gt;FlashAfterUpdate&lt;/b&gt;, але Безпечний режим активовано. Якщо ви продовжуєте, всі додаткові файли &lt;b&gt;не будуть&lt;/b&gt; встановлені.</string>
 	<string name="state_error_not_official_title">Оновлення вимкнуто.</string>
 	<string name="state_error_not_official_extra" formatted="false">Оновлення %s неможливе</string>
 	<string name="button_build_delta">Завантажити</string>
@@ -107,14 +106,15 @@
 	<string name="state_error_permissions">Немає дозволу на зберігання.</string>
 	<string name="state_error_flash">Не вдалося встановити. Очиститіть /cache та повторіть спробу.</string>
 	<string name="state_error_ab_flash">Не вдалося встановити. Будь ласка перезавантажте телефон та спробуйте ще раз.</string>
-	<string name="progress_status_0">Бездіяльність &#8230;</string>
-	<string name="progress_status_1">Перевірка наявності оновлень... &#8230;</string>
-	<string name="progress_status_2">Доступне оновлення &#8230;</string>
-	<string name="progress_status_3">Встановлення &#8230;</string>
-	<string name="progress_status_4">Верифікація файлу &#8230;</string>
-	<string name="progress_status_6">Оновлено. Очікування перезавантаження &#8230;</string>
-	<string name="progress_status_7">Повідомлення про помилку &#8230;</string>
-	<string name="progress_status_8">Спроба відкату &#8230;</string>
+	<string name="progress_status_0">Бездіяльність …</string>
+	<string name="progress_status_1">Перевірка наявності оновлень... …</string>
+	<string name="progress_status_2">Доступне оновлення …</string>
+	<string name="progress_status_3">Встановлення …</string>
+	<string name="progress_status_4">Верифікація файлу …</string>
+	<string name="progress_status_5">Завершення та оптимізація додатків …</string>
+	<string name="progress_status_6">Оновлено. Очікування перезавантаження …</string>
+	<string name="progress_status_7">Повідомлення про помилку …</string>
+	<string name="progress_status_8">Спроба відкату …</string>
 	<string name="progress_status_9">Вимкнено.</string>
 	<string name="ab_perf_mode_title">Режим продуктивності AB</string>
 	<string name="ab_perf_mode_summary">Використовувати режим продуктивності для встановлення AB оновлень</string>

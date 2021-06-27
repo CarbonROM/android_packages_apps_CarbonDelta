@@ -11,46 +11,45 @@
 	<string name="network_ethernet">Bedraad</string>
 	<string name="network_unknown">Anders</string>
 	<string name="action_about">Over</string>
-	<string name="about_content"><![CDATA[        Copyright &copy; _COPYRIGHT_CARBONDELTA_ <b>Jorrit \'Chainfire\' Jongma</b><br>
-        <br>
-        Oorspronkelijk gemaakt voor <b>Het Carbon Project</b><br>
-        <br>
-        licentie onder de voorwaarden van de <b>GNU General Public License, version 3.0 (GPLv3)</b><br>
-        <br>
-        Delta gebaseerd op <b>xdelta</b>, copyright &copy; _COPYRIGHT_XDELTA_ <b>Joshua MacDonald</b><br>
-    ]]></string>
+	<string name="about_content">        Copyright &amp;copy; _COPYRIGHT_CARBONDELTA_ &lt;b&gt;Jorrit \'Chainfire\' Jongma&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Oorspronkelijk gemaakt voor &lt;b&gt;Het Carbon Project&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        licentie onder de voorwaarden van de &lt;b&gt;GNU General Public License, version 3.0 (GPLv3)&lt;/b&gt;&lt;br&gt;
+        &lt;br&gt;
+        Delta gebaseerd op &lt;b&gt;xdelta&lt;/b&gt;, copyright &amp;copy; _COPYRIGHT_XDELTA_ &lt;b&gt;Joshua MacDonald&lt;/b&gt;&lt;br&gt;
+    </string>
 	<string name="state_action_none">Uw systeem is up to date.</string>
-	<string name="state_action_checking">Controleren op updates &#8230;</string>
-	<string name="state_action_checking_md5">Bestand verifiëren &#8230;</string>
-	<string name="state_action_searching">Bestanden zoeken &#8230;</string>
-	<string name="state_action_searching_md5">Bestand verifiëren &#8230;</string>
-	<string name="state_action_downloading">Downloaden &#8230;</string>
-	<string name="state_action_applying">Toepassen &#8230;</string>
-	<string name="state_action_applying_patch">Toepassen &#8230;</string>
-	<string name="state_action_applying_md5">Bestand toepassen &#8230;</string>
+	<string name="state_action_checking">Controleren op updates …</string>
+	<string name="state_action_checking_md5">Bestand verifiëren …</string>
+	<string name="state_action_searching">Bestanden zoeken …</string>
+	<string name="state_action_searching_md5">Bestand verifiëren …</string>
+	<string name="state_action_downloading">Downloaden …</string>
+	<string name="state_action_applying">Toepassen …</string>
+	<string name="state_action_applying_patch">Toepassen …</string>
+	<string name="state_action_applying_md5">Bestand toepassen …</string>
 	<string name="state_action_ready">Update is klaar voor installatie.</string>
 	<string name="state_error_disk_space">Onvoldoende schijfruimte!</string>
 	<string name="state_error_unknown">Onbekende fout.</string>
 	<string name="error_disk_space_sub" formatted="false">%d MiB beschikbaar, %d MiB nodig</string>
 	<string name="notify_update_available">Er is een update beschikbaar</string>
-	<string name="notify_checking">Zoeken naar updates &#8230;</string>
+	<string name="notify_checking">Zoeken naar updates …</string>
 	<string name="notify_eta_remaining" formatted="false">%2d%%, %02d:%02d resterend</string>
 	<string name="last_checked" formatted="false">%s op %s</string>
 	<string name="last_checked_never">Er is nog niet eerder gecontroleerd op updates, zou u willen wat wij het voor u gaan controleren?</string>
 	<string name="button_check_short">Controleer</string>
 	<string name="button_reboot_short">Opnieuw opstarten</string>
 	<string name="button_flash_now">Installeer</string>
-	<!-- updates from 2013/12/18 -->
 	<string name="action_secure_mode">Beveilig</string>
 	<string name="secure_mode_enabled_title">Veilige modus: ingeschakeld</string>
-	<string name="secure_mode_enabled_description"><![CDATA[De cryptografische handtekening van de update zal worden gecontroleerd voor het installeren om de oorsprong te bevestigen en geen extra updates zullen worden geïnstalleerd. Deze modus is alleen compatibel met <b>TWRP</b>.]]></string>
+	<string name="secure_mode_enabled_description">De cryptografische handtekening van de update zal worden gecontroleerd voor het installeren om de oorsprong te bevestigen en geen extra updates zullen worden geïnstalleerd. Deze modus is alleen compatibel met &lt;b&gt;TWRP&lt;/b&gt;.</string>
 	<string name="secure_mode_disabled_title">Veilige modus: uitgeschakeld</string>
-	<string name="secure_mode_disabled_description"><![CDATA[Aanvullende updates worden geïnstalleerd indien aanwezig. Let op dat elke (kwaadaardige) softwarepakket deze updates kan plaatsen en toegang tot het volledige systeem krijgen. Weest voorzichtig.]]></string>
+	<string name="secure_mode_disabled_description">Aanvullende updates worden geïnstalleerd indien aanwezig. Let op dat elke (kwaadaardige) softwarepakket deze updates kan plaatsen en toegang tot het volledige systeem krijgen. Weest voorzichtig.</string>
 	<string name="recovery_notice_title">Melding</string>
-	<string name="recovery_notice_description_secure"><![CDATA[Het installeren van updates in de huidige modus wordt alleen ondersteund door <b>TWRP</b>. Zorg ervoor dat u een compatibele recovery heeft voordat u verdergaat.]]></string>
-	<string name="recovery_notice_description_not_secure"><![CDATA[Het installeren van updates in de huidige modus wordt alleen officieel ondersteund op <b>TWRP</b>. <i>Officiële</i> <b>CWM</b> recoveries zijn <i>niet</i> ondersteund, hoewel sommige <i>community gebouwde</i> versies van <b>CWM</b> <i>zouden kunnen</i> werken. Zorg ervoor dat u een compatibele recovery heeft voordat u verdergaat.]]></string>
+	<string name="recovery_notice_description_secure">Het installeren van updates in de huidige modus wordt alleen ondersteund door &lt;b&gt;TWRP&lt;/b&gt;. Zorg ervoor dat u een compatibele recovery heeft voordat u verdergaat.</string>
+	<string name="recovery_notice_description_not_secure">Het installeren van updates in de huidige modus wordt alleen officieel ondersteund op &lt;b&gt;TWRP&lt;/b&gt;. &lt;i&gt;Officiële&lt;/i&gt; &lt;b&gt;CWM&lt;/b&gt; recoveries zijn &lt;i&gt;niet&lt;/i&gt; ondersteund, hoewel sommige &lt;i&gt;community gebouwde&lt;/i&gt; versies van &lt;b&gt;CWM&lt;/b&gt; &lt;i&gt;zouden kunnen&lt;/i&gt; werken. Zorg ervoor dat u een compatibele recovery heeft voordat u verdergaat.</string>
 	<string name="flash_after_update_notice_title">Melding</string>
-	<string name="flash_after_update_notice_description"><![CDATA[Aanvullende updates zijn aanwezig in de <b>FlashAfterUpdate</b> map, maar veilige modus is ingeschakeld. Als u doorgaat, zullen deze aanvullende updates <b>niet</b> worden geflasht.]]></string>
+	<string name="flash_after_update_notice_description">Aanvullende updates zijn aanwezig in de &lt;b&gt;FlashAfterUpdate&lt;/b&gt; map, maar veilige modus is ingeschakeld. Als u doorgaat, zullen deze aanvullende updates &lt;b&gt;niet&lt;/b&gt; worden geflasht.</string>
 	<string name="state_error_not_official_title">Updates uitgeschakeld.</string>
 	<string name="state_error_not_official_extra" formatted="false">Update voor %s niet mogelijk</string>
 	<string name="button_build_delta">Download</string>
@@ -102,12 +101,12 @@
 	<string name="clean_files_feedback" formatted="false">%d Bestanden verwijderd. Klik nu \'Controleer voor updates\'</string>
 	<string name="state_error_permissions">Geen opslag-machtigingen.</string>
 	<string name="state_error_flash">Voorbereiden flashen mislukt. Wis /cache en probeer opnieuw.</string>
-	<string name="progress_status_1">Zoeken naar updates &#8230;</string>
-	<string name="progress_status_2">Update beschikbaar &#8230;</string>
-	<string name="progress_status_3">Installeren &#8230;</string>
-	<string name="progress_status_4">Verifiëren &#8230;</string>
-	<string name="progress_status_7">Rapporteer Error gebeurtenis &#8230;</string>
-	<string name="progress_status_8">Probeert Terugdraaiing &#8230;</string>
+	<string name="progress_status_1">Zoeken naar updates …</string>
+	<string name="progress_status_2">Update beschikbaar …</string>
+	<string name="progress_status_3">Installeren …</string>
+	<string name="progress_status_4">Verifiëren …</string>
+	<string name="progress_status_7">Rapporteer Error gebeurtenis …</string>
+	<string name="progress_status_8">Probeert Terugdraaiing …</string>
 	<string name="progress_status_9">Uitgeschakeld.</string>
 	<string name="ab_perf_mode_title">AB Prestatie Modus</string>
 	<string name="ab_perf_mode_summary">Gebruik Prestatie Modus om AB Updates te installeren</string>
