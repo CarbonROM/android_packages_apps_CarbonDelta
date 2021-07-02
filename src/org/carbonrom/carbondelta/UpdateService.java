@@ -2228,7 +2228,7 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                                     false
                             };
                             initialFile = findInitialFile(deltas, flashFilename, needsProcessing);
-                            initialFileNeedsProcessing = needsProcessing[0];
+                            initialFileNeedsProcessing = needsProcessing[0] || config.getApplySignature();
                         }
                         Logger.d("initial: %s", initialFile != null ? initialFile : "not found");
 
