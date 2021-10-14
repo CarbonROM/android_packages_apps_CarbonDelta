@@ -1,0 +1,69 @@
+cc_library_shared {
+    name: "libcarbondelta",
+    shared_libs: [
+        "libz",
+    ],
+    header_libs: [
+        "jni_headers"
+    ],
+    include_dirs: [
+        "external/zlib"
+    ],
+    srcs: [
+        "xdelta3-3.0.7/xdelta3.c",
+        "zipadjust.c",
+        "delta.c",
+        "delta_jni.c"
+    ],
+    cflags: [
+        "-Ofast",
+        "-Wno-unused-parameter",
+        "-Wno-unused-function",
+        "-Wno-sign-compare",
+    ],
+    sdk_version: "14",
+    // LLVM libc++
+    stl: "c++_static",
+    product_specific: true,
+}
+
+cc_binary {
+    name: "dedelta",
+    include_dirs: [
+        "external/zlib",
+    ],
+    srcs: [
+        "xdelta3-3.0.7/xdelta3.c",
+        "delta.c",
+        "delta_run.c",
+    ],
+    shared_libs: [
+        "libz",
+    ],
+    cflags: [
+        "-Ofast",
+        "-Wno-unused-parameter",
+        "-Wno-unused-function",
+        "-Wno-sign-compare",
+    ],
+}
+
+cc_binary {
+    name: "zipadjust",
+    include_dirs: [
+        "external/zlib",
+    ],
+    srcs: [
+        "zipadjust.c",
+        "zipadjust_run.c",
+    ],
+    shared_libs: [
+        "libz",
+    ],
+    cflags: [
+        "-Ofast",
+        "-Wno-unused-parameter",
+        "-Wno-unused-function",
+        "-Wno-sign-compare",
+    ],
+}

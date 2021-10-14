@@ -15,8 +15,11 @@ LOCAL_STATIC_ANDROID_LIBRARIES := android-support-v4 \
 
 LOCAL_USE_AAPT2 := true
 LOCAL_AAPT_FLAGS := --auto-add-overlay
-LOCAL_JNI_SHARED_LIBRARIES := libcarbondelta
-LOCAL_REQUIRED_MODULES := libcarbondelta
+ifdef TARGET_BUILD_APPS
+    LOCAL_JNI_SHARED_LIBRARIES := libcarbondelta
+else
+    LOCAL_REQUIRED_MODULES:= libcarbondelta
+endif
 LOCAL_PROGUARD_FLAG_FILES := proguard-project.txt
 
 include $(BUILD_PACKAGE)
