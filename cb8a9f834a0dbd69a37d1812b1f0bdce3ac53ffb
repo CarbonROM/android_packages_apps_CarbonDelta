@@ -1,4 +1,22 @@
 {
   "pushCert": "certificate version 0.1\npusher 822AA3E6EE28340C 1634501869 -0500\npushee ssh://review.carbonrom.org:29418/CarbonROM/android_packages_apps_CarbonDelta\nnonce 1634501866-3ED9BDD59922886C491BED37249937BC4DC70B06\n\n0000000000000000000000000000000000000000 cb8a9f834a0dbd69a37d1812b1f0bdce3ac53ffb refs/for/cr-10.0\n-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEvw/uUiV8PGgD+twvgiqj5u4oNAwFAmFshO0ACgkQgiqj5u4o\nNAz4bQ/+L+HsII8OXTZ8pZlggB9eGK+nqtTsSWziimrAwfbCa6BVgKrqo6vYTCKO\nFUQ3DCSHGxd/pbBiiC4AeA0o0QXA1q+I+5xuUinrc9WMFd/GUeqcpVl0OTN7w4Ns\nsq8Kyl75YznSb4d+pjpxSQq2sPzWv2t0qwI35Kcmu2F3eWmpJHv9HwqkR03hxV/m\nqzrYQl+fSczsXHqfm593BccNy2lLbHhHT7sanyI7k1O3jxfZdA/8gitCSHyLhiF4\nF2IMnxunUdv4kaJgAv/qCC7wX5gzD4wnBms0wMB/tHK4jqhKEsggVf9zejN2AY9k\n272XHi6zFg/NIotYwnjH7grfsNF0FvXBesRqcjQAh76Yfx4f5EciAp7aFMYo9GJT\nfHFxhTye/BS+FAfITQw2rSmhnZvra4/sMsZr4nQihT50rnUfRzOGCZGz/S0aixgo\nGeMS9SWCJdqaS8ncqSHO2ymH5rbqUFBvW41agi15kJmyxEoccssCvptMZ/Qc5/6u\nY2W0OeZt/uorwyF+4BEsbfw7v1wDYD5ztQsxV0Ts90tHnvhYhrwTtOtRi40CNcqk\nBdPwaXYMYlBx5r3dC2r/DaW1B8j5wWnd8XfqCQEIcym4GfQQHvaQgydcrl1T1m2t\n5XOjp8V79LLK3t4zo73/s6tnmmbrAJAwcr5QBAyWwinTKEWftFw\u003d\n\u003d4BMp\n-----END PGP SIGNATURE-----\n",
-  "comments": []
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06c0c2d7_f7beb59c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 341
+      },
+      "writtenOn": "2021-10-17T20:19:07Z",
+      "side": 1,
+      "message": "This is needed to depend on libnativehelper JNI header lib. I have tested it\u0027s built, HAVE NOT tested on-device",
+      "revId": "cb8a9f834a0dbd69a37d1812b1f0bdce3ac53ffb",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081"
+    }
+  ]
 }
