@@ -11,6 +11,8 @@ LOCAL_SYSTEM_EXT_MODULE := true
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
+LOCAL_OPTIONAL_USES_LIBRARIES := org.apache.http.legacy
+
 LOCAL_STATIC_ANDROID_LIBRARIES := android-support-v4 \
     androidx.cardview_cardview
 
