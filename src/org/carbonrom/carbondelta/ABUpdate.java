@@ -50,8 +50,6 @@ class ABUpdate {
     private UpdateService updateservice;
 
     private final UpdateEngineCallback mUpdateEngineCallback = new UpdateEngineCallback() {
-        float lastPercent;
-        int offset = 0;
         @Override
         public void onStatusUpdate(int status, float percent) {
             if (!isInstallingUpdate(updateservice)) {
@@ -67,15 +65,10 @@ class ABUpdate {
                 updateservice.onUpdateCompleted(UpdateEngine.ErrorCodeConstants.ERROR);
                 return;
             }
-            if (lastPercent > percent) {
-                offset = 50;
-            }
-            lastPercent = percent;
             if (mProgressListener != null) {
                 mProgressListener.setStatus(updateservice.getString(updateservice.getResources().getIdentifier(
                     "progress_status_" + status, "string", updateservice.getPackageName())));
-                mProgressListener.onProgress(percent * 50f + (float) offset,
-                    (long) Math.round(percent * 50) + (long) offset, 100L);
+                mProgressListener.onProgress(percent * 100f, (long) Math.round(percent * 100), 100L);
             }
         }
 
