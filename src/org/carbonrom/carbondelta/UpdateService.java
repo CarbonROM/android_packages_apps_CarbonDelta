@@ -1690,6 +1690,10 @@ OnWantUpdateCheckListener, OnSharedPreferenceChangeListener {
                         }
                     }
                     public void setStatus(String status) {
+                        if (this.status != status) {
+                            last[0] = 0;
+                            last[1] = SystemClock.elapsedRealtime();
+                        }
                         this.status = status;
                     }
                 };
