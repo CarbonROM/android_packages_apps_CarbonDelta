@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">CarbonDelta</string>
+	<string name="app_name">Carbon Update</string>
 	<string name="title">Bản cập nhật hệ thống</string>
 	<string name="action_networks">Mạng</string>
 	<string name="title_networks">Tự động tải về</string>
@@ -122,9 +122,9 @@
 	<string name="button_select_file">Tập tin</string>
 	<string name="state_error_ab_flash_title">Không thể cập nhật AB</string>
 	<string name="state_error_flash_title">Không thể cập nhật</string>
-	<string name="file_flash_support_title">Flash tệp cục bộ</string>
+	<string name="file_flash_support_title">Local file flash</string>
 	<string name="file_flash_support_summary">Cho phép chọn tệp ZIP cục bộ</string>
-	<string name="flash_file_notice_title">Flash tệp cục bộ</string>
+	<string name="flash_file_notice_title">Địa chỉ file flash</string>
 	<string name="flash_file_notice_message"><b> Lưu ý: </b> Sẽ không có kiểm tra xem tệp ZIP đã chọn có phù hợp với thiết bị của bạn hay không! \ n \ n <b> Việc nhấp nháy nhầm tệp ZIP có thể dẫn đến thiết bị không hoạt động! </b></string>
 	<string name="channel_name">Cập nhật tiến độ</string>
 	<string name="text_update_file_flash_title">Cập nhật tệp</string>
